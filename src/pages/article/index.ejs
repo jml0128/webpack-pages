@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <%= require('../../templates/head.ejs')('文章详情') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./about.html') %>
+    <div class="blank" data-v="custom-blank"></div>
+    <div class="app-main">
+      <div class="block">
+        <%=
+        require('../../templates/top.ejs')(['该文章一级分类','该文章二级分类','该文章标题该文章标题该文章标题该文章标题该文章标题该文章标题'])
+        %>
+        <div class="box clear">
+          <%=
+          require('../../templates/left.ejs')([{href:'',name:'该文章一级分类下的分类该文章一级分类下的分类该文章一级分类下的分类'},{href:'',name:'该文章一级分类下的分类'}])
+          %>
+          <div class="center float-left" data-v="custom-center">
+            <div class="article-title">安康XXXXXXXXX科技有限公司</div>
+            <div class="article-content">
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            </div>
+          </div>
+          <%= require('../../templates/right.ejs')() %>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')('./index.html') %>
+  </body>
+</html>

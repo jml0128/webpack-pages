@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <%= require('../../templates/head.ejs')('团队介绍') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./team.html') %>
+    <div class="blank" data-v="custom-blank"></div>
+    <div class="app-main">
+      <div class="block">
+        <%= require('../../templates/top.ejs')(['团队介绍','团队成员']) %>
+        <div class="box clear">
+          <%=
+          require('../../templates/left.ejs')([{href:'',name:'团队成员'},{href:'',name:'团队风采'}])
+          %>
+          <div class="center float-left" data-v="custom-center">
+            <div class="group">
+              <%
+              [{pic:"http://placehold.it/115x115"},{pic:"http://placehold.it/115x115"},{pic:"http://placehold.it/115x115"},{pic:"http://placehold.it/115x115"},{pic:"http://placehold.it/115x115"},{pic:"http://placehold.it/115x115"},{pic:"http://placehold.it/115x115"}].forEach(function(item,index,arr){
+              %>
+              <div class="item">
+                <img
+                  src="<%= require('../../assets/img/test.png').default %>"
+                  alt="news"
+                  onclick="imagePreview(this)"
+                  data-index="<%= index%>"
+                />
+                <div class="name">XXXX经理</div>
+              </div>
+              <% }); %>
+              <div class="item blank">这个不要删</div>
+            </div>
+            <%= require('../../templates/page.ejs')() %>
+          </div>
+          <%= require('../../templates/right.ejs')() %>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')('./index.html') %>
+    <script>
+      // 后端渲染imageArray数组
+      var imageArray = [
+        { pic: 'http://placehold.it/115x115' },
+        { pic: 'http://placehold.it/115x115' },
+        { pic: 'http://placehold.it/115x115' },
+        { pic: 'http://placehold.it/115x115' },
+        { pic: 'http://placehold.it/115x115' },
+      ]
+      var imagePreview = function (e) {
+        var items = []
+        imageArray.forEach(function (item) {
+          items.push({
+            // 获取图片地址
+            src: item.pic,
+            w: '600',
+            h: '600',
+          })
+        })
+        var options = {
+          index: parseInt(e.getAttribute('data-index')),
+        }
+
+        var gallery = new PhotoSwipe(
+          document.getElementById('pswp'),
+          UI,
+          items,
+          options
+        )
+        gallery.init()
+      }
+    </script>
+  </body>
+</html>

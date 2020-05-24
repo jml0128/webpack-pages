@@ -1,0 +1,21 @@
+.block {
+  padding-top: 73px;
+  @media (max-width: 767.98px) {
+    padding-top: 30px;
+  }
+  .box {
+    margin-top: 45px;
+    position: relative;
+
+    @media (max-width: 767.98px) {
+      margin-top: 20px;
+      .center {
+        border-right: none;
+        border-left: 0;
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}

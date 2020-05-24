@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('首页') %>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <body>
+    <%= require('../../templates/header.ejs')('./index.html') %>
+    <div class="app-main">
+      <div class="banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="<%= require('../../assets/img/test.png').default %>"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide has-video">
+            <video
+              class="video"
+              playsinline
+              preload="auto"
+              type="video/mp4"
+              x5-video-player-type="h5"
+              webkit-playsinline="true"
+              x5-playsinline="true"
+              x-webkit-airplay="allow"
+              muted
+              autoplay
+              loop
+              src="<%= require('../../assets/video/1.mp4').default %>"
+            ></video>
+            <img
+              src="<%= require('../../assets/img/test.png').default %>"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="<%= require('../../assets/img/test.png').default %>"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="banner-swiper-pagination swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="block block-1 clear">
+        <h1 class="title">关于我们</h1>
+        <h2 class="title">xxxxxxxxxxxxxxx</h2>
+        <div class="left float-left">
+          <div class="title">安康市翰林人才服务有限公司</div>
+          <div class="desc">
+            安康市翰林人才服务有限公司是由安康市人才交流服务中心投资创办，于2003年10月在安康市工商行政管理局依法注册设立的有限责任公司，公司注册资本200万元。主要从事：人才派遣、人事外包、岗位承包、劳动保障事务代理、人才信息咨询、发布、人才招聘、推荐、人才信息网络、人才输出、人才测评、人才培训、高级人才“猎头”服务、驾驶业务外包及代理、代办电信业务、电信服务、信息技术服务、建筑安装工程、市政工程的施工、汽车租赁为主要内容的人力资源服务。2014年经安康市人民政府办公室批准，改制为民营股份制企业。<br />公司立足于陕西安康，下设3家分支机构（汉中、商洛、咸阳）。公司旗下设立两大分公司：安康市翰林物业管理有限公司和安康市全能家政服务有限公司。安康市翰林物业管理有限公司成立于2009年9月，注册资金300万元。主要从事以物业管理为主要内容的服务工作。服务范围已全面覆盖陕南及关中地区。团队管理人员平均在公司工作时间5年以上，人员稳定。目前拥有安康规模最大、专业门类最齐全、技术最领先的后勤人才储备库和先进的人力资源管理系统、人事档案管理、物业管理系统及家政服务系统。通过高效卓越的管理服务团队，为企业提供先进完善的一站式人力资源、物业管理及家政服务解决方案。陆续向市内外移动、联通、电信、邮政、国税系统、地税系统、公安系统、检察院系统、法院系统、烟草公司、金融系统、保险系统、市人大办、政协办、建设局、高交大队、劳动就业培训中心、市二中等一百八十余家机关企事业单位提供了近七千名外派员工和人力资源管理、物业管理服务。并以高效、优质、贴心的服务赢得了合作单位的人力资源管理服务以及合作单位的广泛赞誉。
+            公司发展速度迅猛，2017年公司本部在职人员16人，2018年增加到30人，用工水平已达到全国平均水平。2017年销售收入达到2.1个亿，税收达400万。被陕西省人才交流中心、陕西省人才交流协会授予“人才中介服务诚信单位”，原安康市劳动局授予“劳动保障守法诚信A级单位”、2017年被陕西省人社厅评为“陕西省人力资源骨干企业”，并加入成为陕西省人力资源行业协会会员单位，2018年5月成为陕西省人力资源服务行业协会理事单位。<br />历经十五年的探索与发展，已拥有完善的服务体系和健全的服务功能。公司秉承“派遣到家、服务到人、包您业务、包您满意”的宗旨，致力于为客户排忧解难，实现企业利润最大化；追求“简便、快捷、质优、共赢”的服务理念，助力企业经营管理、人才开发、文化建设，成为广大用工单位最具信赖的人力资源合作伙伴。
+          </div>
+        </div>
+        <button class="btn float-left mobile-more-btn">
+          <a href="./about.html">查看更多</a>
+        </button>
+        <img
+          class="right float-right"
+          src="<%= require('../../assets/img/1.png').default %>"
+          alt="about us"
+        />
+        <button class="btn float-left">
+          <a href="./about.html">查看更多</a>
+        </button>
+      </div>
+      <div class="block-img block-img-2">
+        <div class="block block-2">
+          <h1 class="title">最新动态</h1>
+          <h2 class="title">xxxxxxxxxxxxxxx</h2>
+          <div class="group">
+            <% [1,2,3,4].forEach(function(item){ %>
+            <a href="./news.html" class="item">
+              <img
+                src="<%= require('../../assets/img/test.png').default %>"
+                alt="news"
+              />
+              <div class="info">
+                <div class="title">新闻动态标题</div>
+                <div class="desc">
+                  新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容
+                </div>
+              </div>
+            </a>
+            <% }); %>
+          </div>
+          <button class="btn">
+            <a href="./news.html">查看更多</a>
+          </button>
+        </div>
+      </div>
+      <div class="block block-3">
+        <h1 class="title">业务范围</h1>
+        <h2 class="title">xxxxxxxxxxxx</h2>
+        <div class="group">
+          <% [1,2,3,4].forEach(function(item){ %>
+          <a href="./service.html" class="item">
+            <img
+              src="<%= require('../../assets/img/test.png').default %>"
+              alt="news"
+            />
+            <div class="info">
+              <div class="title">项目案例标题</div>
+              <div class="desc">介绍介绍</div>
+            </div>
+          </a>
+          <% }); %>
+        </div>
+        <button class="btn">
+          <a href="./service.html">查看更多</a>
+        </button>
+      </div>
+      <div class="block block-4">
+        <h1 class="title">合作单位</h1>
+        <h2 class="title">xxxxxxxxxxxx</h2>
+        <div class="group">
+          <% [1,2,3,4,5,6,7,8].forEach(function(item,index){ %>
+          <a href="./company.html" class="item">
+            <% if(index==1 || index == 3){%>
+            <img
+              class="company-logo"
+              src="http://placehold.it/200x45"
+              alt="company-logo"
+            />
+            <%}else{%>
+            <div class="info">
+              <div class="title">合作单位</div>
+              <div class="desc">介绍介绍</div>
+            </div>
+            <%}%>
+          </a>
+          <% }); %>
+        </div>
+        <button class="btn">
+          <a href="./company.html">查看更多</a>
+        </button>
+      </div>
+      <div class="block block-5">
+        <h1 class="title">项目案例</h1>
+        <h2 class="title">xxxxxxxxxxxx</h2>
+        <div class="group">
+          <% [1,2,3,4,5,6].forEach(function(item){ %>
+          <a href="./example.html" class="item">
+            <div class="img">
+              <img
+                src="<%= require('../../assets/img/test.png').default %>"
+                alt="news"
+              />
+              <div class="hover-info">
+                <div class="name">科技相应类网站</div>
+                <img
+                  class="icon"
+                  src="<%= require('../../assets/img/3.png').default %>"
+                  alt="icon"
+                />
+              </div>
+            </div>
+            <div class="info">XXXX科技有限公司</div>
+          </a>
+          <% }); %>
+        </div>
+        <button class="btn">
+          <a href="./example.html">查看更多</a>
+        </button>
+      </div>
+      <div class="block block-6">
+        <h1 class="title">我们的团队</h1>
+        <h2 class="title">xxxxxxxxxxxx</h2>
+        <div class="group">
+          <% [1,2,3,4,5,6,7,8].forEach(function(item){ %>
+          <a href="./team.html" class="item">
+            <img
+              src="<%= require('../../assets/img/test.png').default %>"
+              alt="news"
+            />
+            <div class="name">项目案例标题</div>
+          </a>
+          <% }); %>
+        </div>
+        <button class="btn">
+          <a href="./team.html">查看更多</a>
+        </button>
+      </div>
+      <h2 class="title last-title">
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      </h2>
+    </div>
+    <%= require('../../templates/footer.ejs')('./index.html') %>
+  </body>
+</html>

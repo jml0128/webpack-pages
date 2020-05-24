@@ -1,0 +1,1454 @@
+.change-bg {
+  background-image: url('~@/assets/art-img/现代音乐单页面设计-2020-5-800.png') !important;
+  &:hover {
+    background-image: url('~@/assets/art-img/按钮颜色 .png') !important;
+  }
+}
+.lazy_tip {
+  opacity: 0 !important;
+}
+.banner {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1080px;
+  background-image: url('~@/assets/art-img/hicetea208.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 145px;
+    width: 1400px;
+    margin: 0 auto;
+    .logo {
+      width: 192px;
+      height: 54px;
+      transform: translateY(-50px);
+    }
+    .h2-group {
+      h2 {
+        font-weight: 100;
+        margin-bottom: 17px;
+        font-size: 23px;
+        color: rgba(95, 93, 93, 1);
+      }
+      margin-top: 115px;
+    }
+    h1 {
+      font-weight: 100;
+      color: $mainColor;
+      margin-top: 30px;
+      font-size: 58px;
+    }
+    h3 {
+      margin-top: 147px;
+      font-weight: normal;
+      font-size: 24px;
+      span {
+        font-size: 32px;
+        color: #b47f5d;
+        padding-left: 20px;
+        padding-right: 5px;
+      }
+    }
+    .group {
+      width: 367px;
+      margin-top: 36px;
+      font-size: 0;
+      .item {
+        width: 173px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 23px;
+        box-sizing: border-box;
+        background-color: $mainColor;
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        vertical-align: middle;
+        &:nth-child(2n + 2) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+.part-2 {
+  width: 100%;
+  height: 438px;
+  background-color: #f8f8f8;
+  padding-top: 170px;
+  padding-bottom: 168px;
+  box-sizing: border-box;
+  .text-group {
+    width: 806px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: $mainColor;
+    font-size: 26px;
+    .icon {
+      width: 44px;
+      height: 49px;
+    }
+    padding-bottom: 10px;
+    border-bottom: 2px solid $mainColor;
+  }
+  .en {
+    display: block;
+    width: 806px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 18px;
+    letter-spacing: 13px;
+    font-size: 23px;
+    color: #37302f;
+  }
+}
+.part-3 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1080px;
+  background-image: url('~@/assets/art-img/hicetea42.png');
+  background-size: cover cover;
+  overflow: hidden;
+  position: relative;
+  .content {
+    position: relative;
+    padding-top: 252px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 33px;
+      font-weight: 800;
+      color: $mainColor;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #b58363;
+      margin-top: 19px;
+    }
+    .hr {
+      margin-top: 52px;
+      width: 96px;
+      height: 4px;
+      background-color: $mainColor;
+    }
+    .left-group {
+      width: 543px;
+      margin-top: 40px;
+      font-size: 16px;
+      color: rgba(220, 221, 221, 1);
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .right {
+        img:last-child {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .reward-img {
+      width: 543px;
+      height: 354px;
+      margin-top: 40px;
+    }
+    .right-part {
+      width: 482px;
+      height: 609px;
+      background-image: url('~@/assets/art-img/hicetea44.png');
+      background-size: 100% 100%;
+      position: absolute;
+      left: 776px;
+      top: 252px;
+      padding: 53px 57px;
+      box-sizing: border-box;
+      .year {
+        font-size: 21px;
+        color: $mainColor;
+        line-height: 1;
+        margin-top: 0;
+      }
+      h3 {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        .en {
+          font-size: 15px;
+        }
+      }
+      .r-hr {
+        width: 369px;
+        height: 3px;
+        background-color: $mainColor;
+        margin-top: 15px;
+      }
+      .h-1 {
+        font-size: 22px;
+        color: $mainColor;
+        line-height: 1;
+        margin-top: 30px;
+      }
+      .group {
+        margin-top: 58px;
+        font-size: 0;
+        .item {
+          font-size: 21px;
+          display: inline-block;
+          color: $mainColor;
+          p span {
+            font-size: 49px;
+          }
+          .name {
+            font-size: 20px;
+            margin-top: 9px;
+            color: #332c2b;
+          }
+          margin-bottom: 33px;
+          &:nth-child(2n + 2) {
+            margin-left: 83px;
+          }
+        }
+      }
+    }
+  }
+}
+.part-4 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  min-height: 1080px;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 73px;
+    padding-bottom: 48px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      width: 398px;
+      height: 55px;
+      border-radius: 8px;
+      margin: 0 auto;
+      background-color: $mainColor;
+      font-size: 33px;
+      font-weight: normal;
+      color: #fff;
+      line-height: 1;
+      line-height: 55px;
+      text-align: center;
+      letter-spacing: 2px;
+      padding-bottom: 2px;
+    }
+    .hr {
+      width: 110px;
+      height: 2px;
+      margin: 0 auto;
+      margin-top: 26px;
+      background-color: $mainColor;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(228, 190, 167, 1);
+      line-height: 1;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .nav {
+      margin-top: 90px;
+      display: flex;
+      width: 100%;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-image: url('~@/assets/art-img/hicetea39.png');
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+      .item {
+        cursor: pointer;
+        width: 434px;
+        height: 100%;
+        padding-bottom: 27px;
+        text-align: center;
+        font-size: 25px;
+        color: $mainColor;
+        line-height: 1;
+        position: relative;
+        &.active {
+          &::after {
+            content: '';
+            width: 100%;
+            height: 5px;
+            background-color: $mainColor;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            z-index: 2;
+          }
+        }
+      }
+    }
+    .tips-group {
+      display: none;
+      &.show {
+        display: block;
+      }
+    }
+    .m-content {
+      padding-top: 103px;
+      padding-bottom: 100px;
+      width: 968px;
+      margin: 0 auto;
+      .item {
+        p {
+          font-size: 17px;
+          font-weight: bold;
+          color: rgba(51, 44, 43, 1);
+          line-height: 15px;
+          margin-bottom: 20px;
+          position: relative;
+          &:last-child {
+            font-size: 17px;
+            font-weight: 300;
+            color: rgba(51, 44, 43, 1);
+            line-height: 42px;
+            margin-bottom: 63px;
+          }
+          &:first-child {
+            &::before {
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              background-color: #000;
+              position: absolute;
+              top: 4px;
+              left: -32px;
+            }
+          }
+        }
+        &:last-child {
+          p:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .btn-group {
+      width: 900px;
+      margin: 0 auto;
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 328px;
+        height: 46px;
+        background-image: url('~@/assets/art-img/现代音乐单页面设计-2020-5-800.png');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        span {
+          &:last-child {
+            font-weight: normal;
+            font-size: 12px;
+          }
+        }
+        .tel {
+          font-weight: normal;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+        .icon {
+          width: 29px;
+          height: 27px;
+          position: absolute;
+          right: 27px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+.part-5 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  min-height: 1080px;
+  background-image: url('~@/assets/art-img/hicetea1.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 162px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 33px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: normal;
+      color: #dcdddd;
+      margin-top: 10px;
+    }
+    .hr {
+      margin-top: 24px;
+      width: 96px;
+      height: 4px;
+      background-color: $mainColor;
+    }
+    p {
+      margin-top: 33px;
+      font-size: 21px;
+      font-weight: 300;
+      color: #fff;
+    }
+    .s-content {
+      width: 1238px;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 122px;
+    }
+    .students {
+      margin: 0 auto;
+      width: 1238px;
+      overflow: hidden;
+      .swiper-slide {
+        width: 383px;
+        height: 466px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        img {
+          width: 383px;
+          height: 284px;
+        }
+        .hr {
+          width: 383px;
+          margin-top: 0;
+          height: 17px;
+        }
+        .info {
+          width: 383px;
+          height: 165px;
+          background-color: #fff;
+          padding-top: 53px;
+          padding-left: 35px;
+          padding-right: 35px;
+          box-sizing: border-box;
+          p {
+            color: $mainColor;
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1;
+            margin: 0;
+            &:last-child {
+              font-size: 15px;
+              color: rgba(51, 44, 43, 1);
+              line-height: 1;
+              margin-top: 22px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-button {
+      width: 46px;
+      height: 80px;
+      margin-top: -40px;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+      &-prev {
+        left: -80px;
+      }
+      &-next {
+        left: initial;
+        right: -90px;
+        transform: rotate(180deg);
+      }
+      &::after {
+        content: '';
+      }
+    }
+  }
+}
+.part-6 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 389px;
+  background-image: url('~@/assets/art-img/hicetea63.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-top: -5px;
+  .content {
+    position: relative;
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      font-size: 34px;
+      color: rgba(254, 254, 254, 1);
+      line-height: 18px;
+      &:last-child {
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(254, 254, 254, 1);
+        line-height: 11px;
+      }
+    }
+    .hr {
+      width: 82px;
+      height: 4px;
+      background-color: #fff;
+      margin-top: 41px;
+      margin-bottom: 32px;
+    }
+  }
+}
+.part-7 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  min-height: 1080px;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 186px;
+    padding-bottom: 48px;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    .left {
+      padding-top: 56px;
+      h2 {
+        font-size: 33px;
+        font-weight: 800;
+        color: $mainColor;
+        letter-spacing: 2px;
+      }
+      h3 {
+        font-size: 17px;
+        font-weight: normal;
+        color: #b58363;
+        margin-top: 13px;
+      }
+      .hr {
+        margin-top: 37px;
+        width: 96px;
+        height: 4px;
+        margin-bottom: 143px;
+        background-color: $mainColor;
+      }
+      p {
+        margin-top: 33px;
+        font-size: 17px;
+        font-weight: 300;
+        color: #332c2b;
+        margin-bottom: 19px;
+        &.num {
+          font-size: 50px;
+          color: rgba(181, 131, 99, 1);
+          line-height: 50px;
+        }
+      }
+    }
+    .right {
+      position: absolute;
+      width: 920px;
+      height: 530px;
+      right: 0;
+      top: 186px;
+      overflow: hidden;
+      .swiper-slide {
+        font-size: 0;
+        img {
+          width: 445px;
+          height: 252px;
+          display: inline-block;
+          &:nth-child(1),
+          &:nth-child(2) {
+            margin-bottom: 25px;
+          }
+          &:nth-child(2n + 2) {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+    .swiper-scrollbar {
+      width: 172px;
+      position: absolute;
+      top: 780px;
+      right: 375px;
+      background-color: $mainColor;
+      height: 3px;
+      .swiper-scrollbar-drag {
+        height: 7px;
+        top: -2px;
+        background-color: $mainColor;
+      }
+    }
+    .btn-group {
+      width: 900px;
+      margin: 0 auto;
+      margin-top: 300px;
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 328px;
+        height: 46px;
+        background-image: url('~@/assets/art-img/现代音乐单页面设计-2020-5-800.png');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        &:last-child {
+          background-image: url('~@/assets/art-img/按钮颜色 .png');
+        }
+        span {
+          &:last-child {
+            font-weight: normal;
+            font-size: 12px;
+          }
+        }
+        .tel {
+          font-weight: normal;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+        .icon {
+          width: 29px;
+          height: 27px;
+          position: absolute;
+          right: 27px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.part-8 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  min-height: 1080px;
+  overflow: hidden;
+  background-color: #eeeeef;
+  .content {
+    position: relative;
+    padding-top: 184px;
+    padding-bottom: 48px;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    .left {
+      padding-top: 208px;
+      h2 {
+        font-size: 33px;
+        font-weight: 800;
+        color: $mainColor;
+        letter-spacing: 2px;
+      }
+      h3 {
+        font-size: 17px;
+        font-weight: normal;
+        color: #b58363;
+        margin-top: 13px;
+      }
+      .hr {
+        margin-top: 44px;
+        width: 96px;
+        height: 4px;
+        margin-bottom: 48px;
+        background-color: $mainColor;
+      }
+      p {
+        width: 387px;
+        font-size: 17px;
+        font-weight: 300;
+        color: rgba(51, 44, 43, 1);
+        line-height: 42px;
+      }
+    }
+    .right {
+      position: absolute;
+      width: 660px;
+      top: 184px;
+      left: 596px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .item {
+        width: 284px;
+        height: 210px;
+        margin-bottom: 37px;
+        p {
+          font-size: 17px;
+          font-weight: bold;
+          color: rgba(181, 131, 99, 1);
+          line-height: 8px;
+          margin-top: 13px;
+          &:last-child {
+            margin-top: 10px;
+            font-size: 10px;
+            font-family: Poppins;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 1);
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.part-9 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  min-height: 1080px;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 73px;
+    padding-bottom: 48px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      width: 194px;
+      height: 55px;
+      border-radius: 8px;
+      margin: 0 auto;
+      background-color: $mainColor;
+      font-size: 33px;
+      font-weight: normal;
+      color: #fff;
+      line-height: 1;
+      line-height: 55px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    .hr {
+      width: 110px;
+      height: 2px;
+      margin: 0 auto;
+      margin-top: 26px;
+      background-color: $mainColor;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(228, 190, 167, 1);
+      line-height: 1;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .m-content {
+      padding-top: 103px;
+      width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .item {
+        width: 300px;
+        margin-bottom: 158px;
+        p {
+          font-size: 25px;
+          font-weight: 600;
+          color: rgba(51, 44, 43, 1);
+          line-height: 1;
+          &:last-child {
+            font-size: 17px;
+            font-weight: 300;
+            color: rgba(51, 44, 43, 1);
+            line-height: 35px;
+          }
+        }
+        .hr {
+          width: 52px;
+          height: 3px;
+          margin-left: 0;
+          margin-top: 31px;
+          margin-bottom: 26px;
+        }
+        &:last-child {
+          p:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .btn-group {
+      width: 900px;
+      margin: 0 auto;
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 328px;
+        height: 46px;
+        background-image: url('~@/assets/art-img/现代音乐单页面设计-2020-5-800.png');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        span {
+          &:last-child {
+            font-weight: normal;
+            font-size: 12px;
+          }
+        }
+        &:last-child {
+          background-image: url('~@/assets/art-img/按钮颜色 .png');
+        }
+        .tel {
+          font-weight: normal;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+        .icon {
+          width: 29px;
+          height: 27px;
+          position: absolute;
+          right: 27px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+.part-10 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 508px;
+  background-image: url('~@/assets/art-img/hicetea36.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.56);
+  }
+}
+
+.part-11 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1080px;
+  background-image: linear-gradient(to bottom, #cca185, #b88667);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  .content-box {
+    cursor: default;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 46px;
+    min-width: 1300px;
+    height: 983px;
+    background-image: url('~@/assets/art-img/hicetea196.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: relative;
+    .content {
+      width: 1400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-top: 134px;
+      position: relative;
+      h2 {
+        font-size: 33px;
+        font-weight: 800;
+        color: rgba(181, 131, 99, 1);
+        line-height: 1;
+      }
+      h3 {
+        font-size: 17px;
+        font-weight: 300;
+        color: rgba(181, 131, 99, 1);
+        line-height: 1;
+        margin-top: 24px;
+      }
+      .hr {
+        margin-top: 35px;
+        width: 96px;
+        height: 4px;
+        background-color: $mainColor;
+      }
+      .school {
+        width: 499px;
+        height: 94px;
+        background-image: url('~@/assets/art-img/hicetea200.png');
+        background-size: 100% 100%;
+        margin-top: 111px;
+        display: flex;
+        padding-left: 20px;
+        box-sizing: border-box;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 56px;
+        p {
+          font-size: 24px;
+          font-weight: bold;
+          color: #fff;
+          margin-bottom: 0;
+          line-height: 1;
+          &:last-child {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1;
+            margin-top: 15px;
+          }
+        }
+      }
+      p {
+        width: 499px;
+        margin-bottom: 40px;
+        font-size: 17px;
+        font-weight: 300;
+        color: rgba(51, 44, 43, 1);
+        line-height: 33px;
+      }
+      .right {
+        position: absolute;
+        top: 329px;
+        left: 909px;
+        p {
+          width: 291px;
+          font-size: 25px;
+          font-weight: 300;
+          color: rgba(35, 24, 21, 1);
+          line-height: 1.4;
+          margin-bottom: 130px;
+        }
+        .num {
+          font-size: 67px;
+          font-weight: 500;
+          color: $mainColor;
+          line-height: 1;
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
+}
+
+.part-12 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1080px;
+  position: relative;
+  background-image: url('~@/assets/art-img/hicetea123.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 104px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 33px;
+      font-weight: 800;
+      color: rgba(181, 131, 99, 1);
+      line-height: 1;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(181, 131, 99, 1);
+      line-height: 1;
+      margin-top: 18px;
+    }
+    .hr {
+      margin-top: 40px;
+      width: 96px;
+      height: 4px;
+      background-color: $mainColor;
+    }
+    p {
+      width: 499px;
+      margin-bottom: 40px;
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(51, 44, 43, 1);
+      line-height: 33px;
+      margin-top: 37px;
+    }
+    .group {
+      margin-top: 134px;
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 80px;
+        .index {
+          font-size: 50px;
+          font-weight: 500;
+          color: rgba(181, 131, 99, 1);
+          line-height: 1;
+          margin-right: 50px;
+        }
+        .info {
+          p {
+            margin: 0;
+            font-size: 21px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 1);
+            line-height: 1;
+            &:last-child {
+              font-size: 17px;
+              font-weight: 300;
+              color: rgba(51, 44, 43, 1);
+              line-height: 1;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+    img {
+      position: absolute;
+      width: 567px;
+      height: 818px;
+      top: 101px;
+      left: 834px;
+    }
+  }
+}
+.part-13 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1080px;
+  position: relative;
+  background-image: url('~@/assets/art-img/hicetea134.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 127px;
+    width: 1090px;
+    margin: 0 auto;
+    h2 {
+      font-size: 33px;
+      font-weight: 800;
+      color: rgba(181, 131, 99, 1);
+      line-height: 1;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(181, 131, 99, 1);
+      line-height: 1;
+      margin-top: 18px;
+    }
+    .hr {
+      margin-top: 29px;
+      width: 96px;
+      height: 4px;
+      background-color: $mainColor;
+    }
+    .group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 90px;
+      .item {
+        width: 287px;
+        height: 551px;
+        background-image: url('~@/assets/art-img/hicetea135.png');
+        background-size: 100% 100%;
+        padding: 35px 27px;
+        box-sizing: border-box;
+        color: #fff;
+        .en {
+          font-size: 33px;
+          font-weight: 500;
+          line-height: 33px;
+        }
+        .title {
+          font-size: 25px;
+          margin-top: 32px;
+        }
+        .hr {
+          width: 234px;
+          height: 2px;
+          background-color: #fff;
+          margin-top: 21px;
+          margin-bottom: 46px;
+        }
+        p {
+          margin-bottom: 20px;
+          font-size: 17px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.part-14 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 543px;
+  position: relative;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    .group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 147px;
+      .item {
+        width: 210px;
+        box-sizing: border-box;
+        img {
+          height: 83px;
+        }
+        .title {
+          font-size: 25px;
+          font-weight: 600;
+          color: rgba(181, 131, 99, 1);
+          line-height: 1;
+          margin-top: 21px;
+        }
+        .hr {
+          width: 89px;
+          height: 3px;
+          background-color: $mainColor;
+          margin-top: 21px;
+          margin-bottom: 36px;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 300;
+          color: rgba(51, 44, 43, 1);
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+.part-15 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1080px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 104px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 33px;
+      font-weight: 800;
+      color: rgba(181, 131, 99, 1);
+      line-height: 1;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(181, 131, 99, 1);
+      line-height: 1;
+      margin-top: 18px;
+    }
+    .hr {
+      margin-top: 40px;
+      width: 96px;
+      height: 4px;
+      background-color: $mainColor;
+    }
+    p {
+      width: 309px;
+      margin-bottom: 40px;
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(51, 44, 43, 1);
+      line-height: 33px;
+      margin-top: 27px;
+    }
+    .group {
+      margin-top: 90px;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 455px;
+        object-fit: cover;
+        height: 273px;
+        margin-right: 17px;
+        margin-bottom: 17px;
+        &:nth-child(3n + 3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.part-16 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 320px;
+  position: relative;
+  background-image: url('~@/assets/art-img/ps09a8a0dd5b068c48-ba5b-4630-a0ef-9e72dd3a6f21.png');
+  // background-color: $mainColor;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 51px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 42px;
+      font-weight: 500;
+      color: rgba(254, 254, 254, 1);
+      line-height: 83px;
+    }
+  }
+}
+
+.part-17 {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 1547px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    padding-top: 186px;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    .logo {
+      width: 231px;
+      height: 67px;
+    }
+    h2 {
+      font-size: 33px;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 1);
+      line-height: 33px;
+      margin-top: 64px;
+    }
+    .hr {
+      height: 182px;
+      width: 4px;
+      margin-top: 42px;
+      margin-bottom: 42px;
+      background-color: $mainColor;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 1);
+      line-height: 32px;
+    }
+    form {
+      position: absolute;
+      width: 785px;
+      top: 187px;
+      left: 611px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-bottom: 50px;
+        label {
+          font-size: 16px;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 1);
+          line-height: 17px;
+        }
+        &:last-of-type {
+          width: 100%;
+        }
+        input,
+        textarea {
+          padding-left: 15px;
+          font-size: 20px;
+          height: 42px;
+          outline: none;
+          border: none;
+          resize: none;
+          border-bottom: 1px solid rgba($color: $mainColor, $alpha: 0.3);
+        }
+        textarea {
+          padding: 20px;
+          box-sizing: border-box;
+          margin-top: 35px;
+          height: 230px;
+          border: 1px solid rgba($color: $mainColor, $alpha: 0.3);
+        }
+      }
+      .submit-btn {
+        width: 120px;
+        height: 40px;
+        color: #fff;
+        background-color: $mainColor;
+        border-radius: 8px;
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        &:hover {
+          background-color: #9a562a;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 210px;
+      display: flex;
+      align-items: flex-start;
+      .map {
+        width: 620px;
+        height: 392px;
+        flex-shrink: 0;
+      }
+      .right {
+        margin-left: 120px;
+        & > .name {
+          font-size: 25px;
+          font-weight: 800;
+          color: rgba(0, 0, 0, 1);
+          line-height: 25px;
+        }
+        .group {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 73px;
+          .item {
+            width: 280px;
+            &:nth-child(2n + 2) {
+              width: 310px;
+            }
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            .text {
+              margin-left: 41px;
+              font-size: 17px;
+              font-weight: 300;
+              color: rgba(0, 0, 0, 1);
+              line-height: 25px;
+              a {
+                display: block;
+                font-size: 17px;
+                font-weight: 300;
+                color: rgba(0, 0, 0, 1);
+                line-height: 25px;
+              }
+            }
+            .smgz {
+              margin-left: 20px;
+              margin-top: 97px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  cursor: default;
+  width: 100%;
+  min-width: 1400px;
+  height: 118px;
+  background-image: url('~@/assets/art-img/hicetea188.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-bottom: 22px solid #dcdddd;
+  .content {
+    position: relative;
+    padding-top: 31px;
+    width: 1400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(249, 245, 242, 1);
+      line-height: 1;
+      text-align: center;
+      a {
+        color: rgba(249, 245, 242, 1);
+      }
+    }
+    .hr {
+      width: 38px;
+      height: 2px;
+      background-color: #fff;
+      margin: 12px auto;
+    }
+  }
+}

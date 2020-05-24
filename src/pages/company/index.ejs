@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <%= require('../../templates/head.ejs')('合作单位') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./company.html') %>
+    <div class="blank" data-v="custom-blank"></div>
+    <div class="app-main">
+      <div class="block">
+        <%= require('../../templates/top.ejs')(['合作单位']) %>
+        <div class="box clear">
+          <%= require('../../templates/left.ejs')([]) %>
+          <div class="center float-left" data-v="custom-center">
+            <ul class="list">
+              <%[1,2,3,4,5,6].forEach(function(item,index){ %>
+              <li class="company">
+                <% if(index==1 || index == 3){%>
+                <img
+                  class="company-logo"
+                  src="http://placehold.it/200x45"
+                  alt="company-logo"
+                />
+                <%}else{%>
+                <div class="company-title">合作单位</div>
+                <div class="company-desc">介绍介绍</div>
+                <%}%>
+              </li>
+              <%})%>
+            </ul>
+            <%= require('../../templates/page.ejs')() %>
+          </div>
+          <%= require('../../templates/right.ejs')() %>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')('./index.html') %>
+  </body>
+</html>

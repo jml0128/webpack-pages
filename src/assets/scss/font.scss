@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'pl';
+  src: url('~@/assets/font/pl.ttf'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+  font-family: 'pm';
+  src: url('~@/assets/font/pm.ttf'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+@font-face {
+  font-family: 'cm';
+  src: url('~@/assets/font/Canela-Medium-Reduced.woff.ttf'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+
+.pl {
+  font-family: pl;
+}
+
+.pm {
+  font-family: pm;
+}
+.cm {
+  font-family: cm;
+}

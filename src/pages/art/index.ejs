@@ -1,0 +1,846 @@
+<!--
+ * @Author: jml
+ * @Date: 2020-05-13 21:32:53
+ * @LastEditTime: 2020-05-23 20:08:54
+ * @LastEditors: jml
+ * @Description: In User Settings Edit
+ * @FilePath: \06-zw-page\src\pages\art\index.ejs
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('专业音乐舞蹈艺术培训') %>
+  <body>
+    <div class="banner">
+      <div class="content">
+        <img
+          class="logo"
+          src="<%= require('../../assets/art-img/hicetea233.png').default %>"
+          alt="logo"
+        />
+        <div class="h2-group cm">
+          <h2>PROFESSIONAL MUSIC</h2>
+          <h2>AND DANCE ART STUDENTS TRAINING</h2>
+        </div>
+        <h1>专业音乐舞蹈艺术培训</h1>
+        <h3>现代艺考 <span class="pm">12</span>年口碑专业品牌</h3>
+        <div class="group">
+          <div class="item">· 量身定制教学</div>
+          <div class="item">· 全日制教学</div>
+          <div class="item">· 名师精准指导</div>
+          <div class="item">· 专业课文化课同步</div>
+        </div>
+      </div>
+    </div>
+    <div class="part-2">
+      <div class="text-group">
+        <span>音</span>
+        <span>为</span>
+        <span>梦</span>
+        <span>想</span>
+        <img
+          class="icon"
+          src="<%= require('../../assets/art-img/hicetea241 拷贝 2.png').default %>"
+        />
+        <span>指</span>
+        <span>为</span>
+        <span>琴</span>
+        <span>动</span>
+      </div>
+      <span class="en pl">SOUND IS ADREAM iT MEANSAVIBE</span>
+    </div>
+    <div class="part-3">
+      <div class="content">
+        <h2>教学成果</h2>
+        <h3 class="en">TEACHING ACHIEVEMENTS</h3>
+        <div class="hr"></div>
+        <div class="left-group">
+          <div class="left">
+            <p>我们专注与艺考研究</p>
+            <p>拥有一套完善的现代化教育体系</p>
+          </div>
+          <div class="right">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/组 2.png').default %>"
+              alt=""
+            />
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/组 2.png').default %>"
+              alt=""
+            />
+          </div>
+        </div>
+        <img
+          class="reward-img lazy"
+          data-src="<%= require('../../assets/art-img/hicetea43.png').default %>"
+          alt=""
+        />
+        <div class="right-part">
+          <h3 class="year cm">12年</h3>
+          <h3>
+            <span>教学成果</span><span class="en">Teaching achievements</span>
+          </h3>
+          <div class="r-hr"></div>
+          <p class="h-1">考取</p>
+          <div class="group">
+            <div class="item">
+              <p><span class="cm">98</span>人</p>
+              <p class="name">西安音乐学院</p>
+            </div>
+            <div class="item">
+              <p><span class="cm">35</span>人</p>
+              <p class="name">陕西师范大学</p>
+            </div>
+            <div class="item">
+              <p><span class="cm">2</span>人</p>
+              <p class="name">天津音乐学院</p>
+            </div>
+            <div class="item">
+              <p><span class="cm">3</span>人</p>
+              <p class="name">四川音乐学院</p>
+            </div>
+            <div class="item">
+              <p><span class="cm">2</span>人</p>
+              <p class="name">南京艺术学院</p>
+            </div>
+            <div class="item">
+              <p><span class="cm">10</span>人</p>
+              <p class="name">西安体育学院</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-4">
+      <div class="content">
+        <h2>艺考需要了解哪些？</h2>
+        <div class="hr"></div>
+        <h3 class="en pm">WHAT DO YOU NEED TO KNOW ABOUT THE ART TEST?</h3>
+        <div class="nav">
+          <div class="item active tips-nav-item" onclick="changeNav(0)">
+            高考分析
+          </div>
+          <div class="item tips-nav-item" onclick="changeNav(1)">录取条件</div>
+          <div class="item tips-nav-item" onclick="changeNav(2)">报考院校</div>
+        </div>
+        <div class="m-content tips-group show">
+          <div class="item">
+            <p>音乐高考</p>
+            <p>
+              音乐高考培训作为高考不可忽视的一个分支，不再是文化课成绩不好的退路，而逐渐成为学生根据自身优势和兴趣的主动选择。
+            </p>
+          </div>
+          <div class="item">
+            <p>高考的形势</p>
+            <p>
+              近几年我国音乐高考的形势不容乐观，考生数量不断增多，专业水平趋于下降，而高校对声乐艺考考生专业的要求又逐步提升。考试越来越规范，舞弊等现象越来越少，只有提高学生的专业水平，才具备考学的真正竞争力
+            </p>
+          </div>
+          <div class="item">
+            <p>能力的培养</p>
+            <p>
+              音乐专业更注重能力的培养，是应试教育模式的一种超越。有很多文化课成绩很好的学生同样选择了音乐高考培训，他们提前选择了未来的就业方向。
+            </p>
+          </div>
+        </div>
+        <div class="m-content tips-group">
+          <div class="item">
+            <p>重点音乐高校</p>
+            <p>
+              一类音乐学院对学生的专业要求极高，对文化课的要求相对较低。培养的是中国最顶级的音乐人才，毕业的学生也都成为中国乃至国际知名音乐家。
+            </p>
+          </div>
+          <div class="item">
+            <p>其他音乐学院以及一类大学的音乐学院</p>
+            <p>
+              二类音乐高校对专业的要求仅次于一类高校，较为注重学生的综合能力以及专业基础。音乐学院对文化课要求较低，综合类大学对文化课要求较高，一般在该校普通录取分数线的 70% 左右，但对音乐专业较优秀的学生给予适当照顾。
+            </p>
+          </div>
+          <div class="item">
+            <p>地方艺术学院及综合类大学音乐系</p>
+            <p>
+              此类高校对音乐专业的要求相对较低，对文化课成绩也稍微低一些。一般作为专业优秀学生的保底之选。
+            </p>
+          </div>
+        </div>
+        <div class="m-content tips-group">
+          <div class="item">
+            <p>第一类：重点音乐高校</p>
+            <p>
+              中央音乐学院、中国音乐学院、上海音乐学院，中国音乐最具高等学府。
+            </p>
+          </div>
+          <div class="item">
+            <p>第二类：地方及一类大学音乐学院</p>
+            <p>
+              1、天津、沈阳、星海等音乐学院<br />
+              2、中央戏剧学院、中国戏曲学院、解放军艺术学院、北京电影学院、中央民族大学、中国人民大学
+            </p>
+          </div>
+          <div class="item">
+            <p>第三类：地方艺术学院及各大学音乐系</p>
+            <p>
+              1、山东、吉林、南京等艺术学院<br />
+              2、天津师范大学、东北大学
+            </p>
+          </div>
+          <div class="item">
+            <p>第四类：其他招收艺术特长生的大学</p>
+            <p>
+              清华大学、北京大学、北京航空航天大学、北京邮电大学、中国政法大学
+            </p>
+          </div>
+        </div>
+        <img
+          class="lazy"
+          data-src="<%= require('../../assets/art-img/hicetea39.png').default %>"
+          alt=""
+        />
+        <div class="btn-group">
+          <div class="btn change-bg">
+            <span>报名咨询</span>
+            <span class="pl">/Registration consultatlon </span>
+          </div>
+          <a href="tel:186-2930-8832" class="btn mobile change-bg">
+            <span>电话：</span>
+            <span class="tel pl">186-2930-8832 </span>
+            <img
+              class="icon"
+              src="<%= require('../../assets/art-img/hicetea24 拷贝.png').default %>"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="part-5">
+      <div class="content">
+        <h2>优秀学员</h2>
+        <h3 class="en pl">Outstanding students</h3>
+        <div class="hr"></div>
+        <p>我校往届录取的优秀学员</p>
+        <div class="s-content">
+          <div class="students">
+            <div class="swiper-wrapper">
+              <% [{ img:require('../../assets/art-img/hicetea83.png').default,
+              name:'杨洋', desc:'第四届新加坡莱佛士文化艺术节-声乐比赛' },{
+              img:require('../../assets/art-img/hicetea83.png').default,
+              name:'张馨月', desc:'考入中国石油大学' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'方顺毅', desc:'考入湖南第一师范' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'孟渤皓', desc:'专业院校声乐组-银奖' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'郑伟豪', desc:'考入湖州师范学院' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'王淇博宣', desc:'考入四川传媒大学' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'焦一迪', desc:'考入西安音乐学院' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'韦朝曦', desc:'大连艺术学院 声乐表演' },{
+              img:require('../../assets/art-img/hicetea207.png').default,
+              name:'张涛', desc:'陕西师范大学 舞蹈系'
+              }].forEach(function(item,index){ %>
+              <div class="swiper-slide">
+                <img class="lazy" data-src="<%= item.img %>" alt="" />
+                <div class="hr"></div>
+                <div class="info">
+                  <p class="name"><%= item.name%></p>
+                  <p><%= item.desc%></p>
+                </div>
+              </div>
+              <% }); %>
+            </div>
+          </div>
+          <div class="swiper-button swiper-button-prev">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/微信截图_20200513231156.png').default %>"
+              alt=""
+            />
+          </div>
+          <div class="swiper-button swiper-button-next">
+            <img
+              class="lazy"
+              data-src="<%=
+            require('../../assets/art-img/微信截图_20200513231156.png').default
+            %>"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-6">
+      <div class="content">
+        <p>十二年风雨教会我们的岂止是坚持，更是责任与传承</p>
+        <div class="hr"></div>
+        <p class="pl">
+          Twelve years of wind and rain have taught uS more than persistence,
+          but also responsibility and inheritance
+        </p>
+      </div>
+    </div>
+    <div class="part-7">
+      <div class="content">
+        <div class="left">
+          <h2>师资团队</h2>
+          <h3 class="en pl">Faculty</h3>
+          <div class="hr"></div>
+          <p>学校专业教师</p>
+          <p class="num cm">80%</p>
+          <p>来自各大重点艺术高校专业的在职教师</p>
+          <p>部分授课教师为每年各高校的考试评委</p>
+        </div>
+        <div class="right">
+          <div class="teacher">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea68.png').default %>"
+                  alt=""
+                />
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea67.png').default %>"
+                  alt=""
+                />
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea193.png').default %>"
+                  alt=""
+                />
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea194.png').default %>"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea68.png').default %>"
+                  alt=""
+                />
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea67.png').default %>"
+                  alt=""
+                />
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea193.png').default %>"
+                  alt=""
+                />
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/hicetea194.png').default %>"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="btn-group">
+          <div class="btn change-bg">
+            <span>报名咨询</span>
+            <span class="pl">/Registration consultatlon </span>
+          </div>
+          <a href="tel:186-2930-8832" class="btn mobile change-bg">
+            <span>电话：</span>
+            <span class="tel pl">186-2930-8832 </span>
+            <img
+              class="icon"
+              src="<%= require('../../assets/art-img/hicetea24 拷贝.png').default %>"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="part-8">
+      <div class="content">
+        <div class="left">
+          <h2>名校合作</h2>
+          <h3 class="en pl">graduation</h3>
+          <div class="hr"></div>
+          <p>
+            本校多年和众多高校建立了良好的合作关系,为考生升学奠定了良好的基础,可以指导考生成功报考各种知名高校。
+          </p>
+        </div>
+        <div class="right">
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea235.png').default %>"
+              alt=""
+            />
+            <p class="name">中央音乐学院</p>
+            <p class="en pl">CENTRAL CONSERVATORY OF MUSIC</p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea236.png').default %>"
+              alt=""
+            />
+            <p class="name">北京师范大学</p>
+            <p class="en pl">Beijing Normal University</p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea237.png').default %>"
+              alt=""
+            />
+            <p class="name">西安音乐学院</p>
+            <p class="en pl">Xi'an Conservatory of Music</p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea238.png').default %>"
+              alt=""
+            />
+            <p class="name">北京舞蹈学院</p>
+            <p class="en pl">Beijing Dance Academy</p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea239.png').default %>"
+              alt=""
+            />
+            <p class="name">南京艺术学院</p>
+            <p class="en pl">Nanjing Arts Institute</p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea240.png').default %>"
+              alt=""
+            />
+            <p class="name">陕西师范大学</p>
+            <p class="en pl">Shaanxi Normal University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-9">
+      <div class="content">
+        <h2>七大优势</h2>
+        <div class="hr"></div>
+        <h3 class="en pl">SEVEN ADVANTAGESSEVEN ADVANTAGES</h3>
+        <div class="m-content">
+          <div class="item">
+            <p>独特的学习模式</p>
+            <div class="hr"></div>
+            <p>
+              专业方面明确高校招生的核心要求采取以升学为直接目标的应试训练。
+            </p>
+          </div>
+          <div class="item">
+            <p>针对性学习内容</p>
+            <div class="hr"></div>
+            <p>
+              针对专业考试内容进行点对点式层层突破。
+            </p>
+          </div>
+          <div class="item">
+            <p>制定报考方针</p>
+            <div class="hr"></div>
+            <p>
+              制定突出学生自身优势的报考方针指导学生报考文化课。
+            </p>
+          </div>
+          <div class="item">
+            <p>高校专业的管理模式</p>
+            <div class="hr"></div>
+            <p>
+              全天式学习、封闭式管理、专业和文化课同时学习，使学生专业课和文化课都有保障。
+            </p>
+          </div>
+          <div class="item">
+            <p>专业课文化课同步</p>
+            <div class="hr"></div>
+            <p>
+              文化课方面针对艺术考生的特点制定相应的文化课学习方案。
+            </p>
+          </div>
+          <div class="item">
+            <p>针对性报考院校</p>
+            <div class="hr"></div>
+            <p>
+              成功考进理想合适的学校，实现自己的梦想。
+            </p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <div class="btn change-bg">
+            <span>报名咨询</span>
+            <span class="pl">/Registration consultatlon </span>
+          </div>
+          <a href="tel:186-2930-8832" class="btn mobile change-bg">
+            <span>电话：</span>
+            <span class="tel pl">186-2930-8832 </span>
+            <img
+              class="icon"
+              src="<%= require('../../assets/art-img/hicetea24 拷贝.png').default %>"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="part-10"></div>
+    <div class="part-11">
+      <div class="content-box">
+        <div class="content">
+          <h2>学校介绍</h2>
+          <h3 class="en pl">school introduction</h3>
+          <div class="hr"></div>
+          <div class="school">
+            <p>西安未央现代文化艺术培训学校</p>
+            <p class="cm">
+              XI'AN WEIYANG MODERN CULTURE AND ART TRAINING SCHOOL
+            </p>
+          </div>
+          <p>
+            西安未央现代文化艺术培训学校于年成立，为全国各大艺术类院校培训输送优秀人才的知名机构。
+          </p>
+          <p>
+            成立十二年时间，目前有多所高校与我们达成合作的关系。这十二年时间也是每一位现代艺术中心老师用心血浇灌的十二年。
+          </p>
+          <p>
+            一分耕耘一分收获，入学先测试，全方位舞蹈能力测验，定制训练方案，现代艺考——12年口碑专为音乐、舞蹈艺考生培训。
+          </p>
+          <div class="right">
+            <p class="num cm">96%</p>
+            <p>
+              2018年艺术类成绩过关率达成96%
+            </p>
+            <p class="num cm">85%</p>
+            <p>
+              2018年艺术类成绩高分率达成85%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-12">
+      <div class="content">
+        <h2>量身定制</h2>
+        <h3 class="en pl">Tailored</h3>
+        <div class="hr"></div>
+        <p>
+          了解考生的需求和想法，以及考虑学生的未来发展方向，并制定相应的考学计划
+        </p>
+        <div class="group">
+          <div class="item">
+            <div class="index cm">01</div>
+            <div class="info">
+              <p>责任式规范化教学管理</p>
+              <p>实行班主任负责制，学生分阶段学习</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="index cm">02</div>
+            <div class="info">
+              <p>习惯养成</p>
+              <p>新生入学后，培养学生良好的行为习惯和团队理念</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="index cm">03</div>
+            <div class="info">
+              <p>定制教学</p>
+              <p>教师要根据学生的具体情况制定教学目标及学习计划并责任到人</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="index cm">04</div>
+            <div class="info">
+              <p>即时沟通</p>
+              <p>班主任与学生家长即时沟通，实现家校共育</p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="lazy"
+          data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="part-13">
+      <div class="content">
+        <h2>课程结构</h2>
+        <h3 class="en pm">course structure</h3>
+        <div class="hr"></div>
+        <div class="group">
+          <div class="item">
+            <div class="en cm">MUSIC</div>
+            <div class="title">音乐</div>
+            <div class="hr"></div>
+            <p>音乐教育</p>
+            <p>音乐表演</p>
+            <p>精品联考班</p>
+            <p>音乐学院定向班</p>
+          </div>
+          <div class="item">
+            <div class="en cm">DANCE</div>
+            <div class="title">舞蹈</div>
+            <div class="hr"></div>
+            <p>舞蹈学</p>
+            <p>舞蹈表演</p>
+            <p>舞蹈教育</p>
+            <p>体育舞蹈</p>
+            <p>小班授课</p>
+          </div>
+          <div class="item">
+            <div class="en cm">CULTURAL</div>
+            <div class="title">文化课</div>
+            <div class="hr"></div>
+            <p>文/理精品班</p>
+            <p>文/理提速班</p>
+            <p>文/理定向班</p>
+            <p>文/理艺术班</p>
+            <p>小班授课</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-14">
+      <div class="content">
+        <div class="group">
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/现代音乐单页面设计-2020-5-8.png').default %>"
+              alt=""
+            />
+            <div class="title">管理制度</div>
+            <div class="hr"></div>
+            <p>
+              班主任负责制，分阶段式学习管理责任化管理模式，规范的教学管理
+            </p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea165 拷贝.png').default %>"
+              alt=""
+            />
+            <div class="title">学习管理</div>
+            <div class="hr"></div>
+            <p>
+              新生入学后，培养学生良好的行为习惯和团队理念
+            </p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea166.png').default %>"
+              alt=""
+            />
+            <div class="title">教学方式</div>
+            <div class="hr"></div>
+            <p>
+              教师根据学生的具体情况制定教学目标及学习计划并对每个学生负责
+            </p>
+          </div>
+          <div class="item">
+            <img
+              class="lazy"
+              data-src="<%= require('../../assets/art-img/hicetea167 拷贝.png').default %>"
+              alt=""
+            />
+            <div class="title">贴心服务</div>
+            <div class="hr"></div>
+            <p>
+              班主任与学生家长沟通联系，从而实现共同育人的目的
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-15">
+      <div class="content">
+        <h2>校园生活</h2>
+        <h3 class="en pl">school life</h3>
+        <div class="hr"></div>
+        <p>
+          班主任负责制，分阶段式学习管理责任化管理模式，规范的教学管理
+        </p>
+        <div class="group">
+          <img
+            class="lazy"
+            data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+            alt=""
+          />
+          <img
+            class="lazy"
+            data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+            alt=""
+          />
+          <img
+            class="lazy"
+            data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+            alt=""
+          />
+          <img
+            class="lazy"
+            data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+            alt=""
+          />
+          <img
+            class="lazy"
+            data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+            alt=""
+          />
+          <img
+            class="lazy"
+            data-src="<%= require('../../assets/art-img/hicetea133.png').default %>"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="part-16">
+      <div class="content">
+        <h2 class="cm">UNDERSTANDMORE</h2>
+      </div>
+    </div>
+    <div class="part-17">
+      <div class="content">
+        <img
+          src="<%= require('../../assets/art-img/hicetea233.png').default %>"
+          alt="logo"
+        />
+        <h2>联系方式</h2>
+        <div class="hr"></div>
+        <p>
+          如果你有任何问题
+        </p>
+        <p>请联系我们</p>
+        <p>
+          我们会竭诚为你服务
+        </p>
+        <form action="">
+          <div class="item">
+            <label for="">姓名</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="item">
+            <label for="">手机</label>
+            <input type="text" name="tel" />
+          </div>
+          <div class="item">
+            <label for="">地址</label>
+            <input type="text" name="addr" />
+          </div>
+          <div class="item">
+            <label for="">邮箱</label>
+            <input type="text" name="email" />
+          </div>
+          <div class="item">
+            <label for="">留言</label>
+            <textarea type="text" name="text"></textarea>
+          </div>
+          <button class="submit-btn" type="submit">完成</button>
+        </form>
+        <div class="bottom">
+          <img
+            class="lazy map"
+            data-src="<%= require('../../assets/art-img/微信截图_20200521194942.png').default %>"
+            alt=""
+          />
+          <div class="right">
+            <p class="name">西安未央现代文化艺术培训学校</p>
+            <div class="group">
+              <div class="item">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/5.png').default %>"
+                  alt=""
+                />
+                <div class="text pl">
+                  <a href="tel:186-2930-8832">186-2930-8832</a>
+                  <a href="tel:189-9286-7150">189-9286-7150</a>
+                  <a href="tel:181-9145-8595">181-9145-8595</a>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/2.png').default %>"
+                  alt=""
+                />
+                <img
+                  style="width: 119px; height: 114px;"
+                  class="text lazy"
+                  data-src="<%= require('../../assets/art-img/7.png').default %>"
+                  alt=""
+                />
+                <span class="smgz">扫码关注</span>
+              </div>
+              <div class="item">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/6.png').default %>"
+                  alt=""
+                />
+                <div class="text">
+                  <p class="pl">1515413594</p>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/3.png').default %>"
+                  alt=""
+                />
+                <div class="text">
+                  <p>陕西省西安未央区凤城二路金科天籁城</p>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/4.png').default %>"
+                  alt=""
+                />
+                <div class="text">
+                  <p class="pl">www.xaxdyk.com</p>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="lazy"
+                  data-src="<%= require('../../assets/art-img/1.png').default %>"
+                  alt=""
+                />
+                <div class="text">
+                  <p class="pl">xapopmusic@163.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <h2>
+          COPYRIGHT(C) 2008西安未央现代文化艺术培训学校 备案号:
+          <a href="">陕IC P备18005962号-1</a>
+        </h2>
+        <div class="hr"></div>
+        <h2>技术支持:两极宇禾®品牌文化创意</h2>
+      </div>
+    </div>
+  </body>
+</html>

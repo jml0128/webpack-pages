@@ -1,0 +1,15 @@
+<div class="nav" data-v="custom-nav">
+  <div class="name">
+    <div class="text"><%= obj[0]%></div>
+  </div>
+  <% if(obj.length>1){ %>
+  <div class="right"></div>
+  <div class="name category-name"><%= obj[1]%></div>
+  <% } %> <% if(obj.length>2){ %>
+  <div class="right"></div>
+  <div class="name article-name"><%= obj[2]%></div>
+  <div class="back float-right" onclick="javascript:window.history.back();">
+    返回
+  </div>
+  <% } %>
+</div>

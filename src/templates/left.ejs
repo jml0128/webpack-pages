@@ -1,0 +1,7 @@
+<div class="left float-left" data-v="custom-left">
+  <% obj.forEach(function(item,index){ %> <% if(index==0){%>
+  <div class="item active"><a href=""><%= item.name%></a></div>
+  <%}else{%>
+  <div class="item"><a href=""><%= item.name%></a></div>
+  <%}%> <%})%>
+</div>

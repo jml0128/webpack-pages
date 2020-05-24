@@ -1,0 +1,37 @@
+<div class="header-box" data-v="custom-header">
+  <div class="header">
+    <div class="content">
+      <a class="logo" href="./index.html">
+        <img src="http://placehold.it/200x45" alt="logo" />
+      </a>
+      <div class="nav" id="nav">
+        <% [ { name:'网站首页', url:'./index.html',target:'' }, {
+        name:'关于我们',url:'./about.html',target:'' }, {
+        name:'企业动态',url:'./news.html',target:'' },{
+        name:'业务范围',url:'./service.html',target:'' },{
+        name:'合作单位',url:'./company.html',target:'' },{
+        name:'项目案例',url:'./example.html',target:'' },{
+        name:'团队介绍',url:'./team.html',target:'' },{
+        name:'瑞人云',url:'http://vip.ruirenyun.com/',target:'_blank'
+        }].forEach(function(item){ %> <% if(obj == item.url) { %>
+        <a class="item active" href="<%= item.url%>" target="<%= item.target%>">
+          <%= item.name%>
+        </a>
+        <% } else { %>
+        <a class="item" href="<%= item.url%>" target="<%= item.target%>">
+          <%= item.name%>
+        </a>
+        <% } %> <% }); %>
+      </div>
+      <div class="operate float-right">
+        <img
+          id="btn"
+          src="<%= require('../assets/img/n.png').default %>"
+          data-v="n"
+          alt="btn"
+          onclick="showNav(this)"
+        />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <%= require('../../templates/head.ejs')('项目案例') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./example.html') %>
+    <div class="blank" data-v="custom-blank"></div>
+    <div class="app-main">
+      <div class="block">
+        <%= require('../../templates/top.ejs')(['项目案例','科技类公司']) %>
+        <div class="box clear">
+          <%=
+          require('../../templates/left.ejs')([{href:'',name:'科技类公司'},{href:'',name:'餐饮类公司'}])
+          %>
+          <div class="center float-left" data-v="custom-center">
+            <div class="group">
+              <% [1,2,3,4,5,6].forEach(function(item){ %>
+              <a href="./article.html" class="item">
+                <div class="img">
+                  <img
+                    src="<%= require('../../assets/img/test.png').default %>"
+                    alt="news"
+                  />
+                </div>
+                <div class="info">
+                  XXXX科技有限公司XXXX科技有限公司XXXX科技有限公司XXXX科技有限公司
+                </div>
+              </a>
+              <% }); %>
+            </div>
+            <%= require('../../templates/page.ejs')() %>
+          </div>
+          <%= require('../../templates/right.ejs')() %>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')('./index.html') %>
+  </body>
+</html>
