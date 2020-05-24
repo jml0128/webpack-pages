@@ -1,19 +1,16 @@
+/*
+ * @Description: 每个页面的共用内容
+ * @Author: jml
+ * @Date: 2020-05-24 10:32:30
+ * @LastEditors: jml
+ * @LastEditTime: 2020-05-24 10:44:57
+ */
+
+// 引入通用css
 import '@/assets/scss/reset.scss'
 import '@/assets/scss/common.scss'
 
-window.showNav = (e) => {
-  const navDom = document.getElementById('nav')
-  const status = e.getAttribute('data-v')
-  const n = require('@/assets/img/n.png').default
-  const c = require('@/assets/img/c.png').default
-  if (status === 'n') {
-    e.src = c
-    e.setAttribute('data-v', 'v')
-    navDom.style.display = 'flex'
-  } else {
-    e.src = n
-    e.setAttribute('data-v', 'n')
-    navDom.style.display = 'none'
-  }
-  console.log(status)
+// 向全局注册函数 , 这种方式不建议采取，之后再优化吧
+window.commonFn = (e) => {
+  console.log(`This is common function , path => './src/common.js'`)
 }

@@ -1,3 +1,11 @@
+/*
+ * @Description: webpack的入口文件，用于处理多页面配置，为webpack提供每个页面的js、css
+ * @Author: jml
+ * @Date: 2020-05-24 10:32:30
+ * @LastEditors: jml
+ * @LastEditTime: 2020-05-24 10:41:41
+ */
+
 const pages = require('./config/pages.js')
 const getEntry = (pages, publicPath) => {
   if (typeof pages !== 'object') {

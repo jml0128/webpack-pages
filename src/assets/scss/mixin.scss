@@ -6,17 +6,4 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $h;
-  // max-height: $h * $fontSize;
-  // position: relative;
-  // &::after {
-  //   content: '...';
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 8px;
-  //   padding-left: 30px;
-  //   background: -webkit-linear-gradient(left, transparent, #fff 50%);
-  //   background: -o-linear-gradient(right, transparent, #fff 50%);
-  //   background: -moz-linear-gradient(right, transparent, #fff 50%);
-  //   background: linear-gradient(to right, transparent, #fff 50%);
-  // }
 }
