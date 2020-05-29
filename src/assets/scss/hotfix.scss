@@ -1,0 +1,14 @@
+.block-img-2 .block-2 .group .item {
+  transition: all 0.3s;
+  transform: scale(1) translate3d(0, 0, 0);
+  &:hover {
+    transform: scale(1.1) translate3d(0, 0, 0);
+  }
+}
+[data-v='custom-footer'].footer-box .top .links,
+[data-v='custom-footer'].footer-box .top .nav {
+  width: 315px;
+}
+[data-v=custom-nav].nav .right{
+  margin-right: 21px;
+}

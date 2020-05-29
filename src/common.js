@@ -1,5 +1,13 @@
+/*
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:49:18
+ * @LastEditors: jml
+ * @LastEditTime: 2020-05-30 00:46:40
+ */ 
 import '@/assets/scss/reset.scss'
 import '@/assets/scss/common.scss'
+import '@/assets/scss/hotfix.scss'
 
 window.showNav = (e) => {
   const navDom = document.getElementById('nav')
