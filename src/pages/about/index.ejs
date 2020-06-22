@@ -1,0 +1,94 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-06-23 02:38:13
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('首页') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./about.html') %>
+    <div class="banner-normal">
+      <img
+        src="http://placehold.it/584x370"
+        alt=""
+      />
+    </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>关于</span> 我们</h2>
+          <h4>ABOUT US</h4>
+        </div>
+        <p class="tips aniview" data-av-animation="fadeInUp">
+          KABIS品牌是具有原厂品质的汽车零部件行业领先者之一，致力于汽车制动系统、冷却系统的开发与生产，并为其提供可靠的工程质量和出色的创新设计。
+        </p>
+        <div class="left">
+          <img
+            src="http://placehold.it/584x370"
+            alt=""
+            class="hover-img aniview"
+            data-av-animation="fadeInUp"
+          />
+        </div>
+        <div class="right">
+          <div class="title aniview" data-av-animation="fadeInUp">
+            企业愿景<span>visioning</span>
+          </div>
+          <p class="aniview" data-av-animation="fadeInUp">
+            KABIS售后市场致力于成为汽车零部件和服务行业的领军供应商。
+          </p>
+          <p class="aniview" data-av-animation="fadeInUp">
+            •我们的愿景是，通过不断地打磨产品品质与创新设计，提升客户的综合性体验，逐步扩大市场占有率，成为汽车零部件和服务的全球性领军者。
+          </p>
+          <p class="aniview" data-av-animation="fadeInUp">
+            •我们的愿景是，在客户群中树立这样一种观念，当他们想到优质、可靠、高效和创新时，可以马上联想到KABIS售后市场。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="full-block full-block-2">
+      <div class="main-block">
+        <div class="title aniview" data-av-animation="fadeInUp">
+          核心服务<span>services</span>
+        </div>
+        <div class="group">
+          <img
+            style="animation-delay: 0s;"
+            src="<%= require('../../assets/img/微信截图_20200623022317_01.png').default %>"
+            alt=""
+            class="item aniview"
+            data-av-animation="zoomIn"
+          />
+          <img
+            style="animation-delay: 0.3s;"
+            src="<%= require('../../assets/img/微信截图_20200623022317_02.png').default %>"
+            alt=""
+            class="item aniview"
+            data-av-animation="zoomIn"
+          />
+          <img
+            style="animation-delay: 0.6s;"
+            src="<%= require('../../assets/img/微信截图_20200623022317_03.png').default %>"
+            alt=""
+            class="item aniview"
+            data-av-animation="zoomIn"
+          />
+          <img
+            style="animation-delay: 0.9s;"
+            src="<%= require('../../assets/img/微信截图_20200623022317_04.png').default %>"
+            alt=""
+            class="item aniview"
+            data-av-animation="zoomIn"
+          />
+        </div>
+      </div>
+    </div>
+
+    <%= require('../../templates/contactus.ejs')() %> <%=
+    require('../../templates/footer.ejs')() %>
+  </body>
+</html>

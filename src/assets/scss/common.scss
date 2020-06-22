@@ -314,3 +314,32 @@ $headerHeight: 70px;
     }
   }
 }
+
+.banner-normal {
+  width: 100%;
+  height: 330px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#pages {
+  height: 24px;
+  padding: 20px 0 60px;
+  a {
+    width: 26px;
+    height: 26px;
+    display: block;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: $color9;
+    &.active {
+      color: $baseColor;
+    }
+  }
+}

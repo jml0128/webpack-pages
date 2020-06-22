@@ -1,0 +1,70 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-06-23 02:54:02
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('首页') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./news.html') %>
+    <div class="banner-normal">
+      <img src="http://placehold.it/584x370" alt="" />
+    </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="category">
+          <a href="" class="item active">全部</a>
+          <a href="" class="item">资讯</a>
+          <a href="" class="item">行业</a>
+        </div>
+        <ul class="list">
+          <li class="item">
+            <a href=""
+              ><img src="http://placehold.it/584x370" alt="" class="img" />
+              <div class="right">
+                <div class="title">
+                  李克强对“华龙一号”福清核电5号机组建设工作 作出重要批示
+                </div>
+                <p>
+                  中共中央政治局常委、国务院总理李克强日前对“华龙一号”福清核电5号机组建设工作作出重要批示。批示指出：我国自主研发的三代核电“华龙一号”是推进实施中国制造2025的标志性工程
+                  ...
+                </p>
+                <div class="time">07-02</div>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="">
+              <img src="http://placehold.it/584x370" alt="" class="img" />
+              <div class="right">
+                <div class="title">
+                  李克强对“华龙一号”福清核电5号机组建设工作 作出重要批示
+                </div>
+                <p>
+                  中共中央政治局常委、国务院总理李克强日前对“华龙一号”福清核电5号机组建设工作作出重要批示。批示指出：我国自主研发的三代核电“华龙一号”是推进实施中国制造2025的标志性工程
+                  ...
+                </p>
+                <div class="time">07-02</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div id="pages">
+          <a class="prev disable hide" href="javascript:;">
+            <
+          </a>
+          <a href="index22.html" class="page-item active">
+            1
+          </a>
+          <a class="next disable hide" href="javascript:;">
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')() %>
+  </body>
+</html>
