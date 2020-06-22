@@ -1,0 +1,19 @@
+.main-block {
+  width: $mainBoxWidth;
+  box-sizing: border-box;
+  padding: 0 $padding;
+  height: 100%;
+  margin: 0 auto;
+}
+$headerHeight: 70px;
+#custom-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: $headerHeight;
+  .main-block {
+    .logo{
+      
+    }
+  }
+}
