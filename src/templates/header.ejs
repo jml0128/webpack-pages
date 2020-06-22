@@ -3,12 +3,65 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-22 21:57:35
+ * @LastEditTime: 2020-06-23 01:05:59
 -->
 <header id="custom-header">
   <div class="main-block">
     <a href="" class="logo">
-      <img src="" alt="">
+      <img
+        src="<%= require('../assets/img/图层 1.png').default %>"
+        alt="logo"
+      />
     </a>
+    <nav>
+      <% [ { name:'首页', url:'./index.html',target:'' }, {
+      name:'关于我们',url:'./about.html',target:'' }, {
+      name:'新闻动态',url:'./news.html',target:'' },{
+      name:'产品目录',url:'./service.html',target:'' },{
+      name:'联系我们',url:'./company.html',target:'' }].forEach(function(item){
+      %> <% if(obj == item.url) { %>
+      <a class="item active" href="<%= item.url%>" target="<%= item.target%>">
+        <%= item.name%>
+      </a>
+      <% } else { %>
+      <a class="item" href="<%= item.url%>" target="<%= item.target%>">
+        <%= item.name%>
+      </a>
+      <% } %> <% }); %>
+      <div class="hr"></div>
+    </nav>
+    <div class="search-btn">
+      <img
+        src="<%= require('../assets/img/search.png').default %>"
+        alt="search"
+        class="search-icon"
+      />
+    </div>
+    <div class="options">
+      <div class="item">
+        <img
+          src="<%= require('../assets/img/zhongguo-.png').default %>"
+          class="flag"
+        />
+        <span>中文</span>
+        <img
+          src="<%= require('../assets/img/0 拷贝.png').default %>"
+          class="icon"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="<%= require('../assets/img/yingwen.png').default %>"
+          class="flag"
+        />
+        <span>En</span>
+        <img
+          src="<%= require('../assets/img/0 拷贝.png').default %>"
+          class="icon"
+        />
+      </div>
+    </div>
   </div>
 </header>
+<div class="header-blank-block"></div>
+<img src="<%= require('../assets/img/组 207 拷贝 2.png').default %>" class="icon" id="to-top"/>

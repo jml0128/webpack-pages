@@ -3,17 +3,195 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-22 21:54:28
+ * @LastEditTime: 2020-06-23 01:45:59
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <%= require('../../templates/head.ejs')('首页') %>
   <body>
-    <%= require('../../templates/header.ejs')() %>
-    <div class="page-test">
-      <h1>page-test</h1>
-      <div class="box" style="height: 4000px;">multi-language</div>
+    <%= require('../../templates/header.ejs')('./index.html') %>
+    <div class="banner-block swiper-container">
+      <div class="swiper-wrapper">
+        <a href="" class="swiper-slide">
+          <img src="http://placehold.it/1920x820" alt="" />
+        </a>
+        <a href="" class="swiper-slide">
+          <img src="http://placehold.it/1920x820" alt="" />
+        </a>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>产品 </span>目录</h2>
+          <h4>PRODUCT CATELOG</h4>
+        </div>
+        <div class="box">multi-language</div>
+      </div>
+    </div>
+    <div class="full-block full-block-2">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>关于</span> 我们</h2>
+          <h4>ABOUT US</h4>
+        </div>
+        <div class="left">
+          <h2 class="aniview" data-av-animation="fadeInUp">公司简介</h2>
+          <p class="aniview" data-av-animation="fadeInUp">
+            KABIS品牌是具有原厂品质的汽车零部件行业领先者之一，致力于汽车制动系统、冷却系统的开发与生产，并为其提供可靠的工程质量和出色的创新设计。
+          </p>
+          <p class="aniview" data-av-animation="fadeInUp">
+            KABIS品牌立足于三十多年的汽车零部件开发经验与质量原则，以三个核心价值为基础
+          </p>
+          <div class="icon-group aniview" data-av-animation="fadeInUp">
+            <div class="item">
+              <img src="<%= require('../../assets/img/组 11.png').default %>" />
+              <p>创新</p>
+            </div>
+            <div class="item">
+              <img
+                src="<%= require('../../assets/img/组 11 拷贝.png').default %>"
+              />
+              <p>专注</p>
+            </div>
+            <div class="item">
+              <img
+                src="<%= require('../../assets/img/组 11 拷贝 2.png').default %>"
+              />
+              <p>精益求精</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img
+            src="http://placehold.it/584x370"
+            alt=""
+            class="hover-img aniview"
+            data-av-animation="fadeInUp"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="full-block full-block-3">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>最新</span>新闻</h2>
+          <h4>LATEST NEWS</h4>
+        </div>
+        <div class="left">
+          <img
+            src="http://placehold.it/525x288"
+            alt=""
+            class="aniview"
+            data-av-animation="fadeInUp"
+          />
+          <div class="top aniview" data-av-animation="fadeInUp">
+            <span class="title"
+              >这里是标题这里是标题这里是标题这里是标题这里</span
+            >
+            <span class="time">2020-10-20</span>
+          </div>
+          <p class="aniview" data-av-animation="fadeInUp">
+            12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+          </p>
+          <div class="btn hover-btn aniview" data-av-animation="fadeInUp">
+            查看详情
+          </div>
+        </div>
+        <div class="right">
+          <div class="item aniview" data-av-animation="fadeInUp">
+            <img src="http://placehold.it/114x100" alt="" />
+            <div class="info">
+              <div class="top">
+                <span class="title"
+                  >这里是标题这里是标题这里是标题这里是标题这里</span
+                >
+                <span class="time">2020-10-20</span>
+              </div>
+              <p>
+                12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+              </p>
+            </div>
+          </div>
+          <div class="item aniview" data-av-animation="fadeInUp">
+            <img src="http://placehold.it/114x100" alt="" />
+            <div class="info">
+              <div class="top">
+                <span class="title"
+                  >这里是标题这里是标题这里是标题这里是标题这里</span
+                >
+                <span class="time">2020-10-20</span>
+              </div>
+              <p>
+                12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+              </p>
+            </div>
+          </div>
+          <div class="item aniview" data-av-animation="fadeInUp">
+            <img src="http://placehold.it/114x100" alt="" />
+            <div class="info">
+              <div class="top">
+                <span class="title"
+                  >这里是标题这里是标题这里是标题这里是标题这里</span
+                >
+                <span class="time">2020-10-20</span>
+              </div>
+              <p>
+                12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="more-btn hover-btn aniview" data-av-animation="fadeInUp">
+          更多
+          <img
+            src="<%= require('../../assets/img/矩形 8 拷贝 9.png').default %>"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="full-block full-block-4">
+      <div class="main-block company-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
+            <a href="">
+              <img
+                style="animation-delay: <%= item * 0.3%>s;"
+                src="http://placehold.it/1920x820"
+                alt=""
+                class="aniview"
+                data-av-animation="fadeInUp"
+              />
+            </a>
+            <% }); %>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="http://placehold.it/1920x820"
+                alt=""
+                class="aniview"
+                data-av-animation="fadeInUp"
+              />
+            </a>
+            <a href="">
+              <img
+                src="http://placehold.it/1920x820"
+                alt=""
+                class="aniview"
+                data-av-animation="fadeInUp"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <%= require('../../templates/contactus.ejs')() %>
     <%= require('../../templates/footer.ejs')() %>
   </body>
 </html>

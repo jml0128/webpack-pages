@@ -1,3 +1,225 @@
-h1 {
-  font-size: 58px;
+.full-block-1 {
+  height: 944px;
+  background-color: #f7f7f7;
+}
+.full-block-2 {
+  background-color: #fff;
+  padding-top: 49px;
+  padding-bottom: 100px;
+  .common-title {
+    padding-bottom: 100px;
+  }
+  .left {
+    width: 525px;
+    display: inline-block;
+    h2 {
+      line-height: 1;
+      padding-bottom: 22px;
+      font-size: 28px;
+      color: $color3;
+    }
+    p {
+      color: $color6;
+      font-size: 16px;
+      padding-bottom: 35px;
+      line-height: 26px;
+    }
+    .icon-group {
+      font-size: 0;
+      margin-top: 56px;
+      .item {
+        color: $color3;
+        font-size: 16px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 70px;
+        p {
+          margin-top: 11px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .right {
+    width: 584px;
+    height: 370px;
+    float: right;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.full-block-3 {
+  padding-top: 11px;
+  .common-title {
+    padding-bottom: 90px;
+  }
+  .top {
+    .title {
+      max-width: 80%;
+      display: inline-block;
+      font-size: 18px;
+      color: $color3;
+      line-height: 1.2;
+    }
+    .time {
+      float: right;
+      font-size: 14px;
+      color: $color7;
+      margin-top: 4px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: $color7;
+    line-height: 25px;
+    transition: all 0.3s;
+  }
+  .left {
+    width: 525px;
+    display: inline-block;
+    img {
+      width: 525px;
+      height: 288px;
+    }
+    .top {
+      margin-top: 34px;
+    }
+    p {
+      margin-top: 20px;
+    }
+    .btn {
+      margin-top: 58px;
+      width: 171px;
+      height: 48px;
+      border: 1px solid rgba(153, 153, 153, 1);
+      text-align: center;
+      line-height: 48px;
+      font-size: 14px;
+      font-weight: 300;
+      color: $color7;
+      cursor: pointer;
+    }
+    &:hover {
+      p {
+        padding-left: 30px;
+        border-left: 1px solid 1px solid #e2e2e2;
+      }
+    }
+  }
+  .right {
+    width: 600px;
+    float: right;
+    .av-container {
+      &:first-of-type {
+        .item {
+          padding-top: 0;
+        }
+      }
+    }
+    .item {
+      padding-bottom: 25px;
+      padding-top: 58px;
+      border-bottom: 1px solid #e2e2e2;
+      transition: all 0.3s;
+      cursor: pointer;
+      .info {
+        width: 450px;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 24px;
+        box-sizing: border-box;
+      }
+      p {
+        margin-top: 15px;
+      }
+      &:hover {
+        padding-left: 20px;
+      }
+    }
+  }
+  .more-btn {
+    width: 256px;
+    height: 63px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgba(192, 192, 192, 1);
+    text-align: center;
+    line-height: 63px;
+    cursor: pointer;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-origin: 0 0;
+      left: 0;
+      top: 0;
+      z-index: -2;
+      background-color: #292d35;
+    }
+  }
+}
+
+.full-block-4 {
+  padding-top: 62px;
+  padding-bottom: 70px;
+  background-color: #f7f7f7;
+  position: relative;
+  .main-block {
+    width: $maxWidth;
+    padding: 0;
+    height: 300px;
+    .swiper-slide {
+      font-size: 0;
+      line-height: 0;
+      background-color: #fff;
+      a {
+        display: inline-block;
+        width: $maxWidth/4;
+        height: 150px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-image: url('../../assets//img/组 207.png');
+    left: 50%;
+    right: 50%;
+    &::after {
+      content: '';
+    }
+  }
+  .swiper-button-prev {
+    margin-left: -$maxWidth / 2 - 60;
+  }
+  .swiper-button-next {
+    margin-left: $maxWidth / 2 + 20;
+  }
+  .swiper-button-next,
+  .swiper-button-prev.swiper-button-disabled {
+    transform: rotate(180deg);
+  }
+  .swiper-button-next.swiper-button-disabled {
+    transform: rotate(0);
+  }
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    background-image: url('../../assets//img/组 207 拷贝.png');
+    opacity: 1;
+  }
 }

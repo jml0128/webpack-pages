@@ -42,6 +42,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "image-lazyload": "^1.0.2",
     "jquery": "^3.5.1",
     "jquery-i18n": "^1.0.1",
