@@ -3,15 +3,12 @@
  * @Author: jml
  * @Date: 2020-06-22 19:58:24
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 00:55:32
+ * @LastEditTime: 2020-06-23 17:09:53
  */
 
 import './index.scss'
 import 'swiper/css/swiper.css'
-
 import Swiper from 'swiper'
-
-
 
 var options = {
   animateThreshold: 100,

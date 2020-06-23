@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-06-23 01:44:05
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 01:53:45
+ * @LastEditTime: 2020-06-23 17:04:50
 -->
 <div class="full-block contact-us">
   <div class="main-block">
@@ -21,13 +21,22 @@
     </div>
     <div class="right">
       <div class="icon-group aniview" data-av-animation="fadeInUp">
-        <div class="item">
+        <div
+          class="item"
+          onclick="showPhoto('<%= require('../assets/img/weibo (1).png').default %>')"
+        >
           <img src="<%= require('../assets/img/weibo (1).png').default %>" />
         </div>
-        <div class="item">
+        <div
+          class="item"
+          onclick="showPhoto('<%= require('../assets/img/qq (2).png').default %>')"
+        >
           <img src="<%= require('../assets/img/qq (2).png').default %>" />
         </div>
-        <div class="item">
+        <div
+          class="item"
+          onclick="showPhoto('<%= require('../assets/img/weixinfill.png').default %>')"
+        >
           <img src="<%= require('../assets/img/weixinfill.png').default %>" />
         </div>
       </div>

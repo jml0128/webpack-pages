@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-14 11:32:50
- * @LastEditTime: 2020-06-23 02:31:42
+ * @LastEditTime: 2020-06-23 17:55:17
  * @LastEditors: jml
  * @Description: In User Settings Edit
  * @FilePath: \06-zw-page\src\config\pages.js
@@ -21,5 +21,20 @@ module.exports = {
     title: 'page-test',
     html: '/pages/news/index.ejs',
     js: '/pages/news/index.js',
+  },
+  newsdetail: {
+    title: 'page-test',
+    html: '/pages/newsDetail/index.ejs',
+    js: '/pages/newsDetail/index.js',
+  },
+  goods: {
+    title: 'page-test',
+    html: '/pages/goods/index.ejs',
+    js: '/pages/goods/index.js',
+  },
+  contactus: {
+    title: 'page-test',
+    html: '/pages/contactUs/index.ejs',
+    js: '/pages/contactUs/index.js',
   },
 }

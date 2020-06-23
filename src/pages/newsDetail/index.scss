@@ -1,0 +1,194 @@
+.full-block-0 {
+  height: 50px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  background-color: #f7f7f7;
+}
+.full-block-1 {
+  .category {
+    padding-bottom: 30px;
+    .item {
+      height: 16px;
+      line-height: 16px;
+      display: inline-block;
+      padding: 8px 20px;
+      transition: all 0.3s ease-out 0s;
+      position: relative;
+      color: #737373;
+      &.active {
+        color: #fff;
+        background-color: $baseColor;
+      }
+    }
+  }
+  .news-info {
+    width: 800px;
+    display: inline-block;
+    .postInfo {
+      position: relative;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 44px 0 16px 116px;
+      line-height: 1;
+      .title {
+        font-size: 16px;
+        line-height: 30px;
+        color: #303030;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .usetdate {
+        line-height: 30px;
+        overflow: hidden;
+        position: absolute;
+        top: 42px;
+        left: 23px;
+        font-size: 22px;
+        width: 66px;
+        white-space: nowrap;
+      }
+      .description {
+        font-size: 13px;
+        line-height: 30px;
+        height: 30px;
+        overflow: hidden;
+        color: $color9;
+      }
+    }
+    .content {
+      padding-top: 40px;
+      color: $color9;
+      line-height: 1.4;
+      font-size: 14px;
+    }
+    #tabBtn {
+      margin-top: 80px;
+      margin-bottom: 100px;
+      background: #f5f5f5;
+      & > a {
+        transition: all 0.36s ease;
+        position: relative;
+        width: 50%;
+        height: 120px;
+        overflow: hidden;
+        float: left;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        &.empty {
+          opacity: 0;
+          cursor: default;
+        }
+        &.post-prev {
+          .img-wrap {
+            left: initial;
+            right: 0;
+            transform: translateX(-30px);
+          }
+          .title {
+            text-align: right;
+            padding-right: 40px;
+          }
+          &:hover {
+            .title {
+              padding-left: 0;
+              padding-right: 160px;
+            }
+          }
+        }
+        &:hover {
+          background-color: $baseColor;
+          .img-wrap {
+            opacity: 1;
+          }
+          .title {
+            padding-left: 160px;
+            color: #fff;
+          }
+        }
+        .img-wrap {
+          transition: all 0.3s;
+          width: 120px;
+          height: 60px;
+          overflow: hidden;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateX(30px);
+          margin-top: -30px;
+          opacity: 0;
+        }
+        .title {
+          transition: all 0.36s ease;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          line-height: 100px;
+          display: block;
+          color: #666;
+        }
+      }
+      &::after {
+        content: '';
+        clear: both;
+        display: block;
+      }
+    }
+  }
+  .list {
+    width: 320px;
+    float: right;
+    .item {
+      border-bottom: 1px solid #e5e5e5;
+      position: relative;
+      padding: 27px 0 24px;
+      transition: all 0.36s ease;
+      &:hover {
+        padding-left: 20px;
+        box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+      }
+      .img {
+        width: 340px;
+        height: 130px;
+        display: inline-block;
+      }
+      .right {
+        width: 785px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        .title {
+          position: relative;
+          font-size: 14px;
+          line-height: 30px;
+          color: #333;
+          padding-left: 76px;
+          max-width: 200px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          display: block;
+        }
+        p {
+          transition: all 0.36s ease;
+          margin-top: 13px;
+          font-size: 13px;
+          line-height: 24px;
+          height: 48px;
+          width: 280px;
+          overflow: hidden;
+          color: #999;
+        }
+        .time {
+          font-size: 16px;
+          line-height: 30px;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: 2px;
+        }
+      }
+    }
+  }
+}

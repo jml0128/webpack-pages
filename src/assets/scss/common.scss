@@ -4,11 +4,11 @@ body {
 }
 .full-block {
   width: 100%;
-  &::after {
-    content: '';
-    display: inline-block;
-    clear: both;
-  }
+  // &::after {
+  //   content: '';
+  //   display: inline-block;
+  //   clear: both;
+  // }
 }
 .main-block {
   width: $mainBoxWidth;
@@ -17,11 +17,12 @@ body {
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
-  &::after {
-    content: '';
-    display: inline-block;
-    clear: both;
-  }
+  position: relative;
+  // &::after {
+  //   content: '';
+  //   display: inline-block;
+  //   clear: both;
+  // }
 }
 .banner-block {
   width: 100%;
@@ -39,7 +40,7 @@ $headerHeight: 70px;
 }
 #custom-header {
   z-index: 5;
-  $counterWidth: 86px;
+  $counterWidth: 106px;
   $counterHeight: 21px;
   $searchWidth: 112px;
   position: fixed;
@@ -52,6 +53,7 @@ $headerHeight: 70px;
   .main-block {
     font-size: 0;
     transition: all 0.3s linear;
+    overflow: initial;
     .logo {
       width: 100px;
       height: 27px;
@@ -119,12 +121,16 @@ $headerHeight: 70px;
       display: inline-block;
       width: $counterWidth;
       height: $counterHeight;
-      overflow: hidden;
+      background-color: #fff;
+      position: relative;
+      // overflow: hidden;
       .item {
         cursor: pointer;
         font-size: 0;
         margin-bottom: 6px;
         height: $counterHeight;
+        background-color: #fff;
+        padding: 5px 10px;
         span {
           height: $counterHeight;
           line-height: 21px;
@@ -139,6 +145,23 @@ $headerHeight: 70px;
         }
         .icon {
           margin-top: 5px;
+        }
+        &:last-child {
+          padding-top: 15px;
+          position: absolute;
+          left: 0;
+          top: $counterHeight;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          opacity: 0;
+          transition: all 0.3s;
+        }
+      }
+      &:hover {
+        .item {
+          &:last-child {
+            opacity: 1;
+          }
         }
       }
     }
@@ -219,7 +242,7 @@ $headerHeight: 70px;
 
 .av-container {
   width: 100%;
-  height: 100%;
+  // height: 100%;
 }
 
 .contact-us {
@@ -282,6 +305,7 @@ $headerHeight: 70px;
     display: flex;
     padding-top: 47px;
     padding-bottom: 58px;
+    position: relative;
     .item {
       width: 150px;
       display: flex;
@@ -299,6 +323,26 @@ $headerHeight: 70px;
       color: rgba(153, 153, 153, 1);
       line-height: 1;
       margin-bottom: 13px;
+    }
+    .icon-group {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 20px;
+      bottom: 58px;
+      right: 0;
+      .item {
+        padding: 0;
+        margin-right: 20px;
+        width: 22px;
+        height: 22px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
   .beian {
@@ -342,4 +386,22 @@ $headerHeight: 70px;
       color: $baseColor;
     }
   }
+}
+
+.layui-breadcrumb {
+  font-size: 12px;
+  color: $color9;
+  position: absolute;
+  right: $padding;
+  top: 0;
+  a {
+    &:hover {
+      color: $baseColor !important;
+    }
+  }
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+  background-color: $baseColor !important;
+  border-color: $baseColor !important;
 }

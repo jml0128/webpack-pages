@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:32:30
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 01:26:38
+ * @LastEditTime: 2020-06-23 18:28:57
  */
 
 import $ from 'jquery'
@@ -34,7 +34,7 @@ window.commonFn = (e) => {
   setTimeout(() => {
     hrDom.css({ transitionDuration: '0.3s' })
   }, 30)
-  $('#custom-header a').mouseenter((e) => {
+  $('#custom-header nav a').mouseenter((e) => {
     const { target } = e
     console.log(target.innerText, $(target).position(), $(target).width())
     const domWidth = $(target).innerWidth()
@@ -45,7 +45,7 @@ window.commonFn = (e) => {
     hrWidth == 0 && (hrWidth = hrDom.width())
     hrDom.width(domWidth + 2)
     hrDom.css('left', offset.left - 1)
-    $('#custom-header a').mouseleave((e) => {
+    $('#custom-header nav a').mouseleave((e) => {
       hrDom.width(hrWidth)
       hrDom.css('left', hrLeft)
     })
@@ -58,7 +58,7 @@ window.commonFn = (e) => {
     var scroH = $(document).scrollTop() //滚动高度
     var viewH = $(window).height() //可见高度
     var contentH = $(document).height() //内容高度
-    console.log(scroH)
+    // console.log(scroH)
     if (scroH > 100) {
       //距离顶部大于100px时
       $('#custom-header').height(60)
@@ -93,3 +93,23 @@ $('#to-top').click(function () {
   )
   return false
 })
+layui.use('layer')
+window.showPhoto = function (src) {
+  layer.photos({
+    photos: {
+      title: '', //相册标题
+      id: 123, //相册id
+      start: 0, //初始显示的图片序号，默认0
+      data: [
+        {
+          alt: '',
+          pid: 666, //图片id
+          src: src, //原图地址
+          thumb: src, //缩略图地址
+        },
+      ],
+    },
+    anim: 5, //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+  })
+}
+

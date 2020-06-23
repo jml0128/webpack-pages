@@ -46,6 +46,7 @@
     "image-lazyload": "^1.0.2",
     "jquery": "^3.5.1",
     "jquery-i18n": "^1.0.1",
+    "layui-src": "^2.5.5",
     "photoswipe": "^4.1.3",
     "swiper": "^5.3.7"
   }

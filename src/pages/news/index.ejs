@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 02:54:02
+ * @LastEditTime: 2020-06-23 17:15:30
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -20,9 +20,15 @@
           <a href="" class="item">资讯</a>
           <a href="" class="item">行业</a>
         </div>
+        <span class="layui-breadcrumb" lay-separator=">">
+          <a href="">首页</a>
+          <a href="">国际新闻</a>
+          <a href="">亚太地区</a>
+          <a><cite>正文</cite></a>
+        </span>
         <ul class="list">
           <li class="item">
-            <a href=""
+            <a href="./newsdetail.html"
               ><img src="http://placehold.it/584x370" alt="" class="img" />
               <div class="right">
                 <div class="title">
@@ -37,7 +43,7 @@
             </a>
           </li>
           <li class="item">
-            <a href="">
+            <a href="./newsdetail.html">
               <img src="http://placehold.it/584x370" alt="" class="img" />
               <div class="right">
                 <div class="title">
@@ -67,4 +73,10 @@
     </div>
     <%= require('../../templates/footer.ejs')() %>
   </body>
+  <script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+      var element = layui.element
+    })
+  </script>
 </html>

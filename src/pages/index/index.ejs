@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 01:45:59
+ * @LastEditTime: 2020-06-23 17:10:18
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -27,7 +27,122 @@
           <h2><span>产品 </span>目录</h2>
           <h4>PRODUCT CATELOG</h4>
         </div>
-        <div class="box">multi-language</div>
+        <div class="car-tab aniview" data-av-animation="fadeInUp">
+          <div class="layui-tab">
+            <ul class="layui-tab-title">
+              <li class="layui-this">
+                <img
+                  src="<%= require('../../assets/img/矢量智能对象(1).png').default %>"
+                />
+              </li>
+              <li>
+                <img
+                  src="<%= require('../../assets/img/huoche.png').default %>"
+                />
+              </li>
+              <li>
+                <img
+                  src="<%= require('../../assets/img/forklift_right.png').default %>"
+                />
+              </li>
+            </ul>
+            <div class="layui-tab-content">
+              <div class="layui-tab-item layui-show">
+                <form class="layui-form" action="">
+                  <select name="city">
+                    <option value="">中国</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                    <option value="2">广州</option>
+                    <option value="3">深圳</option>
+                    <option value="4">杭州</option>
+                  </select>
+                  <select name="chejia">
+                    <option value="">车架号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                  <select name="peijian">
+                    <option value="">或者输入配件号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                  <select name="type" lay-search>
+                    <option value="">通过车型搜索</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                </form>
+              </div>
+              <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                  <select name="peijian">
+                    <option value="">或者输入配件号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                  <select name="type" lay-search>
+                    <option value="">通过车型搜索</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                </form>
+              </div>
+              <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                  <select name="city">
+                    <option value="">中国</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                    <option value="2">广州</option>
+                    <option value="3">深圳</option>
+                    <option value="4">杭州</option>
+                  </select>
+                  <select name="chejia">
+                    <option value="">车架号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods-group">
+          <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
+          <a class="item" href="">
+            <div
+              class="content aniview"
+              data-av-animation="fadeInUp"
+              style="animation-delay: <%= item * 0.3%>s;"
+            >
+              <img src="http://placehold.it/380x219" alt="" />
+              <div class="info">
+                <p class="title">名称</p>
+                <p class="desc">描述描述描述描述描述</p>
+              </div>
+            </div>
+          </a>
+          <% }); %>
+        </div>
       </div>
     </div>
     <div class="full-block full-block-2">
@@ -191,7 +306,20 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <%= require('../../templates/contactus.ejs')() %>
-    <%= require('../../templates/footer.ejs')() %>
+    <%= require('../../templates/contactus.ejs')() %> <%=
+    require('../../templates/footer.ejs')() %>
   </body>
+  <script>
+    layui.use('element', function () {
+      var element = layui.element
+    })
+    layui.use('form', function () {
+      var form = layui.form
+      //监听提交
+      form.on('submit(formDemo)', function (data) {
+        layer.msg(JSON.stringify(data.field))
+        return false
+      })
+    })
+  </script>
 </html>
