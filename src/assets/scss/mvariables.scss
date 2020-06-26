@@ -1,0 +1,16 @@
+$baseColor: #e5090d;
+$mainBoxWidth: 10rem;
+$padding: 0.4rem;
+$maxWidth: 9.2rem;
+
+$headerZIndex: 999;
+
+$color3: #333;
+$color6: #666;
+$color7: #707278;
+$color9: #959595;
+
+.swiper-container {
+  --swiper-theme-color: #e5090d;
+  --swiper-pagination-color: #e5090d; /* 两种都可以 */
+}

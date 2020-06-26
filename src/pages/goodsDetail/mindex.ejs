@@ -1,0 +1,61 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-06-26 15:32:58
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/mhead.ejs')('首页') %>
+  <body>
+    <%= require('../../templates/mheader.ejs')('./mgoods.html') %>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="news-info">
+          <div class="postInfo">
+            <p class="title">
+              李克强对“华龙一号”福清核电5号机组建设工作 作出重要批示
+            </p>
+            <div class="description">
+              <p>
+                中共中央政治局常委、国务院总理李克强日前对“华龙一号”福清核电5号机组建设工作作出重要批示。批示指出：我国自主研发的三代核电“华龙一号”是推进实施中国制造2025的标志性工程
+                ...
+              </p>
+            </div>
+          </div>
+          <div class="g-img">
+            <img src="http://placehold.it/584x370" alt="" class="img" />
+          </div>
+          <div class="content">
+            <p>
+              PH是一种布宜诺斯艾利斯典型的住宅类型，这种住宅以高密度和低楼层著称。
+              项目是一个长期规划的收尾性空间，PH Lavalleja
+              住宅被邻近的现代主义高层公寓楼包围PH is the name given to a
+              traditional housing typology in Buenos Aires, characterised by its
+              high density and low rise. Set in the last unit of a long plot, PH
+              Lavalleja coexists with the neighbouring free plan, high rise
+              residential .
+            </p>
+            <p>
+              PH是一种布宜诺斯艾利斯典型的住宅类型，这种住宅以高密度和低楼层著称。
+              项目是一个长期规划的收尾性空间，PH Lavalleja
+              住宅被邻近的现代主义高层公寓楼包围PH is the name given to a
+              traditional housing typology in Buenos Aires, characterised by its
+              high density and low rise. Set in the last unit of a long plot, PH
+              Lavalleja coexists with the neighbouring free plan, high rise
+              residential .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/mfooter.ejs')() %>
+  </body>
+  <script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+      var element = layui.element
+    })
+  </script>
+</html>

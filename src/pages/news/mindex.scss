@@ -1,0 +1,84 @@
+@import '~../../assets/scss/mcommon.scss';
+.full-block-1 {
+  .now-category {
+    width: 10rem;
+    margin-left: -0.4rem;
+    .item {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  #category {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .category {
+    .item {
+      font-size: 0.4rem;
+      display: block;
+      line-height: 16px;
+      padding: 0.4rem 20px;
+      transition: all 0.3s ease-out 0s;
+      position: relative;
+      color: #737373;
+      &.active {
+        color: #fff;
+        background-color: $baseColor;
+      }
+    }
+    a {
+      font-size: 0.4rem;
+    }
+  }
+  .list {
+    .item {
+      padding: 0.3rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e5e5e5;
+      overflow: hidden;
+      transition: all 0.36s ease;
+      a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      &:hover {
+        padding-left: 20px;
+        box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+      }
+      .img {
+        width: 3.5rem;
+        height: 2.5rem;
+        display: inline-block;
+      }
+      .right {
+        width: 100%;
+        padding-left: 0.2rem;
+        position: relative;
+        vertical-align: top;
+        box-sizing: border-box;
+        .title {
+          font-size: 0.4rem;
+          line-height: 1.2;
+          color: #303030;
+        }
+        p {
+          font-size: 0.35rem;
+          line-height: 1.2;
+          overflow: hidden;
+          color: #888;
+          @include text-overflow(2, 1.3);
+        }
+        .time {
+          color: #999;
+          font-size: 0.3rem;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}

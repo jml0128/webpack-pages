@@ -1,0 +1,61 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-06-26 18:34:12
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/mhead.ejs')('首页') %>
+  <body>
+    <%= require('../../templates/mheader.ejs')('./mgoods.html') %>
+    <div class="banner-normal">
+      <img src="http://placehold.it/584x370" alt="" />
+    </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <ul class="list">
+          <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
+          <li class="item aniview" data-av-animation="fadeInUp">
+            <a href="./mgoodsdetail.html">
+              <img src="http://placehold.it/584x370" alt="" class="img" />
+              <div class="right">
+                <div class="g-title">
+                  李克强对“华龙一号”福清核电5号机组建设工作 作出重要批示
+                </div>
+                <p>
+                  中共中央政治局常委、国务院总理李克强日前对“华龙一号”福清核电5号机组建设工作作出重要批示。批示指出：我国自主研发的三代核电“华龙一号”是推进实施中国制造2025的标志性工程
+                  ...
+                </p>
+              </div>
+            </a>
+          </li>
+          <% }); %>
+        </ul>
+        <div class="p">
+          <div class="page-box aniview" data-av-animation="fadeInUp">
+            <div id="pages">
+              <a class="prev disable hide" href="javascript:;">
+                <
+              </a>
+              <a href="index22.html" class="page-item active">
+                1
+              </a>
+              <a class="next disable hide" href="javascript:;">
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/mfooter.ejs')() %>
+  </body>
+  <script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+      var element = layui.element
+    })
+  </script>
+</html>

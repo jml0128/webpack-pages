@@ -1,0 +1,307 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-06-26 15:33:05
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/mhead.ejs')('首页') %>
+  <body>
+    <%= require('../../templates/mheader.ejs')('./mindex.html') %>
+    <div class="banner-block swiper-container">
+      <div class="swiper-wrapper">
+        <a href="" class="swiper-slide">
+          <img src="http://placehold.it/1920x820" alt="" />
+        </a>
+        <a href="" class="swiper-slide">
+          <img src="http://placehold.it/1920x820" alt="" />
+        </a>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="car-tab aniview" data-av-animation="fadeInUp">
+          <div class="layui-tab">
+            <ul class="layui-tab-title">
+              <li class="layui-this">
+                <img
+                  src="<%= require('../../assets/img/矢量智能对象(1).png').default %>"
+                />
+              </li>
+              <li>
+                <img
+                  src="<%= require('../../assets/img/huoche.png').default %>"
+                />
+              </li>
+              <li>
+                <img
+                  src="<%= require('../../assets/img/forklift_right.png').default %>"
+                />
+              </li>
+            </ul>
+            <div class="layui-tab-content">
+              <div class="layui-tab-item layui-show">
+                <form class="layui-form" action="">
+                  <select name="city">
+                    <option value="">中国</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                    <option value="2">广州</option>
+                    <option value="3">深圳</option>
+                    <option value="4">杭州</option>
+                  </select>
+                  <select name="chejia">
+                    <option value="">车架号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                  <select name="peijian">
+                    <option value="">或者输入配件号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                  <select name="type" lay-search>
+                    <option value="">通过车型搜索</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                </form>
+              </div>
+              <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                  <select name="peijian">
+                    <option value="">或者输入配件号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                  <select name="type" lay-search>
+                    <option value="">通过车型搜索</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                </form>
+              </div>
+              <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                  <select name="city">
+                    <option value="">中国</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                    <option value="2">广州</option>
+                    <option value="3">深圳</option>
+                    <option value="4">杭州</option>
+                  </select>
+                  <select name="chejia">
+                    <option value="">车架号</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>产品 </span>目录</h2>
+          <h4>PRODUCT CATELOG</h4>
+        </div>
+        <div class="goods-group">
+          <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
+          <a
+            class="item aniview"
+            data-av-animation="fadeInUp"
+            style="animation-delay: <%= item * 0.3%>s;"
+            href=""
+          >
+            <div class="content">
+              <img src="http://placehold.it/380x219" alt="" />
+              <p class="title">名称</p>
+            </div>
+          </a>
+          <% }); %>
+        </div>
+        <a class="more-btn hover-btn aniview" data-av-animation="fadeInUp">
+          更多&nbsp;>
+        </a>
+      </div>
+    </div>
+    <div class="full-block full-block-2">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>关于</span> 我们</h2>
+          <h4>ABOUT US</h4>
+        </div>
+        <div class="a-img">
+          <img src="http://placehold.it/380x219" alt="" />
+          <div class="a-icon">
+            <img
+              src="<%= require('../../assets/img/微信截图_20200626134928.png').default %>"
+            />
+          </div>
+        </div>
+        <div class="left">
+          <h2 class="aniview" data-av-animation="fadeInUp">公司简介</h2>
+          <p class="aniview" data-av-animation="fadeInUp">
+            KABIS品牌是具有原厂品质的汽车零部件行业领先者之一，致力于汽车制动系统、冷却系统的开发与生产，并为其提供可靠的工程质量和出
+            <span>
+              <a href="">more></a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="full-block full-block-3">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>最新</span>新闻</h2>
+          <h4>LATEST NEWS</h4>
+        </div>
+        <div class="left">
+          <img
+            src="http://placehold.it/525x288"
+            alt=""
+            class="aniview"
+            data-av-animation="fadeInUp"
+          />
+          <div class="top aniview" data-av-animation="fadeInUp">
+            <span class="title"
+              >这里是标题这里是标题这里是标题这里是标题这里</span
+            >
+            <span class="time">2020-10-20</span>
+          </div>
+          <p class="aniview" data-av-animation="fadeInUp">
+            12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+          </p>
+          <div class="btn hover-btn aniview" data-av-animation="fadeInUp">
+            查看详情
+          </div>
+        </div>
+        <div class="right">
+          <div class="item aniview" data-av-animation="fadeInUp">
+            <img src="http://placehold.it/114x100" alt="" />
+            <div class="info">
+              <div class="top">
+                <span class="title"
+                  >这里是标题这里是标题这里是标题这里是标题这里</span
+                >
+                <span class="time">2020-10-20</span>
+              </div>
+              <p>
+                12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+              </p>
+            </div>
+          </div>
+          <div class="item aniview" data-av-animation="fadeInUp">
+            <img src="http://placehold.it/114x100" alt="" />
+            <div class="info">
+              <div class="top">
+                <span class="title"
+                  >这里是标题这里是标题这里是标题这里是标题这里</span
+                >
+                <span class="time">2020-10-20</span>
+              </div>
+              <p>
+                12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+              </p>
+            </div>
+          </div>
+          <div class="item aniview" data-av-animation="fadeInUp">
+            <img src="http://placehold.it/114x100" alt="" />
+            <div class="info">
+              <div class="top">
+                <span class="title"
+                  >这里是标题这里是标题这里是标题这里是标题这里</span
+                >
+                <span class="time">2020-10-20</span>
+              </div>
+              <p>
+                12月20日～21日，猎云财经将携手比特大陆、鱼池、挖易举办一场以“重塑未来”为主题的千人数字矿业高峰论坛！
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="more-btn hover-btn aniview" data-av-animation="fadeInUp">
+          更多
+          <img
+            src="<%= require('../../assets/img/矩形 8 拷贝 9.png').default %>"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="full-block full-block-4">
+      <div class="main-block company-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
+            <a href="">
+              <img
+                style="animation-delay: <%= item * 0.3%>s;"
+                src="http://placehold.it/1920x820"
+                alt=""
+                class="aniview"
+                data-av-animation="fadeInUp"
+              />
+            </a>
+            <% }); %>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="http://placehold.it/1920x820"
+                alt=""
+                class="aniview"
+                data-av-animation="fadeInUp"
+              />
+            </a>
+            <a href="">
+              <img
+                src="http://placehold.it/1920x820"
+                alt=""
+                class="aniview"
+                data-av-animation="fadeInUp"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <%= require('../../templates/mfooter.ejs')() %>
+  </body>
+  <script>
+    layui.use('element', function () {
+      var element = layui.element
+    })
+    layui.use('form', function () {
+      var form = layui.form
+      //监听提交
+      form.on('submit(formDemo)', function (data) {
+        layer.msg(JSON.stringify(data.field))
+        return false
+      })
+    })
+  </script>
+</html>

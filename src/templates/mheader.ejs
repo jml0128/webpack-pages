@@ -3,10 +3,18 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-26 11:27:05
+ * @LastEditTime: 2020-06-26 18:32:17
 -->
 <header id="custom-header">
   <div class="main-block">
+    <div class="menu-btn search-btn">
+      <img
+        onclick="toggleMenu()"
+        src="<%= require('../assets/img/微信截图_20200626112616.png').default %>"
+        alt="search"
+        class="menu-icon search-icon"
+      />
+    </div>
     <a href="" class="logo">
       <img
         src="<%= require('../assets/img/图层 1.png').default %>"
@@ -14,11 +22,11 @@
       />
     </a>
     <nav>
-      <% [ { name:'首页', url:'./index.html',target:'' }, {
-      name:'关于我们',url:'./about.html',target:'' }, {
-      name:'新闻动态',url:'./news.html',target:'' },{
-      name:'产品目录',url:'./goods.html',target:'',hasChild:1 },{
-      name:'联系我们',url:'./contactus.html',target:''
+      <% [ { name:'首页', url:'./mindex.html',target:'' }, {
+      name:'关于我们',url:'./mabout.html',target:'' }, {
+      name:'新闻动态',url:'./mnews.html',target:'' },{
+      name:'产品目录',url:'./mgoods.html',target:'',hasChild:1 },{
+      name:'联系我们',url:'./mcontactus.html',target:''
       }].forEach(function(item){ %> <% if(obj == item.url) { %>
       <div class="item active">
         <a href="<%= item.url%>" target="<%= item.target%>">
@@ -26,10 +34,11 @@
         </a>
       </div>
       <% } else { %>
-      <div class="item">
-        <a href="<%= item.url%>" target="<%= item.target%>">
+      <div class="item has-child">
+        <div class="name">
           <span><%= item.name%></span>
-        </a>
+          <div class="right-icon layui-icon-right layui-icon"></div>
+        </div>
         <div class="child">
           <a href="" class="child-i">二级菜单</a>
           <a href="" class="child-i">二级菜单</a>
@@ -46,17 +55,13 @@
         class="search-icon"
       />
     </div>
-    <div class="options">
+    <!-- <div class="options">
       <a class="item" href="">
         <img
           src="<%= require('../assets/img/zhongguo-.png').default %>"
           class="flag"
         />
         <span>中文</span>
-        <!-- <img
-          src="<%= require('../assets/img/0 拷贝.png').default %>"
-          class="icon"
-        /> -->
       </a>
       <a class="item" href="">
         <img
@@ -64,12 +69,8 @@
           class="flag"
         />
         <span>En</span>
-        <!-- <img
-          src="<%= require('../assets/img/0 拷贝.png').default %>"
-          class="icon"
-        /> -->
       </a>
-    </div>
+    </div> -->
   </div>
 </header>
 <div class="header-blank-block"></div>
@@ -94,4 +95,11 @@
       }
     )
   }
+  window.toggleMenu = function () {
+    $('nav').fadeToggle()
+  }
+  $('nav .item.has-child').click(function (e) {
+    $(e.currentTarget).children('.child').toggle()
+    $(e.currentTarget).children('.name').children('.right-icon').toggleClass('show')
+  })
 </script>

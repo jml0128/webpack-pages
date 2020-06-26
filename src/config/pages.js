@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-14 11:32:50
- * @LastEditTime: 2020-06-24 09:37:11
+ * @LastEditTime: 2020-06-26 15:17:41
  * @LastEditors: jml
  * @Description: In User Settings Edit
  * @FilePath: \06-zw-page\src\config\pages.js
@@ -41,5 +41,41 @@ module.exports = {
     title: 'page-test',
     html: '/pages/contactUs/index.ejs',
     js: '/pages/contactUs/index.js',
+  },
+
+  mindex: {
+    title: 'page-test',
+    html: '/pages/index/mindex.ejs',
+    js: '/pages/index/mindex.js',
+  },
+  mabout: {
+    title: 'page-test',
+    html: '/pages/about/mindex.ejs',
+    js: '/pages/about/mindex.js',
+  },
+  mcontactus: {
+    title: 'page-test',
+    html: '/pages/contactUs/mindex.ejs',
+    js: '/pages/contactUs/mindex.js',
+  },
+  mnews: {
+    title: 'page-test',
+    html: '/pages/news/mindex.ejs',
+    js: '/pages/news/mindex.js',
+  },
+  mnewsdetail: {
+    title: 'page-test',
+    html: '/pages/newsDetail/mindex.ejs',
+    js: '/pages/newsDetail/mindex.js',
+  },
+  mgoods: {
+    title: 'page-test',
+    html: '/pages/goods/mindex.ejs',
+    js: '/pages/goods/mindex.js',
+  },
+  mgoodsdetail: {
+    title: 'page-test',
+    html: '/pages/goodsDetail/mindex.ejs',
+    js: '/pages/goodsDetail/mindex.js',
   },
 }
