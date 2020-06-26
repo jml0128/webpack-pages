@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 16:57:12
+ * @LastEditTime: 2020-06-24 10:01:45
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -15,15 +15,13 @@
     </div>
     <div class="full-block full-block-1">
       <div class="main-block">
-        <div class="title aniview" data-av-animation="fadeInUp">
+        <!-- <div class="title aniview" data-av-animation="fadeInUp">
           产品目录<span>goods</span>
-        </div>
-        <div class="category">
-          <a href="" class="item active aniview" data-av-animation="fadeInUp">
-            全部
-          </a>
-          <a href="" class="item aniview" data-av-animation="fadeInUp">资讯</a>
-          <a href="" class="item aniview" data-av-animation="fadeInUp">行业</a>
+        </div> -->
+        <div class="category aniview" data-av-animation="fadeInUp">
+          <a href="" class="item active">全部</a>
+          <a href="" class="item">资讯</a>
+          <a href="" class="item">行业</a>
         </div>
         <span class="layui-breadcrumb" lay-separator=">">
           <a href="">首页</a>
@@ -34,7 +32,7 @@
         <ul class="list">
           <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
           <li class="item aniview" data-av-animation="fadeInUp">
-            <a href="">
+            <a href="./goodsdetail.html">
               <img src="http://placehold.it/584x370" alt="" class="img" />
               <div class="right">
                 <div class="g-title">

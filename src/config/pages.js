@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-14 11:32:50
- * @LastEditTime: 2020-06-23 17:55:17
+ * @LastEditTime: 2020-06-24 09:37:11
  * @LastEditors: jml
  * @Description: In User Settings Edit
  * @FilePath: \06-zw-page\src\config\pages.js
@@ -31,6 +31,11 @@ module.exports = {
     title: 'page-test',
     html: '/pages/goods/index.ejs',
     js: '/pages/goods/index.js',
+  },
+  goodsdetail: {
+    title: 'page-test',
+    html: '/pages/goodsDetail/index.ejs',
+    js: '/pages/goodsDetail/index.js',
   },
   contactus: {
     title: 'page-test',

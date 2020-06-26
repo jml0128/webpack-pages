@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 22:51:16
+ * @LastEditTime: 2020-06-24 13:49:41
 -->
 <header id="custom-header">
   <div class="main-block">
@@ -17,16 +17,24 @@
       <% [ { name:'首页', url:'./index.html',target:'' }, {
       name:'关于我们',url:'./about.html',target:'' }, {
       name:'新闻动态',url:'./news.html',target:'' },{
-      name:'产品目录',url:'./goods.html',target:'' },{
+      name:'产品目录',url:'./goods.html',target:'',hasChild:1 },{
       name:'联系我们',url:'./contactus.html',target:''
       }].forEach(function(item){ %> <% if(obj == item.url) { %>
-      <a class="item active" href="<%= item.url%>" target="<%= item.target%>">
-        <%= item.name%>
-      </a>
+      <div class="item active">
+        <a href="<%= item.url%>" target="<%= item.target%>">
+          <span><%= item.name%></span>
+        </a>
+      </div>
       <% } else { %>
-      <a class="item" href="<%= item.url%>" target="<%= item.target%>">
-        <%= item.name%>
-      </a>
+      <div class="item">
+        <a href="<%= item.url%>" target="<%= item.target%>">
+          <span><%= item.name%></span>
+        </a>
+        <div class="child">
+          <a href="" class="child-i">二级菜单</a>
+          <a href="" class="child-i">二级菜单</a>
+        </div>
+      </div>
       <% } %> <% }); %>
       <div class="hr"></div>
     </nav>

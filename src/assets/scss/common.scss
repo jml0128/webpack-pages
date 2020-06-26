@@ -74,7 +74,7 @@ $headerHeight: 70px;
       box-sizing: border-box;
       position: relative;
       font-size: 0;
-      a {
+      .item {
         font-size: 16px;
         color: $color6;
         display: inline-block;
@@ -83,15 +83,40 @@ $headerHeight: 70px;
         line-height: $headerHeight;
         box-sizing: border-box;
         transition: all 0.3s;
+        position: relative;
+        .child {
+          opacity: 0;
+          width: 100%;
+          left: 0;
+          top: $headerHeight - 10px;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          background-color: #fff;
+          transition: all 0.3s 0.3s;
+          display: none;
+          .child-i {
+            width: 100%;
+            text-align: center;
+          }
+        }
         &:hover,
         &.active {
           box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12);
+        }
+        &:hover {
+          .child {
+            display: flex;
+            opacity: 1;
+          }
         }
         // &.active {
         //   border-bottom: 2px solid $baseColor;
         // }
       }
       .hr {
+        pointer-events: none;
         position: absolute;
         width: 100px;
         height: 2px;

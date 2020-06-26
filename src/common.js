@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:32:30
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 18:28:57
+ * @LastEditTime: 2020-06-24 13:50:03
  */
 
 import $ from 'jquery'
@@ -25,7 +25,7 @@ window.commonFn = (e) => {
 // 导航栏动画样式
 ;(function () {
   const hrDom = $('#custom-header .hr')
-  const domArr = $('#custom-header nav a').toArray()
+  const domArr = $('#custom-header nav .item').toArray()
   const dom = domArr.find((item) => $(item).hasClass('active'))
   let hrLeft = $(dom).position().left
   let hrWidth = $(dom).innerWidth()
@@ -34,8 +34,9 @@ window.commonFn = (e) => {
   setTimeout(() => {
     hrDom.css({ transitionDuration: '0.3s' })
   }, 30)
-  $('#custom-header nav a').mouseenter((e) => {
+  $('#custom-header nav .item').mouseenter((e) => {
     const { target } = e
+    console.log(target)
     console.log(target.innerText, $(target).position(), $(target).width())
     const domWidth = $(target).innerWidth()
     const offset = $(target).position()
@@ -45,7 +46,7 @@ window.commonFn = (e) => {
     hrWidth == 0 && (hrWidth = hrDom.width())
     hrDom.width(domWidth + 2)
     hrDom.css('left', offset.left - 1)
-    $('#custom-header nav a').mouseleave((e) => {
+    $('#custom-header nav .item').mouseleave((e) => {
       hrDom.width(hrWidth)
       hrDom.css('left', hrLeft)
     })
@@ -112,4 +113,3 @@ window.showPhoto = function (src) {
     anim: 5, //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
   })
 }
-
