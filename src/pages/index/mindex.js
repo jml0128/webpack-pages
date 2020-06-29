@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-06-22 19:58:24
  * @LastEditors: jml
- * @LastEditTime: 2020-06-26 14:18:09
+ * @LastEditTime: 2020-06-28 16:43:04
  */
 
 import './mindex.scss'
@@ -23,6 +23,10 @@ const bannerSwiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  slidesPerView: 'auto',
+  centeredSlides: !0,
+  watchSlidesProgress: !0,
+  paginationClickable: !0,
 })
 const companySwiper = new Swiper('.company-swiper', {
   navigation: {
