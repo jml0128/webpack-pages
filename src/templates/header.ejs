@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-26 11:27:05
+ * @LastEditTime: 2020-10-19 15:30:35
 -->
 <header id="custom-header">
   <div class="main-block">
@@ -24,6 +24,10 @@
         <a href="<%= item.url%>" target="<%= item.target%>">
           <span><%= item.name%></span>
         </a>
+        <div class="child">
+          <a href="" class="child-i">二级菜单</a>
+          <a href="" class="child-i">二级菜单</a>
+        </div>
       </div>
       <% } else { %>
       <div class="item">
@@ -38,13 +42,13 @@
       <% } %> <% }); %>
       <div class="hr"></div>
     </nav>
-    <div class="search-btn">
-      <img
+    <div class="search-btn" style="opacity: 0">
+      <!-- <img
         onclick="headerSearch()"
         src="<%= require('../assets/img/search.png').default %>"
         alt="search"
         class="search-icon"
-      />
+      /> -->
     </div>
     <div class="options">
       <a class="item" href="">
@@ -89,7 +93,7 @@
         area: ['800px', '50px'], //自定义文本域宽高
       },
       function (value, index, elem) {
-        alert(value) //得到value
+        // alert(value) //得到value
         layer.close(index)
       }
     )

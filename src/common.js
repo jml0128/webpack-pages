@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:32:30
  * @LastEditors: jml
- * @LastEditTime: 2020-06-24 13:50:03
+ * @LastEditTime: 2020-10-19 15:37:15
  */
 
 import $ from 'jquery'
@@ -36,8 +36,8 @@ window.commonFn = (e) => {
   }, 30)
   $('#custom-header nav .item').mouseenter((e) => {
     const { target } = e
-    console.log(target)
-    console.log(target.innerText, $(target).position(), $(target).width())
+    // console.log(target)
+    // console.log(target.innerText, $(target).position(), $(target).width())
     const domWidth = $(target).innerWidth()
     const offset = $(target).position()
     // const hrWidth = target.innerText.length * 18

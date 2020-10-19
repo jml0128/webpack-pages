@@ -1,0 +1,226 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-07-06 15:21:58
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('首页') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./index.html') %>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="common-title aniview" data-av-animation="fadeInUp">
+          <h2><span>产品 </span>目录</h2>
+          <h4>PRODUCT CATELOG</h4>
+        </div>
+        <div class="car-tab aniview" data-av-animation="fadeInUp">
+          <div class="layui-tab">
+            <ul class="layui-tab-title">
+              <li class="layui-this">
+                <img
+                  src="<%= require('../../assets/img/矢量智能对象(1).png').default %>"
+                />
+              </li>
+              <li>
+                <img
+                  src="<%= require('../../assets/img/huoche.png').default %>"
+                />
+              </li>
+              <li>
+                <img
+                  src="<%= require('../../assets/img/forklift_right.png').default %>"
+                />
+              </li>
+            </ul>
+            <div class="layui-tab-content">
+              <div class="layui-tab-item layui-show">
+                <form class="layui-form" action="">
+                  <select name="city" id="region0"> </select>
+
+                  <div class="searchbox" id="chejia">
+                    <input
+                      type="text"
+                      name="chejia"
+                      value=""
+                      placeholder="请输入车架号"
+                      class="layui-input searchbox-input"
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+
+                  <div class="searchbox" id="peijian">
+                    <input
+                      type="text"
+                      name="peijian"
+                      value=""
+                      placeholder="或者输入配件号"
+                      class="layui-input searchbox-input"
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+
+                  <div class="searchbox" id="chexing">
+                    <input
+                      type="text"
+                      name="chexing"
+                      value=""
+                      placeholder="通过车型搜索"
+                      class="layui-input searchbox-input"
+                      readonly=""
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                  <select name="city" id="region1"> </select>
+
+                  <div class="searchbox" id="chejia">
+                    <input
+                      type="text"
+                      name="chejia"
+                      value=""
+                      placeholder="请输入车架号"
+                      class="layui-input searchbox-input"
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+
+                  <div class="searchbox" id="peijian">
+                    <input
+                      type="text"
+                      name="peijian"
+                      value=""
+                      placeholder="或者输入配件号"
+                      class="layui-input searchbox-input"
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+
+                  <div class="searchbox" id="chexing">
+                    <input
+                      type="text"
+                      value=""
+                      placeholder="通过车型搜索"
+                      class="layui-input searchbox-input"
+                      readonly=""
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                  <select name="city" id="region2"> </select>
+
+                  <div class="searchbox" id="chejia">
+                    <input
+                      type="text"
+                      name="chejia"
+                      value=""
+                      placeholder="请输入车架号"
+                      class="layui-input searchbox-input"
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+
+                  <div class="searchbox" id="peijian">
+                    <input
+                      type="text"
+                      name="peijian"
+                      value=""
+                      placeholder="或者输入配件号"
+                      class="layui-input searchbox-input"
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+
+                  <div class="searchbox" id="chexing">
+                    <input
+                      type="text"
+                      value=""
+                      placeholder="通过车型搜索"
+                      class="layui-input searchbox-input"
+                      readonly=""
+                    />
+                    <button
+                      type="button"
+                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
+                    >
+                      <i class="layui-icon">&#xe602;</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')() %>
+  </body>
+  <script>
+    function getQueryString(name) {
+      var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
+      var r = window.location.search.substr(1).match(reg)
+      if (r != null) {
+        return unescape(r[2])
+      }
+      return null
+    }
+    layui.use(['layer', 'element', 'jquery', 'form'], function () {
+      var obj = {
+        querycar_type: getQueryString('querycar_type'),
+        city: getQueryString('city'),
+        chejia: getQueryString('chejia'),
+        peijian: getQueryString('peijian'),
+      }
+      console.log(obj)
+    })
+  </script>
+</html>

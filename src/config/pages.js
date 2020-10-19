@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-14 11:32:50
- * @LastEditTime: 2020-06-26 15:17:41
+ * @LastEditTime: 2020-07-06 14:42:40
  * @LastEditors: jml
  * @Description: In User Settings Edit
  * @FilePath: \06-zw-page\src\config\pages.js
@@ -41,6 +41,11 @@ module.exports = {
     title: 'page-test',
     html: '/pages/contactUs/index.ejs',
     js: '/pages/contactUs/index.js',
+  },
+  search: {
+    title: 'page-test',
+    html: '/pages/search/index.ejs',
+    js: '/pages/search/index.js',
   },
 
   mindex: {

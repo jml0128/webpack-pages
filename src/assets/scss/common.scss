@@ -88,7 +88,7 @@ $headerHeight: 70px;
           opacity: 0;
           width: 100%;
           left: 0;
-          top: $headerHeight - 10px;
+          top: $headerHeight - 4px;
           position: absolute;
           display: flex;
           align-items: center;
@@ -96,19 +96,48 @@ $headerHeight: 70px;
           background-color: #fff;
           transition: all 0.3s 0.3s;
           display: none;
+          // &::before {
+          //   content: '';
+          //   width: 100%;
+          //   height: 4px;
+          //   background-color: $baseColor;
+          //   display: block;
+          //   position: absolute;
+          //   left: 0;
+          //   top: 0;
+          // }
           .child-i {
+            height: 48px;
+            line-height: 48px;
             width: 100%;
             text-align: center;
+            border-top: 1px solid #d8d8d8;
+            &:first-child {
+              border-top: none;
+              // border-top: 4px solid $baseColor;
+            }
           }
+        }
+        > a {
+          color: $color6;
         }
         &:hover,
         &.active {
-          box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12);
+          // box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12);
+          > a {
+            color: $baseColor;
+            font-weight: bold;
+          }
         }
         &:hover {
           .child {
             display: flex;
             opacity: 1;
+            .child-i {
+              &:hover {
+                color: $baseColor;
+              }
+            }
           }
         }
         // &.active {
@@ -181,6 +210,11 @@ $headerHeight: 70px;
           opacity: 0;
           transition: all 0.3s;
         }
+        .flag {
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+        }
       }
       &:hover {
         .item {
@@ -188,6 +222,17 @@ $headerHeight: 70px;
             opacity: 1;
           }
         }
+      }
+      &::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid $color3;
+        border-bottom: 2px solid $color3;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: rotate(45deg) translateX(-100%);
       }
     }
   }
@@ -330,11 +375,46 @@ $headerHeight: 70px;
     display: flex;
     padding-top: 47px;
     padding-bottom: 58px;
+    padding-right: 200px;
     position: relative;
     .item {
       width: 150px;
       display: flex;
       flex-direction: column;
+      &.link-item {
+        position: absolute;
+        top: 47px;
+        right: 0;
+        width: 198px;
+        #link-form {
+          .layui-form-select {
+            width: 198px;
+            &::after {
+              content: none;
+            }
+            .layui-input {
+              font-size: 10px;
+              height: 30px;
+              background-color: transparent;
+              border: 1px solid #525a63;
+              color: #999999;
+            }
+            dl {
+              font-size: 10px;
+              color: #999;
+              background-color: #1c202c;
+              dd {
+                &:hover {
+                  background-color: rgba($color: $baseColor, $alpha: 0.2);
+                }
+                &.layui-this {
+                  background-color: $baseColor;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     .title {
       font-size: 14px;
@@ -429,4 +509,127 @@ $headerHeight: 70px;
 .layui-layer-btn .layui-layer-btn0 {
   background-color: $baseColor !important;
   border-color: $baseColor !important;
+}
+
+.searchbox {
+  display: inline-block;
+  position: relative;
+}
+.searchbox-input {
+  width: 254px;
+  height: 51px;
+  margin-right: 31px;
+  padding-right: 30px;
+}
+.searchbox-btn {
+  position: absolute;
+  right: 30px;
+  width: 30px;
+  height: 51px;
+  border: none;
+  top: 0;
+  border-radius: 2px;
+  background: #c2c2c2;
+  color: #fff;
+}
+.v2-car-tab.car-tab .layui-tab-title {
+  height: 72px;
+}
+.v2-car-tab.car-tab .layui-tab-title > li {
+  width: 240px;
+  height: 72px;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+}
+.v2-car-tab.car-tab .layui-tab-title > li .bg-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  z-index: -1;
+}
+.v2-car-tab.car-tab .layui-tab-title > li:nth-child(2) {
+  transform: translateX(-30px);
+}
+.v2-car-tab.car-tab .layui-tab-title > li:nth-child(3) {
+  transform: translateX(-60px);
+}
+.v2-car-tab.car-tab .layui-tab-title > li:last-child .bg-icon {
+  margin-top: 0 !important;
+}
+.v2-car-tab.car-tab .layui-tab-title > li.layui-this {
+  background-color: transparent;
+}
+.v2-car-tab .layui-tab-title > li > img {
+  height: 21px;
+  margin-top: 28px;
+}
+.v2-car-tab .layui-tab-title > li:last-child > img {
+  height: 29px;
+  margin-top: 22px !important;
+}
+.v2-car-tab .choose-icon,
+.v2-car-tab .choose-bg-icon {
+  display: none;
+}
+.v2-car-tab .layui-this > img {
+  display: none;
+}
+.v2-car-tab .layui-this .choose-icon {
+  display: inline-block;
+}
+.v2-car-tab .layui-this .choose-bg-icon {
+  display: inline-block;
+}
+.v2-car-tab.car-tab > .tt-title {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+.layui-tab-content {
+  background-image: url('../img/组 2212.png');
+  background-size: 100% 100%;
+  padding: 0 28px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  .layui-form-select {
+    width: 254px;
+    height: 51px;
+    margin-right: 33px;
+    .layui-select-title {
+      height: 100%;
+    }
+    .layui-input {
+      height: 100%;
+    }
+    dl {
+      top: 51px;
+    }
+  }
+}
+.layui-form-select,
+.searchbox {
+  position: relative;
+}
+.layui-form-select::after,
+.searchbox::after {
+  content: '';
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  background-image: url('../img/组 23229.png');
+  background-size: 100% 100%;
+  top: 0;
+  right: 30px;
+}
+.layui-form-select::after {
+  right: 0;
+  transform: rotate(90deg);
 }

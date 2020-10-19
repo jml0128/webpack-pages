@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-24 10:11:17
+ * @LastEditTime: 2020-10-19 15:06:19
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -13,118 +13,31 @@
     <div class="banner-block swiper-container">
       <div class="swiper-wrapper">
         <a href="" class="swiper-slide">
-          <img src="http://placehold.it/1920x820" alt="" />
+          <img src="http://placehold.it/1920x700" alt="" />
         </a>
         <a href="" class="swiper-slide">
-          <img src="http://placehold.it/1920x820" alt="" />
+          <img src="http://placehold.it/1920x700" alt="" />
         </a>
       </div>
       <div class="swiper-pagination"></div>
     </div>
     <div class="full-block full-block-1">
       <div class="main-block">
-        <div class="common-title aniview" data-av-animation="fadeInUp">
-          <h2><span>产品 </span>目录</h2>
-          <h4>PRODUCT CATELOG</h4>
-        </div>
-        <div class="car-tab aniview" data-av-animation="fadeInUp">
-          <div class="layui-tab">
-            <ul class="layui-tab-title">
-              <li class="layui-this">
-                <img
-                  src="<%= require('../../assets/img/矢量智能对象(1).png').default %>"
-                />
-              </li>
-              <li>
-                <img
-                  src="<%= require('../../assets/img/huoche.png').default %>"
-                />
-              </li>
-              <li>
-                <img
-                  src="<%= require('../../assets/img/forklift_right.png').default %>"
-                />
-              </li>
-            </ul>
-            <div class="layui-tab-content">
-              <div class="layui-tab-item layui-show">
-                <form class="layui-form" action="">
-                  <select name="city">
-                    <option value="">中国</option>
-                    <option value="0">北京</option>
-                    <option value="1">上海</option>
-                    <option value="2">广州</option>
-                    <option value="3">深圳</option>
-                    <option value="4">杭州</option>
-                  </select>
-                  <select name="chejia">
-                    <option value="">车架号</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="4">5</option>
-                  </select>
-                  <select name="peijian">
-                    <option value="">或者输入配件号</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="4">5</option>
-                  </select>
-                  <select name="type" lay-search>
-                    <option value="">通过车型搜索</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="4">5</option>
-                  </select>
-                </form>
-              </div>
-              <div class="layui-tab-item">
-                <form class="layui-form" action="">
-                  <select name="peijian">
-                    <option value="">或者输入配件号</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="4">5</option>
-                  </select>
-                  <select name="type" lay-search>
-                    <option value="">通过车型搜索</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="4">5</option>
-                  </select>
-                </form>
-              </div>
-              <div class="layui-tab-item">
-                <form class="layui-form" action="">
-                  <select name="city">
-                    <option value="">中国</option>
-                    <option value="0">北京</option>
-                    <option value="1">上海</option>
-                    <option value="2">广州</option>
-                    <option value="3">深圳</option>
-                    <option value="4">杭州</option>
-                  </select>
-                  <select name="chejia">
-                    <option value="">车架号</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="4">5</option>
-                  </select>
-                </form>
-              </div>
-            </div>
+        <div class="v2-common-title aniview" data-av-animation="fadeInUp">
+          <div class="v2-title">欢迎访问卡比斯</div>
+          <div class="v2-desc">
+            这里是文案这里是文案这里是文案这里是文案这里是文案这里<br />是文案这里是文案这里是文案这里是文案这里是文案这里是文案这里是文案这里是文案
           </div>
+          <!-- <h2><span>产品 </span>目录</h2>
+          <h4>PRODUCT CATELOG</h4> -->
+        </div>
+        <%= require('../../templates/search.ejs')() %>
+        <div
+          class="v2-common-title aniview"
+          data-av-animation="fadeInUp"
+          style="padding-top: 70px; padding-bottom: 70px"
+        >
+          <div class="v2-title">产品系列</div>
         </div>
         <div class="goods-group">
           <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
@@ -132,7 +45,7 @@
             <div
               class="content aniview"
               data-av-animation="fadeInUp"
-              style="animation-delay: <%= item * 0.3%>s;"
+              style="animation-delay: <%= item * 0.3%>s"
             >
               <img src="http://placehold.it/380x219" alt="" />
               <div class="info">
@@ -151,7 +64,7 @@
         </a>
       </div>
     </div>
-    <div class="full-block full-block-2">
+    <!-- <div class="full-block full-block-2">
       <div class="main-block">
         <div class="common-title aniview" data-av-animation="fadeInUp">
           <h2><span>关于</span> 我们</h2>
@@ -279,7 +192,7 @@
             <% [ 1,2,3,4,5,6,7,8].forEach(function(item){ %>
             <a href="">
               <img
-                style="animation-delay: <%= item * 0.3%>s;"
+                style="animation-delay: <%= item * 0.3%>s"
                 src="http://placehold.it/1920x820"
                 alt=""
                 class="aniview"
@@ -311,20 +224,125 @@
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+    </div> -->
+    <div class="v2">
+      <div class="v2-full-block v2-full-block-1 full-block">
+        <div class="icon">
+          <img
+            class="aniview"
+            data-av-animation="fadeInUp"
+            src="<%= require('../../assets/img/caizhi.png').default %>"
+          />
+        </div>
+        <div class="c">
+          <div class="title aniview" data-av-animation="fadeInUp">创新材质</div>
+          <div class="desc aniview" data-av-animation="fadeInUp">
+            创新材质介绍创新材质介绍创新材质介绍创新材质介绍创新材质介绍创新材质介绍创新材质介绍创新材质介绍创新材质介绍创新材质介绍
+          </div>
+        </div>
+      </div>
+      <div class="v2-full-block v2-full-block-2 full-block">
+        <div class="v2-common-title aniview" data-av-animation="fadeInUp">
+          <div class="v2-title">可信赖品质</div>
+        </div>
+        <div class="aniview v2-swiper-block" data-av-animation="fadeInUp">
+          <div class="banner-block v2-swiper">
+            <div class="swiper-wrapper">
+              <a href="" class="swiper-slide">
+                <div class="con">
+                  <img
+                    src="<%= require('../../assets/img/组 239.png').default %>"
+                    alt=""
+                  />
+                  <div class="c">
+                    <div class="title">性能测试</div>
+                    <div class="desc">performance test</div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide">
+                <div class="con">
+                  <img
+                    src="<%= require('../../assets/img/组 239(1).png').default %>"
+                    alt=""
+                  />
+                  <div class="c">
+                    <div class="title">45°-60°环境测试</div>
+                    <div class="desc">45°-60° environmental testing</div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide">
+                <div class="con">
+                  <img
+                    src="<%= require('../../assets/img/组 239(2).png').default %>"
+                    alt=""
+                  />
+                  <div class="c">
+                    <div class="title">30万次耐久测试</div>
+                    <div class="desc">300,000 endurance tests</div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide">
+                <div class="con">
+                  <img
+                    src="<%= require('../../assets/img/组 239(2).png').default %>"
+                    alt=""
+                  />
+                  <div class="c">
+                    <div class="title">30万次耐久测试</div>
+                    <div class="desc">300,000 endurance tests</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="v2-swiper-button-prev swiper-button-prev swiper-button">
+            <img
+              src="<%= require('../../assets/img/组 233.png').default %>"
+              alt=""
+            />
+          </div>
+          <div class="v2-swiper-button-next swiper-button-next swiper-button">
+            <img
+              src="<%= require('../../assets/img/组 233.png').default %>"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="aniview" data-av-animation="fadeInUp">
+          <div class="bottom">
+            <div class="b-item">
+              <div class="t">
+                <div class="title aniview" data-av-animation="fadeInUp">
+                  我们准备了车型目录供您下孰
+                </div>
+                <div class="hr aniview" data-av-animation="fadeInUp"></div>
+                <div class="desc aniview" data-av-animation="fadeInUp">
+                  请选弄您需要的目录
+                </div>
+              </div>
+              <a class="btn aniview" data-av-animation="fadeInUp">下载</a>
+            </div>
+            <div class="b-item">
+              <div class="t">
+                <div class="title aniview" data-av-animation="fadeInUp">
+                  我们正在寻我合作伙佬，_Kabis觉力于<br />
+                  与各户及供应向建立合作共之的槌伟治汞
+                </div>
+                <div class="hr aniview" data-av-animation="fadeInUp"></div>
+                <div class="desc aniview" data-av-animation="fadeInUp">
+                  如果您也希望参与到Kabs的发震中来，埔联<br />
+                  弄贯们与您一起，思考更多。行动更多。创步更多!-
+                </div>
+              </div>
+              <a class="btn aniview" data-av-animation="fadeInUp">注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <%= require('../../templates/footer.ejs')() %>
   </body>
-  <script>
-    layui.use('element', function () {
-      var element = layui.element
-    })
-    layui.use('form', function () {
-      var form = layui.form
-      //监听提交
-      form.on('submit(formDemo)', function (data) {
-        layer.msg(JSON.stringify(data.field))
-        return false
-      })
-    })
-  </script>
 </html>

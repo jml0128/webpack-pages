@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-06-22 19:58:24
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 17:09:53
+ * @LastEditTime: 2020-10-19 14:52:36
  */
 
 import './index.scss'
@@ -29,5 +29,13 @@ const companySwiper = new Swiper('.company-swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+})
+const v2Swiper = new Swiper('.v2-swiper', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.v2-swiper-button-next',
+    prevEl: '.v2-swiper-button-prev',
   },
 })

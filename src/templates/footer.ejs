@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 18:20:45
+ * @LastEditTime: 2020-10-19 15:27:44
 -->
 <footer class="full-block custom-footer">
   <div class="main-block">
@@ -63,6 +63,16 @@
         <a href="" class="s">这里文案</a>
         <a href="" class="s">这里文案</a>
       </div>
+      <div class="item link-item">
+        <div class="title">友情链接</div>
+        <form class="layui-form" id="link-form" action="">
+          <select name="link" lay-filter="link" id="link" class="link">
+            <option value="https://www.baidu.com">链接1</option>
+            <option value="https://www.qq.com">链接2</option>
+            <option value="https://www.weixin.com">链接3</option>
+          </select>
+        </form>
+      </div>
       <div class="icon-group">
         <div
           class="item"
@@ -81,3 +91,13 @@
   </div>
   <div class="beian"><a href="">ICP备案号：沪ICP备17032085号</a></div>
 </footer>
+<script>
+  layui.use(['form'], function () {
+    var form = layui.form
+    form.render('select')
+    form.on('select(link)', function (data) {
+      var value = data.value
+      window.open(value, '_blank')
+    })
+  })
+</script>
