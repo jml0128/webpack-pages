@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:32:30
  * @LastEditors: jml
- * @LastEditTime: 2020-05-24 10:41:41
+ * @LastEditTime: 2020-10-19 22:13:57
  */
 
 const pages = require('./config/pages.js')
@@ -23,13 +23,12 @@ const getPage = (pages, publicPath) => {
     return []
   }
   const obj = Object.keys(pages).reduce((pre, cur) => {
-    pre[cur] = `${publicPath}${pages[cur].js}`
     const page = pages[cur]
     pre.push({
       title: page.title,
       template: `${publicPath}${page.html}`,
       filename: `${cur}.html`,
-      chunks: ['vender', cur],
+      chunks: (pages[cur].otherJs || []).concat(['vender', cur]),
       minify: false,
     })
     return pre

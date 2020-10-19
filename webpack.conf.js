@@ -9,11 +9,12 @@ module.exports = {
   entry: Object.assign(
     {
       vender: './src/common.js',
+      vendersearch: './src/search.js',
     },
     entry
   ),
   output: {
-    filename: `${publicPath}/[name].js?v=[contenthash:8]`,
+    filename: `${publicPath}/[name][contenthash:8].js?v=[contenthash:8]`,
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -105,7 +106,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: `${publicPath}/[name].css?v=[contenthash:8]`,
+      filename: `${publicPath}/[name][contenthash:8].css?v=[contenthash:8]`,
     }),
     ...pages.reduce((pre, cur) => {
       pre.push(new HtmlWebPackPlugin(cur))

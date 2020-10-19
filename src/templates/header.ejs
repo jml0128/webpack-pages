@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-10-19 15:30:35
+ * @LastEditTime: 2020-10-19 21:23:17
 -->
 <header id="custom-header">
   <div class="main-block">
@@ -15,8 +15,10 @@
     </a>
     <nav>
       <% [ { name:'首页', url:'./index.html',target:'' }, {
-      name:'关于我们',url:'./about.html',target:'' }, {
-      name:'新闻动态',url:'./news.html',target:'' },{
+      name:'关于我们',url:'./about.html',target:'' },{
+      name:'产品中心',url:'./product.html',target:'' }, {
+      name:'质量体系',url:'./quality.html',target:'' },{
+      name:'技术服务',url:'./service.html',target:'' },{
       name:'产品目录',url:'./goods.html',target:'',hasChild:1 },{
       name:'联系我们',url:'./contactus.html',target:''
       }].forEach(function(item){ %> <% if(obj == item.url) { %>
@@ -42,14 +44,14 @@
       <% } %> <% }); %>
       <div class="hr"></div>
     </nav>
-    <div class="search-btn" style="opacity: 0">
-      <!-- <img
+    <!-- <div class="search-btn" style="opacity: 0">
+      <img
         onclick="headerSearch()"
         src="<%= require('../assets/img/search.png').default %>"
         alt="search"
         class="search-icon"
-      /> -->
-    </div>
+      />
+    </div> -->
     <div class="options">
       <a class="item" href="">
         <img

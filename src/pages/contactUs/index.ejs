@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 18:13:50
+ * @LastEditTime: 2020-10-19 21:09:54
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -11,127 +11,75 @@
   <body>
     <%= require('../../templates/header.ejs')('./contactus.html') %>
     <div class="banner-normal">
-      <img src="http://placehold.it/584x370" alt="" />
+      <img
+        src="<%= require('../../assets/img/v2/banner_03.png').default %>"
+        alt=""
+      />
     </div>
     <div class="full-block full-block-1">
       <div class="main-block">
-        <div class="title aniview" data-av-animation="fadeInUp">
-          联系我们<span>contact us</span>
-        </div>
         <div class="group">
           <div
             class="item aniview"
             data-av-animation="fadeInUp"
-            style="animation-delay: 0s;"
+            style="animation-delay: 0s"
           >
             <section class="editor ck-content">
               <p>
-                <span class="text-20" style="font-size: 20px; color: #f8c026;"
-                  >北京momo科技有限公司</span
-                >
+                <span class="text-20" style="font-size: 20px; color: #2d5da1">
+                  上海卡比斯汽车技术服务有限公司
+                </span>
               </p>
               <p>
-                <span
-                  class="text-12"
-                  style="font-size: 12px; color: hsl(0, 0%, 60%);"
-                  >Shang Hai&nbsp; Communication Co. Ltd.</span
-                >
-              </p>
-              <p>&nbsp;</p>
-              <p><span style="color: hsl(0, 0%, 60%);">—</span></p>
-              <p>&nbsp;</p>
-              <p>
-                <span style="color: hsl(0, 0%, 60%);">地址：</span
-                ><span style="color: hsl(0, 0%, 30%);"
-                  >北京市朝阳区世贸商务楼2688室</span
-                >
+                <span style="color: hsl(0, 0%, 60%)">地址：</span>
+                <span style="color: hsl(0, 0%, 30%)">
+                  上海嘉定区城北路1818号15B栋
+                </span>
               </p>
               <p>
-                <span style="color: hsl(0, 0%, 60%);">电话：</span
-                ><span style="color: hsl(0, 0%, 30%);">+86 10 69888888</span>
+                <span style="color: hsl(0, 0%, 60%)">电话：</span
+                ><span style="color: hsl(0, 0%, 30%)">：86+021-60766189</span>
               </p>
               <p>
-                <span style="color: hsl(0, 0%, 60%);">邮箱：</span
-                ><span style="color: hsl(0, 0%, 30%);">website@webs.com</span>
-              </p>
-              <p>
-                <span style="color: hsl(0, 0%, 60%);">邮编：</span
-                ><span style="color: hsl(0, 0%, 30%);">100024</span>
-              </p>
-              <p>
-                <span style="color: hsl(0, 0%, 30%);"
-                  >https://www.baidu.com/</span
-                >
+                <span style="color: hsl(0, 0%, 60%)">邮箱：</span>
+                <span style="color: hsl(0, 0%, 30%)">
+                  ：website@webs.com info@kabis.com.cn www.kabis.com
+                </span>
               </p>
             </section>
           </div>
           <div
             class="item aniview"
             data-av-animation="fadeInUp"
-            style="animation-delay: 0.3s;"
+            style="animation-delay: 0.3s"
           >
             <section class="editor ck-content">
               <p>
-                <span class="text-20" style="font-size: 20px;">加盟合作</span>
+                <span class="text-20" style="font-size: 20px; color: #2d5da1">
+                  商务合作
+                </span>
               </p>
               <p>
-                <span
-                  class="text-12"
-                  style="font-size: 12px; color: hsl(0, 0%, 60%);"
-                >
-                  Cooperative Alliance.</span
-                >
-              </p>
-              <p>&nbsp;</p>
-              <p><span style="color: hsl(0, 0%, 60%);">—</span></p>
-              <p>&nbsp;</p>
-              <p>
-                <span style="color: hsl(0, 0%, 60%);">联系人：</span
-                ><span style="color: hsl(0, 0%, 30%);">江小姐</span>
+                <span style="color: hsl(0, 0%, 60%)">联系人：</span>
+                <span style="color: hsl(0, 0%, 30%)">刘经理 </span>
               </p>
               <p>
-                <span style="color: hsl(0, 0%, 60%);">邮箱：</span
-                ><span style="color: hsl(0, 0%, 30%);">website@qq.com</span>
+                <span style="color: hsl(0, 0%, 60%)">邮箱：</span>
+                <span style="color: hsl(0, 0%, 30%)">info@kabis.com.cn </span>
               </p>
               <p>
-                <span style="color: hsl(0, 0%, 60%);">手机：</span
-                ><span style="color: hsl(0, 0%, 30%);">188-666-1111</span>
+                <span style="color: hsl(0, 0%, 60%)">手机：</span>
+                <span style="color: hsl(0, 0%, 30%)">86+13806871680</span>
               </p>
-              <div class="icon-group">
-                <div
-                  class="item"
-                  onclick="showPhoto('<%= require('../../assets/img/weibo (1).png').default %>')"
-                >
-                  <img
-                    src="<%= require('../../assets/img/weibo (1).png').default %>"
-                  />
-                </div>
-                <div
-                  class="item"
-                  onclick="showPhoto('<%= require('../../assets/img/qq (2).png').default %>')"
-                >
-                  <img
-                    src="<%= require('../../assets/img/qq (2).png').default %>"
-                  />
-                </div>
-                <div
-                  class="item"
-                  onclick="showPhoto('<%= require('../../assets/img/weixinfill.png').default %>')"
-                >
-                  <img
-                    src="<%= require('../../assets/img/weixinfill.png').default %>"
-                  />
-                </div>
-              </div>
             </section>
           </div>
           <div
             class="item aniview"
             data-av-animation="fadeInUp"
-            style="animation-delay: 0.6s;"
+            style="animation-delay: 0.6s"
           >
             <section class="editor ck-content">
-              <p><span style="color: hsl(0, 0%, 100%);">服务热线</span></p>
+              <p><span style="color: hsl(0, 0%, 100%)">服务热线</span></p>
               <p>
                 <span
                   class="text-26"
@@ -143,10 +91,8 @@
                   >010-88888888</span
                 >
               </p>
-              <p>&nbsp;</p>
-              <p><span style="color: hsl(0, 0%, 100%);">—</span></p>
-              <p>&nbsp;</p>
-              <p><span style="color: hsl(0, 0%, 100%);">售前电话</span></p>
+              <p><span style="color: hsl(0, 0%, 100%)">—</span></p>
+              <p><span style="color: hsl(0, 0%, 100%)">售前电话</span></p>
               <p>
                 <span
                   class="text-26"
@@ -156,25 +102,184 @@
                     font-family: GOTHAM-BOLD;
                   "
                   >13888888888</span
-                ><span style="color: hsl(0, 0%, 100%);">&nbsp;(X经理)</span>
+                ><span style="color: hsl(0, 0%, 100%)">&nbsp;(X经理)</span>
               </p>
-              <p>&nbsp;</p>
               <p>
-                <span style="color: hsl(0, 0%, 100%);"
-                  >服务时间：周一到周五9:00-18:00</span
-                >
+                <span style="color: hsl(0, 0%, 100%)">
+                  服务时间：周一到周五9:00-18:00
+                </span>
               </p>
             </section>
           </div>
         </div>
       </div>
     </div>
+    <div class="full-block full-block-2">
+      <div class="main-block">
+        <form class="layui-form" action="">
+          <div class="tips tips1">发送电子邮件</div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <input
+                type="text"
+                name="username"
+                lay-verify="required"
+                lay-reqtext="请输入姓名"
+                placeholder="姓名"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <input
+                type="text"
+                name="company"
+                placeholder="公司"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item citys">
+            <div class="layui-input-block">
+              <select
+                name="province"
+                data-area=""
+                lay-verify="required"
+                lay-reqtext="请选择省"
+                lay-filter="province"
+              >
+                <option value="">选择省</option>
+              </select>
+              <select
+                name="city"
+                data-area=""
+                lay-verify="required"
+                lay-reqtext="请选择市"
+                lay-filter="city"
+              >
+                <option value="">选择市</option>
+              </select>
+              <select
+                name="district"
+                data-area=""
+                lay-verify="required"
+                lay-reqtext="请选择区"
+                lay-filter="district"
+              >
+                <option value="">选择区</option>
+              </select>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <input
+                type="text"
+                name="email"
+                lay-verify="email"
+                autocomplete="off"
+                placeholder="电子邮箱"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item layui-form-text">
+            <div class="layui-input-block">
+              <textarea
+                placeholder="请留言"
+                name="message"
+                class="layui-textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="tips">请确认使用条款</div>
+
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <input
+                type="checkbox"
+                name="checkStatus"
+                lay-skin="primary"
+                lay-verify="required"
+                lay-reqtext="请确认使用条款"
+                title="我们将存储您向我们提供的信息，我们仅将此信息用于帮助回答您的询问之目的。我们不会向第三方泄露您的资料。再为您提供帮助的过程中，我们可能需要将您的信息传输至欧盟以外地区。勾选此项，即表示您同意上述条款。"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button
+                type="submit"
+                class="layui-btn"
+                lay-submit="formDemo"
+                lay-filter="formDemo"
+              >
+                提交
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id="map"></div>
+      </div>
+    </div>
     <%= require('../../templates/footer.ejs')() %>
   </body>
+  <script
+    type="text/javascript"
+    src="http://www.kabis.com.cn/template/web/index/static/s.js"
+  ></script>
   <script>
-    //注意：导航 依赖 element 模块，否则无法进行功能性操作
-    layui.use('element', function () {
-      var element = layui.element
+    layui
+      .config({
+        base: 'http://www.kabis.com.cn/template/web/index/static/', //假设这是你存放拓展模块的根目录
+      })
+      .extend({
+        //设定模块别名
+        common: 'common', //如果 common.js 是在根目录，也可以不用设定别名
+      })
+    layui.use(['form', 'common'], function () {
+      var common = layui.common,
+        form = layui.form
+      //三级地址联动
+      common.showCity('province', 'city', 'district')
+      //监听提交
+      form.on('submit(formDemo)', function (data) {
+        var resData = data.field,
+          province = resData.province,
+          city = resData.city,
+          district = resData.district
+        // 通过地址code码获取地址名称
+        var address = common.getCity({
+          province,
+          city,
+          district,
+        })
+        if (!resData['checkStatus']) {
+          layer.msg('请确认使用条款', { icon: 5 })
+          return false
+        }
+        console.log('请求接口', resData, address)
+        return false
+      })
     })
+  </script>
+  <script
+    type="text/javascript"
+    src="http://api.map.baidu.com/api?v=2.0&ak=Sx3zDE5cB7qxLx7tyNCuMasLpgh1cAuk"
+  ></script>
+  <script type="text/javascript">
+    var map = new BMap.Map('map')
+    var point = new BMap.Point(121.224696, 31.420865)
+    map.centerAndZoom(point, 16)
+    // 编写自定义函数,创建标注
+    function addMarker(point) {
+      var marker = new BMap.Marker(point)
+      map.addOverlay(marker)
+      //var label = new BMap.Label("{$system.name}",{offset:new BMap.Size(20,-10)});
+      //marker.setLabel(label);
+    }
+    addMarker(point)
   </script>
 </html>

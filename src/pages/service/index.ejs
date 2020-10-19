@@ -1,0 +1,143 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-10-19 19:49:54
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('技术服务') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./service.html') %>
+    <div class="banner-normal">
+      <img
+        src="<%= require('../../assets/img/v2/微信截图_20201019190155.png').default %>"
+        alt=""
+      />
+    </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="title aniview" data-av-animation="fadeInUp">技术服务</div>
+        <div class="block aniview" data-av-animation="fadeInUp">
+          <div class="item">
+            <div class="img">
+              <img
+                src="<%= require('../../assets/img/v2/img_08.png').default %>"
+                alt=""
+              />
+            </div>
+            <div class="c">
+              <div class="c-title">Kabis提供的不仅仅是零件</div>
+              <div class="c-desc">
+                除了特殊的零配件，KABIS以全面的服务脱颖而出，除了经销商，主要集中在修理店。其中包括技术信息表和培训计划。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img
+                src="<%= require('../../assets/img/v2/img_09.png').default %>"
+                alt=""
+              />
+            </div>
+            <div class="c">
+              <div class="c-title">技术培训：附加值</div>
+              <div class="c-desc">
+                Kabis的技术顾问将为客户和修理厂提供切实可行的建议和支持。<br />
+                这主要通过以下领域的面向能力的培训课程来实现：包括典型的损坏症状或安装错误，这些故障可防止索赔并将时间损失最小化。还介绍了专用工具和诊断技术。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img
+                src="<%= require('../../assets/img/v2/img_10.png').default %>"
+                alt=""
+              />
+            </div>
+            <div class="c">
+              <div class="c-title">修理厂专有技术</div>
+              <div class="c-desc">
+                KABIS提供的一项特殊服务是提供技术信息表。他们为汽车车间提供支持和最佳实践解决方案：新产品线的重要车型信息进行晰而详细的说明。信息与产品相关的说明，包装中随附相应的更换零件，并向修理厂提供有关安装的重要信息，每个包装盒内包含快速、正确安装所需的所有附件和说明。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="full-block full-block-2">
+      <div class="main-block aniview" data-av-animation="fadeInUp">
+        <div class="title aniview" data-av-animation="fadeInUp">技术公告</div>
+        <div class="desc aniview" data-av-animation="fadeInUp">
+          KABIS提供的技术公告涵盖了已知在车辆中发生的各种制动情况。这些公告可以帮助您在商店中有车辆时对问题进行故障排除，并帮助您找到解决方案。
+        </div>
+        <ul>
+          <% [ 1,2,3,4,5,6].forEach(function(item){ %>
+          <li
+            onclick="playvideo('http://liangji-qingzhuo.oss-cn-beijing.aliyuncs.com/web/video/a2877a.mp4','xxxxx')"
+          >
+            <div class="img">
+              <img
+                src="<%= require('../../assets/img/v2/微信截图_20201019190155.png').default %>"
+                alt=""
+              />
+            </div>
+            <div class="name">xxxxxxxxxx</div>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+    <!-- <video src="" controls></video> -->
+
+    <div class="full-block full-block-3">
+      <div class="main-block aniview" data-av-animation="fadeInUp">
+        <div class="title">常见问题</div>
+        <div class="c">
+          <div class="img"></div>
+          <ul>
+            <div class="u-desc">
+              车主可能将自己的车带入您的商店，并抱怨间歇性制动性能不佳、硬刹车踏板、紧急停止时很难踩下制动踏板，在这些情况下，可能会感觉失去了真空辅助系统，并且制动踏板机械地停止了。踩下制动踏板时，您可能还会听到空气从助力器逸出。<br />
+              要解决此问题，请助手启动车辆并踩几次刹车踏板。当他们这样做时，请遵循从制动助力器到进气歧管的真空软管。发生问题的通常是防火墙和进气歧管之间的发动机舱背面。<br />
+              感觉真空软管。如果由于真空的变化而变软或在视觉上塌陷并膨胀，则需要更换软管。
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="full-block full-block-4">
+      <div class="main-block aniview" data-av-animation="fadeInUp">
+        <div class="title">保修服务</div>
+        <div class="c">
+          <ul>
+            <div class="u-desc">
+              我们为所有液压制动系统替换零件提供3年的制造商保修-超出法定保修期。这是Kabis对质量的承诺。这对每一个信任KABIS产品的人来说都是一个真正的附加值。
+            </div>
+            <img
+              src="<%= require('../../assets/img/v2/ico_技术服务.png').default %>"
+              alt=""
+            />
+          </ul>
+          <div class="img"></div>
+        </div>
+      </div>
+    </div>
+
+    <%= require('../../templates/footer.ejs')() %>
+  </body>
+  <script>
+    function playvideo(url, title) {
+      layer.open({
+        type: 1,
+        title: title || '',
+        area: ['800px', '600px'], //宽高
+        content:
+          '<video style="width:100%;height:95%;outline:none;" controls autoplay src=' +
+          url +
+          '></video>',
+      })
+    }
+  </script>
+</html>

@@ -1,0 +1,98 @@
+@import '~../../assets/scss/mcommon.scss';
+.full-block-1 {
+  padding-bottom: 1rem;
+  .common-title {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .tips {
+    font-size: 0.4rem;
+    font-weight: 400;
+    color: $color6;
+    line-height: 26px;
+    padding-bottom: 0.6rem;
+  }
+  .left {
+    width: 100%;
+    height: 3rem;
+    display: inline-block;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .right {
+    width: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-top: 0.4rem;
+    .title {
+      font-size: 0.6rem;
+      color: #000;
+      font-weight: bold;
+      padding-bottom: 0.3rem;
+      span {
+        font-size: 0.3rem;
+        color: #bcbcbc;
+        font-weight: normal;
+      }
+    }
+    p {
+      font-size: 0.4rem;
+      font-weight: 400;
+      color: rgba(102, 102, 102, 1);
+      line-height: 30px;
+    }
+  }
+}
+.full-block-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(248, 248, 248);
+  .title {
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 30px;
+    span {
+      font-size: 14px;
+      color: #bcbcbc;
+      font-weight: normal;
+    }
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .av-container{
+      width: 50%;
+    }
+  }
+  .col-25 {
+    line-height: 1.3;
+    // width: 25%;
+    padding: 5% 30px !important;
+    height: 7rem;
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .group {
+    width: $maxWidth * 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    img {
+      width: 234px * 1.1;
+      height: 247px * 1.1;
+    }
+  }
+}

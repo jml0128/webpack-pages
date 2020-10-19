@@ -1,0 +1,51 @@
+<div class="v2-search-list">
+  <div style="z-index: 2; position: relative" id="s-group">
+    <form class="layui-form s-group aniview" data-av-animation="fadeInUp">
+      <select name="zhizaoshang" id="zhizaoshang" lay-filter="s">
+        <option value="">选择制造商</option>
+      </select>
+      <select name="cheliang" id="cheliang" lay-filter="s">
+        <option value="">选择车辆</option>
+      </select>
+      <select name="bianshi" id="nian" lay-filter="s">
+        <option value="">选择年份</option>
+      </select>
+      <select name="bianshi" id="kw" lay-filter="s">
+        <option value="">KW/PH</option>
+      </select>
+      <select name="product" id="product" lay-filter="s">
+        <option value="">选择产品组</option>
+      </select>
+    </form>
+  </div>
+  <div
+    class="s-goods-group aniview"
+    data-av-animation="fadeInUp"
+    id="s-goods-group"
+  >
+    <div class="left">
+      <div class="title">通过产品线筛选</div>
+      <div class="hr"></div>
+    </div>
+    <div class="right"></div>
+  </div>
+</div>
+
+<script>
+  // window.vinnoGetUrl = "{:url('api/Index/vinnoGet')}"
+  // window.OeGetUrl = "{:url('api/Index/OeGet')}"
+  // window.getZhizaoshangUrl = "{:url('api/Index/getZhizaoshang')}"
+  // window.getAllInfoUrl = "{:url('api/Index/getAllInfo')}"
+  // window.getProductUrl = "{:url('api/Index/getProduct')}"
+  // window.getChildrenUrl = "{:url('api/Index/getChildren')}"
+  // window.allProductUrl = "{:url('api/Index/allProduct')}"
+
+  window.vinnoGetUrl = 'http://www.kabis.com.cn/api/Index/vinnoGet.html'
+  window.OeGetUrl = 'http://www.kabis.com.cn/api/Index/OeGet.html'
+  window.getZhizaoshangUrl =
+    'http://www.kabis.com.cn/api/Index/getZhizaoshang.html'
+  window.getAllInfoUrl = 'http://www.kabis.com.cn/api/Index/getAllInfo.html'
+  window.getProductUrl = 'http://www.kabis.com.cn/api/Index/getProduct.html'
+  window.getChildrenUrl = 'http://www.kabis.com.cn/api/Index/getChildren.html'
+  window.allProductUrl = 'http://www.kabis.com.cn/api/Index/allProduct.html'
+</script>

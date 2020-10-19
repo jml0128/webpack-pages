@@ -1,5 +1,6 @@
 .full-block-1 {
-  margin-top: -120px;
+  margin-top: -110px;
+  background-color: #f3f3f3;
   .main-block {
     padding-top: 40px;
     // background-color: #fff;
@@ -23,8 +24,29 @@
     .av-container {
       width: 33.33%;
       display: inline-block;
-      height: 366px;
+      height: 540px;
       vertical-align: top;
+      &:last-child {
+        .item {
+          section {
+            height: 100%;
+            & > p {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        section {
+          & > p {
+            margin-bottom: 10px;
+            &:nth-child(1) {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
       .item {
         line-height: 1.2;
         width: 100%;
@@ -32,8 +54,9 @@
         // background-color: rgba($color: #000000, $alpha: 0.2);
         background-color: #fff;
         border-radius: 0px;
-        padding: 50px;
+        padding: 30px;
         box-sizing: border-box;
+        padding-top: 120px;
         p {
           display: block;
           margin: 0;
@@ -63,6 +86,93 @@
           width: 100%;
           height: 100%;
         }
+      }
+    }
+  }
+}
+.full-block-2 {
+  background-color: #f3f3f3;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  #map {
+    width: 600px;
+    height: 580px;
+    border: 1px solid #fff;
+    margin-top: 30px;
+  }
+  .main-block {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .layui-form {
+      width: 570px;
+      padding-right: 100px;
+      box-sizing: border-box;
+      .layui-form-item {
+        textarea {
+          resize: none;
+        }
+        .layui-input-block {
+          margin-left: 0;
+          .layui-input,
+          .layui-select,
+          .layui-textarea {
+            background: transparent;
+          }
+        }
+        .layui-form-select:after {
+          content: none;
+        }
+        &.citys {
+          .layui-input-block {
+            display: flex;
+          }
+          .layui-form-select {
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          dl dd.layui-this {
+            background-color: $baseColor;
+          }
+        }
+        .layui-form-checkbox[lay-skin='primary'] {
+          margin-top: 24px;
+          width: 100%;
+          span {
+            width: 100%;
+            white-space: pre-wrap;
+            font-size: 14px;
+            color: #666666;
+            line-height: 19px;
+          }
+        }
+        .layui-form-checkbox[lay-skin='primary']:hover i {
+          border-color: $baseColor !important;
+        }
+        .layui-form-checked[lay-skin='primary'] i {
+          border-color: $baseColor !important;
+          background-color: $baseColor;
+        }
+      }
+      .tips {
+        font-size: 20px;
+        color: $baseColor;
+        line-height: 26px;
+        margin-top: 30px;
+      }
+      .tips1{
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      .layui-btn {
+        width: 100%;
+        background-color: $baseColor;
+        height: 48px;
+        margin-top: 10px;
       }
     }
   }

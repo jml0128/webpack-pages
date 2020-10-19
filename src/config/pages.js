@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-14 11:32:50
- * @LastEditTime: 2020-07-06 14:42:40
+ * @LastEditTime: 2020-10-19 22:22:12
  * @LastEditors: jml
  * @Description: In User Settings Edit
  * @FilePath: \06-zw-page\src\config\pages.js
@@ -11,6 +11,7 @@ module.exports = {
     title: 'page-test',
     html: '/pages/index/index.ejs',
     js: '/pages/index/index.js',
+    otherJs: ['vendersearch'],
   },
   about: {
     title: 'page-test',
@@ -46,6 +47,22 @@ module.exports = {
     title: 'page-test',
     html: '/pages/search/index.ejs',
     js: '/pages/search/index.js',
+    otherJs: ['vendersearch'],
+  },
+  product: {
+    title: 'page-test',
+    html: '/pages/product/index.ejs',
+    js: '/pages/product/index.js',
+  },
+  service: {
+    title: 'page-test',
+    html: '/pages/service/index.ejs',
+    js: '/pages/service/index.js',
+  },
+  quality: {
+    title: 'page-test',
+    html: '/pages/quality/index.ejs',
+    js: '/pages/quality/index.js',
   },
 
   mindex: {

@@ -3,7 +3,7 @@
  * @Author: jml
  * @Date: 2020-06-22 19:58:24
  * @LastEditors: jml
- * @LastEditTime: 2020-10-19 14:52:36
+ * @LastEditTime: 2020-10-19 22:39:00
  */
 
 import './index.scss'
@@ -39,3 +39,7 @@ const v2Swiper = new Swiper('.v2-swiper', {
     prevEl: '.v2-swiper-button-prev',
   },
 })
+
+setTimeout(() => {
+  queryRegion()
+}, 200)

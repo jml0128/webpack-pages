@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-06-22 21:30:39
+ * @LastEditors: jml
+ * @LastEditTime: 2020-10-19 22:34:12
+ */
 body {
   cursor: default;
   min-width: $mainBoxWidth;
@@ -65,7 +72,7 @@ $headerHeight: 70px;
       }
     }
     nav {
-      width: $maxWidth - $searchWidth - $counterWidth - 100px - 1px;
+      width: $maxWidth - $searchWidth - $counterWidth - 10px - 1px;
       height: 100%;
       display: inline-block;
       text-align: right;
@@ -466,10 +473,11 @@ $headerHeight: 70px;
 
 .banner-normal {
   width: 100%;
-  height: 330px;
+  height: 600px;
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -523,14 +531,22 @@ $headerHeight: 70px;
 }
 .searchbox-btn {
   position: absolute;
-  right: 30px;
-  width: 30px;
-  height: 51px;
   border: none;
   top: 0;
   border-radius: 2px;
-  background: #c2c2c2;
+  background: #fff;
   color: #fff;
+
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  background-image: url('../img/组 23229.png');
+  background-size: 100% 100%;
+  top: 0;
+  right: 30px;
+  .layui-icon {
+    display: none;
+  }
 }
 .v2-car-tab.car-tab .layui-tab-title {
   height: 72px;
@@ -618,8 +634,7 @@ $headerHeight: 70px;
 .searchbox {
   position: relative;
 }
-.layui-form-select::after,
-.searchbox::after {
+.layui-form-select::after {
   content: '';
   width: 51px;
   height: 51px;
@@ -628,8 +643,125 @@ $headerHeight: 70px;
   background-size: 100% 100%;
   top: 0;
   right: 30px;
+  pointer-events: none;
 }
 .layui-form-select::after {
   right: 0;
   transform: rotate(90deg);
+}
+
+.v2-search-list {
+  .layui-form-select dl {
+    top: 42px !important;
+    bottom: auto !important;
+  }
+  .s-group {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  .s-group .layui-form-select {
+    margin-bottom: 10px;
+  }
+  .s-group .layui-form-select:last-child {
+    margin-right: 0;
+  }
+  .s-group .layui-form-select dl dd.layui-this {
+    background-color: $baseColor;
+  }
+  .s-goods-group {
+    display: flex;
+    background-color: #fff;
+  }
+  .s-goods-group .left {
+    flex: 0 1 220px;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+    height: min-content;
+    display: none;
+  }
+  .s-goods-group .left .title {
+    background-color: #47535f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .s-goods-group .left .hr {
+    padding: 5px;
+    border-bottom: 1px solid #47535f;
+  }
+  .s-goods-group .right {
+    flex: 1 1 auto;
+  }
+  .s-goods-group .right .g-item {
+    border-bottom: 5px solid #47535f;
+    /* margin-bottom: 20px; */
+    min-height: 170px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .s-goods-group .right .g-item .img {
+    width: 220px;
+    height: 150px;
+    flex: 0 1 220px;
+    margin-right: 20px;
+    display: block;
+  }
+  .s-goods-group .right .g-item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+  }
+  .s-goods-group .right .g-item .img img:first-child {
+    display: block;
+  }
+  .s-goods-group .right .g-item .info {
+    flex: 1 1 auto;
+  }
+  .s-goods-group .right .g-item .info .title {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-top: 20px;
+  }
+  .s-goods-group .right .g-item .info .title span:nth-child(1) {
+    color: #47535f;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .s-goods-group .right .g-item .info .title span:nth-child(1):hover {
+    text-decoration: underline;
+  }
+  .s-goods-group .right .g-item .info .title span:nth-child(2) {
+    color: #959595;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .s-goods-group .right .g-item .info .t-item-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .s-goods-group .right .g-item .info .t-item-group .t-item {
+    width: 50%;
+    font-size: 13px;
+    color: #47535f;
+    font-weight: bold;
+    padding: 8px 0;
+    padding-right: 15px;
+    word-break: break-all;
+    box-sizing: border-box;
+  }
+  .s-goods-group .right .g-item .info .t-item-group .t-item .desc {
+    font-weight: normal;
+  }
+  .layui-form-select:after {
+    display: none;
+  }
 }

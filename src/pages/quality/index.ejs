@@ -1,0 +1,80 @@
+<!--
+ * @Description: 
+ * @Author: jml
+ * @Date: 2020-05-24 10:33:47
+ * @LastEditors: jml
+ * @LastEditTime: 2020-10-19 21:42:02
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <%= require('../../templates/head.ejs')('质量体系') %>
+  <body>
+    <%= require('../../templates/header.ejs')('./quality.html') %>
+    <div class="banner-normal">
+      <img
+        src="<%= require('../../assets/img/v2/微信截图_20201019190155.png').default %>"
+        alt=""
+      />
+    </div>
+    <div class="full-block full-block-1">
+      <div class="main-block">
+        <div class="title aniview" data-av-animation="fadeInUp">质量流程</div>
+        <div class="desc aniview" data-av-animation="fadeInUp">
+          在KABIS，我们在开发产品时会使用过程和技术的高级产品质量计划（APQP）框架，为客户提供符合OE质量的更换部件。我们的目标是通过从一开始就计划优质产品来支持客户的成功，然后评估内部和市场反馈以支持持续改进。<br />
+          从初始样品到系列产品的详细检查，所有零件在添加到内部测试实验室的产品系列之前都要经过精确的检查。为了做到这一点，KABIS的质量管理人员依赖于各种高科技设备。
+        </div>
+        <div class="hr aniview" data-av-animation="fadeInUp"></div>
+      </div>
+    </div>
+    <div class="full-block full-block-2">
+      <div class="main-block aniview" data-av-animation="fadeInUp">
+        <div class="title aniview" data-av-animation="fadeInUp">
+          质量控制流程图
+        </div>
+        <ul>
+          <% [
+          {i:require('../../assets/img/v2/1_03.png').default,t:'质量审核',desc:'质量前期控制'},{i:require('../../assets/img/v2/1_06.png').default,t:'质量监督',desc:'质量中期控制'},{i:require('../../assets/img/v2/1_08.png').default,t:'质量整改',desc:'质量后期控制'},{i:require('../../assets/img/v2/1_13.png').default,t:'质量数据',desc:'质量数据追溯'},{i:require('../../assets/img/v2/1_14.png').default,t:'质量投诉',desc:'质量投诉索赔'}].forEach(function(item){
+          %>
+          <li>
+            <div class="img">
+              <img src="<%= item.i%>" alt="" />
+            </div>
+            <div class="b">
+              <div class="b-title"><%= item.t%></div>
+              <div class="b-hr"></div>
+              <div class="b-desc"><%= item.desc%></div>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+    <!-- <video src="" controls></video> -->
+
+    <div class="full-block full-block-3">
+      <div class="main-block aniview" data-av-animation="fadeInUp">
+        <div class="title">质量保证</div>
+        <div class="c">
+          <div class="img"></div>
+          <ul>
+            <div class="u-desc">
+              我们为所有液压制动系统替换零件提供3年的制造商保修-超出法定保修期。这是Kabis对质量的承诺。这对每一个信任KABIS产品的人来说都是一个真正的附加值。
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="full-block full-block-4">
+      <div class="main-block aniview" data-av-animation="fadeInUp">
+        <div class="title">质量技术交流</div>
+        <div class="desc">
+          有技术问题吗？我们的认证技术人员会提供答案。单击下面的按钮，然后与他们交谈。
+        </div>
+        <a class="btn">communication</a>
+      </div>
+    </div>
+
+    <%= require('../../templates/footer.ejs')() %>
+  </body>
+</html>

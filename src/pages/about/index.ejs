@@ -3,62 +3,46 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-06-23 23:19:44
+ * @LastEditTime: 2020-10-19 16:38:26
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <%= require('../../templates/head.ejs')('首页') %>
+  <%= require('../../templates/head.ejs')('关于我们') %>
   <body>
     <%= require('../../templates/header.ejs')('./about.html') %>
     <div class="banner-normal">
-      <img src="http://placehold.it/584x370" alt="" />
+      <img
+        src="<%= require('../../assets/img/v2/banner_02.png').default %>"
+        alt=""
+      />
     </div>
     <div class="full-block full-block-1">
       <div class="main-block">
-        <div class="common-title aniview" data-av-animation="fadeInUp">
-          <h2><span>关于</span> 我们</h2>
-          <h4>ABOUT US</h4>
-        </div>
-        <p class="tips aniview" data-av-animation="fadeInUp">
-          KABIS品牌是具有原厂品质的汽车零部件行业领先者之一，致力于汽车制动系统、冷却系统的开发与生产，并为其提供可靠的工程质量和出色的创新设计。
-        </p>
-        <div class="left">
-          <img
-            src="http://placehold.it/584x370"
-            alt=""
-            class="hover-img aniview"
-            data-av-animation="fadeInUp"
-          />
-        </div>
-        <div class="right">
-          <div class="title aniview" data-av-animation="fadeInUp">
-            企业愿景<span>visioning</span>
+        <div class="title aniview" data-av-animation="fadeInUp">公司介绍</div>
+        <div class="desc aniview" data-av-animation="fadeInUp">
+          <div class="desc-1">
+            KABIS品牌是具有原厂品质的汽车零部件行业领先者之一，致力于汽车制动系统、冷却系统的开发与生产，并为其提供可靠的工程质量和出色的创新设计。
           </div>
-          <p class="aniview" data-av-animation="fadeInUp">
-            KABIS售后市场致力于成为汽车零部件和服务行业的领军供应商。
-          </p>
-          <p class="aniview" data-av-animation="fadeInUp">
-            •我们的愿景是，通过不断地打磨产品品质与创新设计，提升客户的综合性体验，逐步扩大市场占有率，成为汽车零部件和服务的全球性领军者。
-          </p>
-          <p class="aniview" data-av-animation="fadeInUp">
-            •我们的愿景是，在客户群中树立这样一种观念，当他们想到优质、可靠、高效和创新时，可以马上联想到KABIS售后市场。
-          </p>
+        </div>
+        <div class="hr aniview" data-av-animation="fadeInUp"></div>
+        <div class="desc aniview" data-av-animation="fadeInUp">
+          <div class="desc-2">
+            我们不断努力成为行业创新者，采用100％新材料制成新卡钳、制动主缸、冷却水泵，KABIS一直在寻找革新售后市场的方法并与竞争对手区分开来，为全球消费者提供了同等或更高质量的替代品及维修市场最高保修年限。从制动零件到电子元件，从卡钳到液压系统，KABIS都能生产出覆盖范围广的可靠的制动零件。我们所有的产品都经过广泛的测试，因此您可以确定购买的是可靠安全的产品。
+          </div>
         </div>
       </div>
     </div>
 
     <div class="full-block full-block-2">
       <div class="main-block">
-        <div class="title aniview" data-av-animation="fadeInUp">
-          核心服务<span>services</span>
-        </div>
+        <div class="title aniview" data-av-animation="fadeInUp">核心服务</div>
         <section
           data-animate="4"
           data-key=""
           data-col="25_25_25_25"
           data-stick-parent=""
           class="row"
-          style="width: 100%;"
+          style="width: 100%"
         >
           <section
             id="tyklmvJdLVzPCAug"
@@ -73,33 +57,23 @@
             "
           >
             <section class="editor ck-content">
-              <p style="text-align: center;">
-                <span
-                  class="text-20"
-                  style="font-size: 20px; color: hsl(0, 0%, 0%);"
-                  >专注品质</span
-                >
+              <p style="text-align: center">
+                <span class="text-20" style="font-size: 24px; color: #444">
+                  专注品质
+                </span>
               </p>
-              <p style="text-align: center;">
-                <span
-                  style="
-                    color: hsl(0, 0%, 60%);
-                    font-family: HELVETICANEUELTPRO-THEX;
-                  "
-                  >Focus on quality</span
-                >
-              </p>
-              <p style="text-align: center;">&nbsp;</p>
+              <p style="text-align: center">&nbsp;</p>
               <figure class="image">
                 <img
-                  src="http://resources.jsmo.xin/templates/upload/15375/201905/1559028283536.png"
+                  style="width: 75px; height: 84px"
+                  src="<%= require('../../assets/img/v2/品质.png').default %>"
                 />
               </figure>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;">
-                <span style="color: hsl(0, 0%, 60%);"
-                  >自创始以来，始终如一，心无旁骛的研发以品质为信念</span
-                >
+              <p style="text-align: center">&nbsp;</p>
+              <p style="text-align: center">
+                <span style="color: #999">
+                  始终关注于将我们各个产品系列中对于细节的执着和专注的精神融入与客户的关系中。
+                </span>
               </p>
             </section>
           </section>
@@ -116,33 +90,23 @@
             "
           >
             <section class="editor ck-content">
-              <p style="text-align: center;">
-                <span
-                  class="text-20"
-                  style="font-size: 20px; color: hsl(0, 0%, 0%);"
-                  >持续创新</span
-                >
+              <p style="text-align: center">
+                <span class="text-20" style="font-size: 24px; color: #444">
+                  持续创新
+                </span>
               </p>
-              <p style="text-align: center;">
-                <span
-                  style="
-                    color: hsl(0, 0%, 60%);
-                    font-family: HELVETICANEUELTPRO-THEX;
-                  "
-                  >Continuous innovation</span
-                >
-              </p>
-              <p style="text-align: center;">&nbsp;</p>
+              <p style="text-align: center">&nbsp;</p>
               <figure class="image">
                 <img
-                  src="http://resources.jsmo.xin/templates/upload/15375/201905/155902830788.png"
+                  style="width: 80px; height: 94px"
+                  src="<%= require('../../assets/img/v2/创新.png').default %>"
                 />
               </figure>
               <p>&nbsp;</p>
-              <p style="text-align: center;">
-                <span style="color: hsl(0, 0%, 60%);"
-                  >始终如一的投入，心无旁骛的研发，以品质为信念，坚持让卫浴融入完</span
-                >
+              <p style="text-align: center">
+                <span style="color: #999">
+                  我们富于创新精神，不断拓展，不断尝试只为给客户带来高品质的产品。
+                </span>
               </p>
             </section>
           </section>
@@ -159,33 +123,23 @@
             "
           >
             <section class="editor ck-content">
-              <p style="text-align: center;">
-                <span
-                  class="text-20"
-                  style="font-size: 20px; color: hsl(0, 0%, 0%);"
-                  >倡导环保</span
-                >
+              <p style="text-align: center">
+                <span class="text-20" style="font-size: 24px; color: #444">
+                  倡导环保
+                </span>
               </p>
-              <p style="text-align: center;">
-                <span
-                  style="
-                    color: hsl(0, 0%, 60%);
-                    font-family: HELVETICANEUELTPRO-THEX;
-                  "
-                  >environmen protection</span
-                >
-              </p>
-              <p style="text-align: center;">&nbsp;</p>
+              <p style="text-align: center">&nbsp;</p>
               <figure class="image">
                 <img
-                  src="http://resources.jsmo.xin/templates/upload/15375/201905/1559028322843.png"
+                  style="width: 86px; height: 78px"
+                  src="<%= require('../../assets/img/v2/环保.png').default %>"
                 />
               </figure>
               <p>&nbsp;</p>
-              <p style="text-align: center;">
-                <span style="color: hsl(0, 0%, 60%);"
-                  >以引领行业的促益社会为己任，从点滴细节做起，节约资源。</span
-                >
+              <p style="text-align: center">
+                <span style="color: #999">
+                  以引领行业的促益社会为己任，从点滴细节做起，节约资源。
+                </span>
               </p>
             </section>
           </section>
@@ -202,33 +156,23 @@
             "
           >
             <section class="editor ck-content">
-              <p style="text-align: center;">
-                <span
-                  class="text-20"
-                  style="font-size: 20px; color: hsl(0, 0%, 0%);"
-                  >恒于心 专与质</span
-                >
+              <p style="text-align: center">
+                <span class="text-20" style="font-size: 24px; color: #444">
+                  精益求精
+                </span>
               </p>
-              <p style="text-align: center;">
-                <span
-                  style="
-                    color: hsl(0, 0%, 60%);
-                    font-family: HELVETICANEUELTPRO-THEX;
-                  "
-                  >quality</span
-                >
-              </p>
-              <p style="text-align: center;">&nbsp;</p>
+              <p style="text-align: center">&nbsp;</p>
               <figure class="image">
                 <img
-                  src="http://resources.jsmo.xin/templates/upload/15375/201905/1559028341709.png"
+                  style="width: 85px; height: 79px"
+                  src="<%= require('../../assets/img/v2/形状.png').default %>"
                 />
               </figure>
-              <p style="text-align: center;">&nbsp;</p>
-              <p style="text-align: center;">
-                <span style="color: hsl(0, 0%, 60%);"
-                  >以引领行业的促益社会为己任细节做起节约资源，保护环境。</span
-                >
+              <p style="text-align: center">&nbsp;</p>
+              <p style="text-align: center">
+                <span style="color: #999">
+                  追求品质与效率，为客户提供优质的服务和技术。
+                </span>
               </p>
             </section>
           </section>
@@ -236,7 +180,16 @@
       </div>
     </div>
 
-    <%= require('../../templates/contactus.ejs')() %> <%=
-    require('../../templates/footer.ejs')() %>
+    <div class="full-block full-block-3">
+      <div class="c-box aniview" data-av-animation="fadeInUp">
+        <div class="title">寻找合作伙伴</div>
+        <div class="desc">
+          Kabis致力于与客户及供应商建立合作共赢的伙伴关系<br />在与客户合作树立汽车零部件后市场领军产品品牌的同时，我们通过与客户建立资源共享平台以及灵活高效的交互机制，实现与客户们最快速的需求沟通及问题解决。在高效交互的同时，我们更热衷于满足不同市场客户的个性化需求，通过组织双方优秀伙伴的互访和相互间培训的开展，增进专业知识的传播及交流，实共赢。如果您也希望参与到Kabis的发展中来，请联系我们，与您一起，思考更多，行动更多，创造更多！
+        </div>
+        <div class="c">联系人：xxx</div>
+        <div class="c">联系方式：123456789</div>
+      </div>
+    </div>
+    <%= require('../../templates/footer.ejs')() %>
   </body>
 </html>

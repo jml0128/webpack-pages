@@ -3,200 +3,69 @@
  * @Author: jml
  * @Date: 2020-05-24 10:33:47
  * @LastEditors: jml
- * @LastEditTime: 2020-07-06 15:21:58
+ * @LastEditTime: 2020-10-19 22:22:57
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <%= require('../../templates/head.ejs')('首页') %>
   <body>
     <%= require('../../templates/header.ejs')('./index.html') %>
+    <div class="banner-normal">
+      <img
+        src="<%= require('../../assets/img/v2/banner_05.png').default %>"
+        alt=""
+      />
+    </div>
+    <div class="full-block full-block-0">
+      <div class="main-block">
+        <div class="title aniview" data-av-animation="fadeInUp">产品搜索</div>
+        <div class="desc aniview" data-av-animation="fadeInUp">
+          <div class="desc-1">
+            感谢您选择了kabis.com.cn网站！有了它，您可以比以往更快，更轻松地找到合适的零件。我们的产品目录分为3个明确标记的部分，包括更新内容和一个应用部分。此外还包括内容深入的买家指南，其中带有图表、安装尺寸、制动模式来帮助识别。
+          </div>
+        </div>
+        <div class="hr aniview" data-av-animation="fadeInUp"></div>
+        <div class="desc aniview" data-av-animation="fadeInUp">
+          <div class="desc-2">
+            我们不断努力成为行业创新者，采用100％新材料制成新卡钳、制动主缸、冷却水泵，KABIS一直在寻找革新售后市场的方法并与竞争对手区分开来，为全球消费者提供了同等或更高质量的替代品及维修市场最高保修年限。从制动零件到电子元件，从卡钳到液压系统，KABIS都能生产出覆盖范围广的可靠的制动零件。我们所有的产品都经过广泛的测试，因此您可以确定购买的是可靠安全的产品。
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="full-block full-block-1">
       <div class="main-block">
-        <div class="common-title aniview" data-av-animation="fadeInUp">
-          <h2><span>产品 </span>目录</h2>
-          <h4>PRODUCT CATELOG</h4>
-        </div>
-        <div class="car-tab aniview" data-av-animation="fadeInUp">
-          <div class="layui-tab">
-            <ul class="layui-tab-title">
-              <li class="layui-this">
-                <img
-                  src="<%= require('../../assets/img/矢量智能对象(1).png').default %>"
-                />
-              </li>
-              <li>
-                <img
-                  src="<%= require('../../assets/img/huoche.png').default %>"
-                />
-              </li>
-              <li>
-                <img
-                  src="<%= require('../../assets/img/forklift_right.png').default %>"
-                />
-              </li>
-            </ul>
-            <div class="layui-tab-content">
-              <div class="layui-tab-item layui-show">
-                <form class="layui-form" action="">
-                  <select name="city" id="region0"> </select>
-
-                  <div class="searchbox" id="chejia">
-                    <input
-                      type="text"
-                      name="chejia"
-                      value=""
-                      placeholder="请输入车架号"
-                      class="layui-input searchbox-input"
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-
-                  <div class="searchbox" id="peijian">
-                    <input
-                      type="text"
-                      name="peijian"
-                      value=""
-                      placeholder="或者输入配件号"
-                      class="layui-input searchbox-input"
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-
-                  <div class="searchbox" id="chexing">
-                    <input
-                      type="text"
-                      name="chexing"
-                      value=""
-                      placeholder="通过车型搜索"
-                      class="layui-input searchbox-input"
-                      readonly=""
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div class="layui-tab-item">
-                <form class="layui-form" action="">
-                  <select name="city" id="region1"> </select>
-
-                  <div class="searchbox" id="chejia">
-                    <input
-                      type="text"
-                      name="chejia"
-                      value=""
-                      placeholder="请输入车架号"
-                      class="layui-input searchbox-input"
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-
-                  <div class="searchbox" id="peijian">
-                    <input
-                      type="text"
-                      name="peijian"
-                      value=""
-                      placeholder="或者输入配件号"
-                      class="layui-input searchbox-input"
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-
-                  <div class="searchbox" id="chexing">
-                    <input
-                      type="text"
-                      value=""
-                      placeholder="通过车型搜索"
-                      class="layui-input searchbox-input"
-                      readonly=""
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-
-              <div class="layui-tab-item">
-                <form class="layui-form" action="">
-                  <select name="city" id="region2"> </select>
-
-                  <div class="searchbox" id="chejia">
-                    <input
-                      type="text"
-                      name="chejia"
-                      value=""
-                      placeholder="请输入车架号"
-                      class="layui-input searchbox-input"
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-
-                  <div class="searchbox" id="peijian">
-                    <input
-                      type="text"
-                      name="peijian"
-                      value=""
-                      placeholder="或者输入配件号"
-                      class="layui-input searchbox-input"
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-
-                  <div class="searchbox" id="chexing">
-                    <input
-                      type="text"
-                      value=""
-                      placeholder="通过车型搜索"
-                      class="layui-input searchbox-input"
-                      readonly=""
-                    />
-                    <button
-                      type="button"
-                      class="layui-btn layui-btn-sm layui-btn-primary searchbox-btn"
-                    >
-                      <i class="layui-icon">&#xe602;</i>
-                    </button>
-                  </div>
-                </form>
-              </div>
+        <%= require('../../templates/search.ejs')() %>
+        <%= require('../../templates/search-list.ejs')() %>
+        <div class="title aniview" data-av-animation="fadeInUp">目录下载</div>
+        <div class="aniview" data-av-animation="fadeInUp">
+          <div class="d-list">
+            <div class="d-list-item">
+              <img
+                src="<%= require('../../assets/img/v2/img_04.png').default %>"
+                alt=""
+              />
+              <div class="name">奥迪通讯录</div>
+            </div>
+            <div class="d-list-item">
+              <img
+                src="<%= require('../../assets/img/v2/img_05.png').default %>"
+                alt=""
+              />
+              <div class="name">奥迪通讯录</div>
+            </div>
+            <div class="d-list-item">
+              <img
+                src="<%= require('../../assets/img/v2/img_06.png').default %>"
+                alt=""
+              />
+              <div class="name">奥迪通讯录</div>
+            </div>
+            <div class="d-list-item">
+              <img
+                src="<%= require('../../assets/img/v2/img_07.png').default %>"
+                alt=""
+              />
+              <div class="name">奥迪通讯录</div>
             </div>
           </div>
         </div>
@@ -204,23 +73,4 @@
     </div>
     <%= require('../../templates/footer.ejs')() %>
   </body>
-  <script>
-    function getQueryString(name) {
-      var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
-      var r = window.location.search.substr(1).match(reg)
-      if (r != null) {
-        return unescape(r[2])
-      }
-      return null
-    }
-    layui.use(['layer', 'element', 'jquery', 'form'], function () {
-      var obj = {
-        querycar_type: getQueryString('querycar_type'),
-        city: getQueryString('city'),
-        chejia: getQueryString('chejia'),
-        peijian: getQueryString('peijian'),
-      }
-      console.log(obj)
-    })
-  </script>
 </html>
