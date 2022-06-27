@@ -1,10 +1,94 @@
-<!--
- * @Description: 
- * @Author: jml
- * @Date: 2020-05-24 10:33:47
- * @LastEditors: jml
- * @LastEditTime: 2020-05-24 10:39:16
---> 
 <header>
-  <h2>This is header, path => './src/template/header.ejs'</h2>
+  <div class="header-content">
+    <a href="/" class="logo">
+      <img
+        src="<%= require('../assets/img/logo.png').default %>"
+        alt="logo"
+        width="110"
+        height="24"
+      />
+    </a>
+    <nav class="lato-r">
+      <a href="">Products</a>
+      <a href="">News & Blog</a>
+      <a href="">Support</a>
+      <a href="">#CreatorMeetsEdifier</a>
+    </nav>
+    <div class="operate lato-r">
+      <a href="">
+        <img
+          src="<%= require('../assets/img/search.png').default %>"
+          alt="search"
+          width="16"
+          height="16"
+        />
+      </a>
+      <a href="">
+        <img
+          src="<%= require('../assets/img/shop.png').default %>"
+          alt="shop"
+          width="16"
+          height="16"
+        />
+        <span>shop</span>
+      </a>
+      <a href="">
+        <img
+          src="<%= require('../assets/img/global-site.png').default %>"
+          alt="global-site"
+          width="16"
+          height="16"
+        />
+        <span>Global Site</span>
+      </a>
+    </div>
+  </div>
+  <div class="header-content-mobile">
+    <img
+      src="<%= require('../assets/img/menu.png').default %>"
+      alt="menu"
+      class="menu"
+      id="menu"
+    />
+    <a href="/" class="logo">
+      <img
+        src="<%= require('../assets/img/logo.png').default %>"
+        alt="logo"
+        width="100%"
+        height="100%"
+      />
+    </a>
+    <div>
+      <a href="/" class="search">
+        <img
+          src="<%= require('../assets/img/search.png').default %>"
+          alt="shop"
+          width="100%"
+          height="100%"
+        />
+      </a>
+      <a href="/" class="shop">
+        <img
+          src="<%= require('../assets/img/shop.png').default %>"
+          alt="shop"
+          width="100%"
+          height="100%"
+        />
+      </a>
+    </div>
+    <ul id="mobile-menu" class="lato-r">
+      <li>
+        <a href="">Products</a>
+      </li>
+      <li>
+        <a href="">News & Blog</a>
+      </li>
+      <li>
+        <a href="">Support</a>
+      </li>
+      <li>
+        <a href="">#CreatorMeetsEdifier</a>
+      </li>
+    </ul>
+  </div>
 </header>

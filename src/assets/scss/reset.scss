@@ -84,6 +84,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -100,7 +101,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.6;
 }
 ol,
 ul {
@@ -131,4 +132,8 @@ button {
   border: 1px solid transparent; //自定义边框
   outline: none; //消除默认点击蓝色边框效果
   cursor: pointer;
+}
+
+div {
+  // transform-style: preserve-3d;
 }

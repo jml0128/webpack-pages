@@ -1,18 +1,245 @@
-<!--
- * @Description: 
- * @Author: jml
- * @Date: 2020-05-24 10:33:47
- * @LastEditors: jml
- * @LastEditTime: 2020-05-24 10:40:13
---> 
 <!DOCTYPE html>
 <html lang="zh-CN">
   <%= require('../../templates/head.ejs')('首页') %>
   <body>
-    <%= require('../../templates/header.ejs') %>
-    <div class="page-test">
-      <h1>page-test</h1>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHB25K4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <%= require('../../templates/header.ejs')() %>
+    <div class="banner swiper-container">
+      <div class="swiper-wrapper">
+        <%[1].forEach(function(item){ %>
+        <div class="banner-item swiper-slide">
+          <div class="pc-img" style="background-image: url('https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062314172216559650426823.jpeg');"></div>
+          <img class="mobile-img" src="https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309534816559492283786.jpg" alt="" />
+          <div class="banner-item-content">
+            <p class="title">CREATOR</p>
+            <p class="title">MEETS</p>
+            <p class="title">EDIFIER</p>
+            <p class="desc">“A passion for sound” has been Edifier’s tagline for years, and creativity is where the brand value lies. Edifier never limits its imagination in technological innovations and has been focused on creating classic yet unique audio designs. </p>
+            <p class="desc">And, we believe that creativity works inextricably with music. many musicians, artists and designers verify the importance of being inspired by music in their creative processes. That is the reason why Edifier has been dedicated to design and produce high-quality audio products, to deliver great music, and to inspire the growing global creators.</p>
+          </div>
+        </div>
+        <% }); %>
+      </div>
     </div>
-    <%= require('../../templates/footer.ejs') %>
+    <div class="page">
+      <div class="page-content part-1 lato-r">
+        <p class="lato-b aniview title" data-av-animation="fadeInUp">MEET OUR CREATORS</p>
+        <p class="aniview desc" data-av-animation="fadeInUp delay-2">From Edifier's perspective, creation should not be defined solely as the job of artists. Everyone is creating in their daily life - designing, writing, and even cooking...</p>
+        <p class="aniview desc" data-av-animation="fadeInUp delay-4">Creation is the way that people discover the world with their imagination.</p>
+        <p class="aniview desc" data-av-animation="fadeInUp delay-6">Here, EDIFIER  has cooperated with 7 independent “Creators” to showcase their stories, values, music lists, and their way of discovering the world, to represent the brand and to inspire more.</p>
+      </div>
+
+      <div class="part-2 lato-r">
+        <div class="page-content">
+          <div class="product-block aniview" data-av-animation="fadeInUp">
+            <div class="product swiper-container">
+              <div class="swiper-wrapper">
+                <% [
+                 {
+                  name:'Anna Sentina',
+                  img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309542516559492652969.png',
+                  target:'"Creating to me is releasing your heart in a form where words can\'t suffice."',
+                 },
+                 { 
+                  name:'Ariana Abedini',
+                  img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309553116559493312888.png', 
+                  target:'"Anything could be inspiration for creation: from some beautiful scenery in nature to deep feelings and emotions, music helps me communicate something genuine that often words fail to describe."' 
+                 },
+                 { 
+                  name:'Roxane De Almeida', 
+                  img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309544816559492882583.png',
+                  target:'"Creative, passionate and vintage, Roxane loves to create stories via her cameras and paintbrushes."' 
+                 },
+                 { 
+                  name:'Maddy Kimberley', 
+                  img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309570616559494264083.png', 
+                  target:'"Music is integral to the creative process. Having a passion for sound means I need an excellent playlist to help me to get in that creative mindset: it\'s just me, my camera, and the music!"'
+                 },
+                 { 
+                  name:'Eric Yi Lin', 
+                  img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309560816559493684321.png', 
+                  target:'"Being an artist is a journey. A journey is made with many trips. To me, painting every painting is a trip."' 
+                 },
+                 { 
+                  name:'Mike Berdis', 
+                  img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309573116559494516804.png', 
+                  target:'"Skateboarding and music are two of the most important things in my life. Being able to listen in on a playlist I can relate to is a key component for me to unlock the focus and precision I need when I\'m skating."' 
+                 }
+                ].forEach(function(item,index,arr){ %>
+                <div class="swiper-slide">
+                  <div class="product-item" style="background-image: url(<%=item.img%>)" onclick='clickProductItem(<%=index%>)'>
+                    <div class="block">
+                      <p class="name"><%= item.name%></p>
+                      <p class="desc"><%= item.target%></p>
+                    </div>
+                    <div class="hover-block" onclick="defalutEvet(event)">
+                      <p class="name"><%= item.name%></p>
+                      <p class="desc"><%= item.target%></p>
+                      <button onclick='clickProductItem(<%=index%>)'>Explore</button>
+                    </div>
+                  </div>
+                </div>
+                <% }); %>
+              </div>
+            </div>
+            <div class="p-prev swiper-button-prev"></div>
+            <div class="p-next swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="part-3 page-content">
+        
+        <p class="lato-b aniview title" data-av-animation="fadeInUp" style="margin-bottom: 0;">EDIFIER MS50A</p>
+        <p class="lato-b aniview title" data-av-animation="fadeInUp">Speakers for Creators</p>
+        <video id="video" class="video-js vjs-default-skin" controls preload autoplay muted loop playsinline x5-video-player-type="h5" x5-video-player-fullscreen="true" poster="https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310302016559514206403.jpg">
+          <source src="https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310492516559525658834.mp4" />
+        </video>
+      </div>
+      <div class="part-4">
+        <img class="pc-img" src="https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310304716559514477517.jpg" />
+        <img class="mobile-img" src="https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310310716559514678327.jpg" />
+        <div class="page-content">
+          <p style="color: #e47e4e" class="font-size-84 aniview" data-av-animation="fadeInUp delay-1">CREATOR</p>
+          <p style="color: #e9b19e" class="font-size-84 aniview" data-av-animation="fadeInUp delay-2">CALL-UP!</p>
+          <p class="font-size-32 margin-top-24 aniview" data-av-animation="fadeInUp delay-3">Everyone Is the Creator.</p>
+          <p class="lato-r font-size-16 aniview" data-av-animation="fadeInUp delay-4">Share your creation, story and music lists with Edifier by tagging @edifier_global on Instagram. Everyone has the chance to be picked as the future Edifier Creators thus to win the latest Edifier products! We can Not Wait To Listen To Your Stories And Your Music inspiration!</p>
+          <p style="color: #e47e4e" class="lato-r font-size-32 aniview" data-av-animation="fadeInUp delay-5">The Creation Never Ends.</p>
+          <div class="margin-top--50 right aniview" data-av-animation="fadeInUp delay-6">
+            <p class="font-size-32 b-font-size-32">FIND MORE ON</p>
+            <p class="font-size-48 b-font-size-48" style="color: #fff;" >
+              <a href="https://www.instagram.com/edifier_global/" target="_blank" style="color: #fff;">@edifier_global</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dialog" class="dialog">
+      <div class="dialog-content">
+        <div class="close" onclick='closeDialog()'></div>
+        <div class="product-swiper swiper-container">
+          <div class="swiper-wrapper">
+            <% [
+             {
+              name:'Anna Sentina',
+              img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310000316559496035466.png',
+              target:'"Creating to me is releasing your heart in a form where words can\'t suffice."',
+              src: 'https://www.edifier.com/product-w820nb.html?utm_source=landing-page&utm_medium=card&utm_campaign=anna',
+              video: 'https://youtu.be/xs8nY4wS9vg',
+              embed: 'https://www.youtube.com/embed/xs8nY4wS9vg',
+              pname: 'W820NB',
+              pdesc: 'Active Noise Cancelling Bluetooth Stereo Headphones',
+              ins: '@annapocalypsee',
+              insSrc: 'https://www.instagram.com/p/Ce5-gnKr7YE/',
+              title: 'Anna \'s choice'
+             },
+             { 
+              name:'Ariana Abedini',
+              img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310091916559501595555.png',
+              target:'"Anything could be inspiration for creation: from some beautiful scenery in nature to deep feelings and emotions, music helps me communicate something genuine that often words fail to describe."' ,
+              src: 'https://www.edifier.com/product-s3.html?utm_source=landing-page&utm_medium=card&utm_campaign=ariana',
+              video: 'https://youtu.be/bZVIRNwj_3A',
+              embed: 'https://www.youtube.com/embed/bZVIRNwj_3A',
+              pname: 'EDIFIER STAX SPIRIT S3',
+              pdesc: 'Wireless Over-Ear Headphones',
+              ins: '@ariana.abedini',
+              insSrc: 'https://www.instagram.com/p/Cen-xk6uc1S/',
+              title: 'Ariana \'s choice'
+             },
+             { 
+              name:'Roxane De Almeida', 
+              img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310094216559501822431.png', 
+              target:'"Creative, passionate and vintage, Roxane loves to create stories via her cameras and paintbrushes."' ,
+              src: 'https://www.edifier.com/product-mp230.html?utm_source=landing-page&utm_medium=card&utm_campaign=roxane',
+              video: 'https://youtu.be/mivfyHTkiuk',
+              embed: 'https://www.youtube.com/embed/mivfyHTkiuk',
+              pname: 'MP230',
+              pdesc: 'Portable Bluetooth Speaker',
+              ins: '@laroxstyle',
+              insSrc: 'https://www.instagram.com/p/CevBjS_uLdN/',
+              title: 'Roxane \'s choice'
+             },
+             { 
+              name:'Maddy Kimberley', 
+              img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310100316559502030956.png', 
+              target:'"Music is integral to the creative process. Having a passion for sound means I need an excellent playlist to help me to get in that creative mindset: it\'s just me, my camera, and the music!"',
+              src: 'https://www.edifier.com/product-ms50a.html?utm_source=landing-page&utm_medium=card&utm_campaign=maddy',
+              video: 'https://youtu.be/lAeBcdDAIs0',
+              embed: 'https://www.youtube.com/embed/lAeBcdDAIs0',
+              pname: 'MS50A',
+              pdesc: 'Wireless Smart Speaker with multi-room connectivity',
+              ins: '@sailorandscout',
+              insSrc: 'https://www.instagram.com/p/Ce0wDw3r_rX/',
+              title: 'Maddy \'s choice'
+             },
+             { 
+              name:'Eric Yi Lin', 
+              img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310100316559502030956.png', 
+              target:'"Being an artist is a journey. A journey is made with many trips. To me, painting every painting is a trip."' ,
+              src: 'https://www.edifier.com/product-ms50a.html?utm_source=landing-page&utm_medium=card&utm_campaign=eric',
+              video: 'https://youtu.be/F101ulW8Xcg',
+              embed: 'https://www.youtube.com/embed/F101ulW8Xcg',
+              pname: 'MS50A',
+              pdesc: 'Wireless Smart Speaker with multi-room connectivity',
+              ins: '@cafewatercolor',
+              insSrc: 'https://www.instagram.com/p/Cei5EKntamP/',
+              title: 'Eric \'s choice'
+             },
+             { 
+              name:'Mike Berdis', 
+              img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310102816559502281658.png', 
+              target:'"Skateboarding and music are two of the most important things in my life. Being able to listen in on a playlist I can relate to is a key component for me to unlock the focus and precision I need when I\'m skating."' ,
+              src: 'https://www.edifier.com/product-neobuds-pro.html?utm_source=landing-page&utm_medium=card&utm_campaign=mike',
+              video: 'https://youtu.be/-sTH9noocag',
+              embed: 'https://www.youtube.com/embed/-sTH9noocag',
+              pname: 'NeoBuds Pro',
+              pdesc: 'True Wireless Stereo Earbuds with Active Noise Cancellation',
+              ins: '@mikeberdis',
+              insSrc: 'https://www.instagram.com/p/CfBdOwCO54F/',
+              title: 'Mike \'s choice'
+             }
+            ].forEach(function(item,index,arr){ %>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="top">
+                  <!-- <video class="video video-js vjs-default-skin" controls preload muted loop playsinline x5-video-player-type="h5" x5-video-player-fullscreen="true">
+                    <source src="<%=item.video%>" />
+                  </video> -->
+
+                  <iframe class="video-js" width="1280" height="720" src="<%=item.embed%>" title="Edifier × Maddy Kimberley | Creator Meets Edifier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="other">
+                    <p class="lato-b p-4"><%=item.ins%></p>
+                    <p class="p-5"><%=item.name%></p>
+                    <p class="p-6"><%=item.target%></p>
+                  </div>
+                  <div class="right">
+                    <p class="p-1 lato-b"><%=item.title%></p>
+                    <div class="flex">
+                      <img src="<%=item.img%>" alt="">
+                      <div class="">
+                        <p class="p-2"><%=item.pname%></p>
+                        <p class="p-3"><%=item.pdesc%></p>
+                      </div>
+                    </div>
+                    <a href="<%=item.src%>" target="_blank">Learn More</a>
+                  </div>
+                </div>
+                <div class="pc-other">
+                  <p class="lato-b p-4">
+                    <a href="<%=item.insSrc%>" target="_blank" style="color:#000;"><%=item.ins%></a>
+                  </p>
+                  <p class="p-5"><%=item.name%></p>
+                  <p class="p-6"><%=item.target%></p>
+                </div>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+        </div>
+        <div class="dialog-prev swiper-button-prev"></div>
+        <div class="dialog-next swiper-button-next"></div>
+      </div>
+    </div>
   </body>
 </html>

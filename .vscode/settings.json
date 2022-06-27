@@ -3,7 +3,7 @@
   "prettier.singleQuote": true,
   "eslint.autoFixOnSave": true,
   "fileheader.customMade": {
-    "Description":"",
+    "Description": "",
     "Author": "jml",
     "Date": "Do not edit", // 文件创建时间(不变)
     "LastEditors": "jml", // 文件最后编辑者
@@ -27,5 +27,7 @@
   "prettier.semi": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "editor.wordWrap": "off",
+  "prettier.printWidth": 1000
 }

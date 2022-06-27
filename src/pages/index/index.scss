@@ -1,3 +1,152 @@
-h1 {
-  font-size: 58px;
+$height: 62px;
+header {
+  width: 100%;
+  height: $height;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: 9;
+  font-size: 14px;
+  a {
+    transition: opacity 0.1s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .header-content-mobile {
+    display: none;
+  }
+  .header-content {
+    max-width: $maxWidth;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .logo {
+      width: 110px;
+      height: $height;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5em;
+      img {
+        height: 24px;
+        margin-top: ($height - 24px) / 2;
+      }
+    }
+    nav {
+      display: inline-block;
+      height: $height;
+      a {
+        color: #fff;
+        height: $height;
+        line-height: $height;
+        display: inline-block;
+        margin-right: 4.285em;
+        &:last-child {
+          margin-right: 20px;
+        }
+      }
+    }
+    .operate {
+      float: right;
+      a {
+        color: #fff;
+        height: $height;
+        line-height: $height;
+        margin-right: 2.285em;
+        display: inline-block;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+        span {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  header {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  $mobileHeight: 0.99rem;
+  header {
+    height: $mobileHeight;
+    .header-content {
+      display: none;
+    }
+    .header-content-mobile {
+      display: flex;
+      height: $mobileHeight;
+      background-color: #000;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 12px;
+      .menu {
+        width: 0.49rem;
+        height: 0.4rem;
+      }
+      .logo {
+        position: absolute;
+        width: 1.96rem;
+        height: 0.43rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .shop {
+        width: 0.43rem;
+        height: 0.43rem;
+        display: inline-block;
+        margin-left: 0.3rem;
+      }
+      .search {
+        width: 0.43rem;
+        height: 0.43rem;
+        display: inline-block;
+      }
+      ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #000;
+        z-index: -1;
+        padding: $mobileHeight 0.4rem 0 0.4rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: height 0.3s;
+        li {
+          height: 1rem;
+          border-bottom: 1px solid rgba($color: #fff, $alpha: 0.35);
+          padding-left: 0.37rem;
+          a {
+            color: #fff;
+            font-size: 0.37333rem;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            line-height: $mobileHeight;
+          }
+        }
+      }
+    }
+  }
 }
