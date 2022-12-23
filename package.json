@@ -31,7 +31,7 @@
     "html-url-loader": "^1.0.5",
     "html-webpack-plugin": "^4.2.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "sass-resources-loader": "^2.0.2",

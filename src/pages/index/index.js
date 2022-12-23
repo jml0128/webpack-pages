@@ -194,7 +194,7 @@ window.defalutEvet = event => {
 window.clickProductItem = index => {
   preventBack(true)
   if (!window.productDialogSwiper) {
-    window.iframeSrc = ['https://www.youtube.com/embed/xzjYO-qRCqE', 'https://www.youtube.com/embed/xs8nY4wS9vg', 'https://www.youtube.com/embed/bZVIRNwj_3A', 'https://www.youtube.com/embed/mivfyHTkiuk', 'https://www.youtube.com/embed/lAeBcdDAIs0', 'https://www.youtube.com/embed/F101ulW8Xcg', 'https://www.youtube.com/embed/-sTH9noocag']
+    window.iframeSrc = ['https://www.youtube.com/embed/dmgn9BBj74w', 'https://www.youtube.com/embed/awvqmssuQqA', 'https://www.youtube.com/embed/xzjYO-qRCqE', 'https://www.youtube.com/embed/xs8nY4wS9vg', 'https://www.youtube.com/embed/bZVIRNwj_3A', 'https://www.youtube.com/embed/mivfyHTkiuk', 'https://www.youtube.com/embed/lAeBcdDAIs0', 'https://www.youtube.com/embed/F101ulW8Xcg', 'https://www.youtube.com/embed/-sTH9noocag']
     window.productDialogSwiper = new Swiper('.product-swiper', {
       initialSlide: index,
       navigation: {

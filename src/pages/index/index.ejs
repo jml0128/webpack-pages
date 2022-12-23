@@ -38,6 +38,17 @@
               <div class="swiper-wrapper">
                 <% [
                 { 
+                 name:'Jonny Mansour', 
+                 img: 'https://usa-oss.edifier.com/Uploads/images/2022/12/16/2022121611324916711615696599.jpg', 
+                 target:'"The future depends on what you’re doing today, and what you’ll be doing tomorrow. Now tell yourself that everyday"' 
+                },
+                { 
+                 name:'Leisan', 
+                 bName:'Leisan <p style="opacity: 0;">Leisan</p>',
+                 img: 'https://usa-oss.edifier.com/Uploads/images/2022/12/16/2022121611333216711616127884.jpg', 
+                 target:'"Music is the language of the world, and it is the best and direct way to share, to feel, to resonate the emotion with each other."' 
+                },
+                { 
                  name:'Cyra Gwynth', 
                  img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309564016559494008965.jpg', 
                  target:'"Music has always been part of my life. It\'s what keeps me going. There\'s just something so magical about it. It\'s truly the best world cure."' 
@@ -71,7 +82,7 @@
                   name:'Mike Berdis', 
                   img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062309573116559494516804.png', 
                   target:'"Skateboarding and music are two of the most important things in my life. Being able to listen in on a playlist I can relate to is a key component for me to unlock the focus and precision I need when I\'m skating."' 
-                 }
+                 },
                 ].forEach(function(item,index,arr){ %>
                 <div class="swiper-slide">
                   <div class="product-item" style="background-image: url(<%=item.img%>)" onclick='clickProductItem(<%=index%>)'>
@@ -80,7 +91,7 @@
                       <p class="desc"><%= item.target%></p>
                     </div>
                     <div class="hover-block" onclick="defalutEvet(event)">
-                      <p class="name"><%= item.name%></p>
+                      <div class="name"><%= item.bName || item.name%></div>
                       <p class="desc"><%= item.target%></p>
                       <button onclick='clickProductItem(<%=index%>)'>Explore</button>
                     </div>
@@ -126,6 +137,32 @@
         <div class="product-swiper swiper-container">
           <div class="swiper-wrapper">
             <% [
+            { 
+            name:'Jonny Mansour', 
+            img: 'https://test-edifierus.oss-us-east-1.aliyuncs.com/images/20221206/06456f831123c68592311ff6dd9bf522.png', 
+            target:'"The future depends on what you’re doing today, and what you’ll be doing tomorrow. Now tell yourself that everyday"',
+            src: 'https://www.edifier.com/product-w240tn.html?from=john',
+            video: 'https://www.youtube.com/embed/dmgn9BBj74w',
+            embed: 'https://www.youtube.com/embed/dmgn9BBj74w',
+            pname: 'W240TN',
+            pdesc: 'True Wireless Noise Cancellation In-Ear Headphones',
+            ins: '@jonnymansour',
+            insSrc: '',
+            title: 'Jonny \'s choice'
+            },
+            { 
+            name:'Leisan', 
+            img: 'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310104916559502496819.png', 
+            target:'"Music is the language of the world, and it is the best and direct way to share, to feel, to resonate the emotion with each other."',
+            src: 'https://www.edifier.com/product-mr4.html?from=leisan',
+            video: 'https://www.youtube.com/embed/awvqmssuQqA',
+            embed: 'https://www.youtube.com/embed/awvqmssuQqA',
+            pname: 'MR4',
+            pdesc: 'Studio Monitor',
+            ins: '@leisan.lealea',
+            insSrc: '',
+            title: 'Leisan \'s choice' 
+            },
             { 
              name:'Cyra Gwynth', 
              img:'https://usa-oss.edifier.com/Uploads/images/2022/06/23/2022062310104916559502496819.png',
@@ -216,7 +253,7 @@
               ins: '@mikeberdis',
               insSrc: 'https://www.instagram.com/p/CfBdOwCO54F/',
               title: 'Mike \'s choice'
-             }
+             },
             ].forEach(function(item,index,arr){ %>
             <div class="swiper-slide">
               <div class="product-item">
@@ -245,7 +282,11 @@
                 </div>
                 <div class="pc-other">
                   <p class="lato-b p-4">
+                    <%if(item.insSrc){%>
                     <a href="<%=item.insSrc%>" target="_blank" style="color:#000;"><%=item.ins%></a>
+                    <%}else{%>
+                    <a target="_blank" style="color:#000;"><%=item.ins%></a>
+                    <%}%>
                   </p>
                   <p class="p-5"><%=item.name%></p>
                   <p class="p-6"><%=item.target%></p>
